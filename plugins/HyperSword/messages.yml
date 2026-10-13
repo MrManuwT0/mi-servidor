@@ -1,0 +1,73 @@
+# ============================================================
+#  HyperSword - messages.yml
+#  Todos los mensajes del plugin. Soporta MiniMessage + RGB.
+# ============================================================
+
+prefix: "<gradient:#FF6B35:#FFD700><bold>HyperSword</bold></gradient> <dark_gray>»</dark_gray>"
+
+# Espada
+sword-received: "<green>¡Has recibido tu <gold>HyperSword</gold>!</green>"
+sword-already-has: "<red>Ya tienes tu HyperSword. Usa <gold>/hsword</gold> para abrirla.</red>"
+sword-given-admin: "<green>HyperSword entregada a <gold>%player%</gold>.</green>"
+sword-reset: "<gold>La espada de <white>%player%</white> ha sido reiniciada.</gold>"
+sword-not-found: "<red>Ese jugador no tiene una HyperSword.</red>"
+
+# Protecciones
+no-drop: "<red>No puedes tirar tu HyperSword.</red>"
+no-trade: "<red>No puedes intercambiar tu HyperSword.</red>"
+no-anvil: "<red>No puedes modificar tu HyperSword en un yunque.</red>"
+no-enchant-table: "<red>No puedes encantar tu HyperSword en una mesa.</red>"
+no-item-frame: "<red>No puedes colocar tu HyperSword en un marco.</red>"
+no-shulker: "<red>No puedes guardar tu HyperSword en un shulker.</red>"
+
+# Nivel
+level-up: "<gradient:#FFD700:#FF6B35><bold>⬆ ¡NIVEL UP!</bold></gradient> <gold>Tu espada ha subido al nivel <white>%level%</white>!</gold>"
+max-level: "<yellow>Tu espada ya está en el nivel máximo.</yellow>"
+
+# Prestigio
+prestige-success: "<gradient:#FF00FF:#00FFFF><bold>✦ PRESTIGIO %prestige% ✦</bold></gradient> <gold>¡Has llegado al prestigio <white>%prestige%</white>!</gold>"
+prestige-not-ready: "<red>Necesitas el nivel <gold>%required%</gold> para hacer prestigio. Nivel actual: <white>%level%</white>.</red>"
+prestige-max: "<red>Ya estás en el prestigio máximo.</red>"
+
+# Encantamientos
+enchant-upgraded: "<green>✔ <gold>%enchant%</gold> mejorado al nivel <white>%level%</white>.</green>"
+enchant-max-level: "<yellow>%enchant% ya está en el nivel máximo.</yellow>"
+enchant-no-tokens: "<red>Necesitas <gold>%cost% tokens</gold> para mejorar %enchant%. Tienes: <white>%balance%</white>.</red>"
+enchant-no-gems: "<red>Necesitas <gold>%cost% gemas</gold> para mejorar %enchant%. Tienes: <white>%balance%</white>.</red>"
+enchant-cooldown: "<red>Debes esperar <gold>%time%s</gold> para mejorar %enchant% de nuevo.</red>"
+enchant-no-permission: "<red>No tienes permiso para mejorar este encantamiento.</red>"
+
+# XP
+xp-added-admin: "<green>Se han dado <gold>%xp% XP</gold> a <white>%player%</white>.</green>"
+
+# Estadísticas
+stats-header: "<gradient:#FF6B35:#FFD700>━━━━━ Estadísticas de %player% ━━━━━</gradient>"
+stats-kills-mobs: "<gold>Mobs eliminados: <white>%value%</white>"
+stats-kills-players: "<gold>Jugadores eliminados: <white>%value%</white>"
+stats-damage-total: "<gold>Daño total infligido: <white>%value%</white>"
+stats-footer: "<gradient:#FF6B35:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+
+# Comandos
+no-permission: "<red>No tienes permiso para usar este comando.</red>"
+player-not-found: "<red>Jugador <gold>%player%</gold> no encontrado.</red>"
+invalid-usage: "<red>Uso incorrecto. Escribe <gold>/hsword help</gold>.</red>"
+reload-success: "<green>¡HyperSword recargado correctamente!</green>"
+only-players: "<red>Este comando solo puede ser usado por jugadores.</red>"
+
+# Ayuda
+help-header: "<gradient:#FF6B35:#FFD700>━━━━━━ HyperSword Help ━━━━━━</gradient>"
+help-footer: "<gradient:#FF6B35:#FFD700>━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gradient>"
+first-join-sword: "<gradient:#FFD700:#FF8C00>⚔ ¡Bienvenido! Has recibido tu <bold>HyperSword</bold>. Haz clic derecho para abrir el menú.</gradient>"
+sword-returned-on-respawn: "<gold>⚔ Tu <bold>HyperSword</bold> ha sido devuelta a tu inventario.</gold>"
+
+help-lines:
+  - "<gold>/hsword</gold> <gray>- Abre la GUI principal</gray>"
+  - "<gold>/hsword give <player></gold> <gray>- Entrega la espada</gray>"
+  - "<gold>/hsword stats [player]</gold> <gray>- Ver estadísticas</gray>"
+  - "<gold>/hsword prestige</gold> <gray>- Hacer prestigio</gray>"
+  - "<gold>/hsword reload</gold> <gray>- Recargar plugin</gray>"
+  - "<gold>/hsword admin xp <player> <amount></gold> <gray>- Dar XP</gray>"
+  - "<gold>/hsword admin level <player> <amount></gold> <gray>- Dar niveles</gray>"
+  - "<gold>/hsword admin enchant <player> <enchant> <level></gold> <gray>- Forzar encantamiento (solo HyperSword)</gray>"
+  - "<gold>/hsword enchant <player> <enchant> <level></gold> <gray>- Encantar cualquier objeto (HyperSword o vanilla), sin límite de nivel</gray>"
+  - "<gold>/hsword admin reset <player></gold> <gray>- Reiniciar espada</gray>"

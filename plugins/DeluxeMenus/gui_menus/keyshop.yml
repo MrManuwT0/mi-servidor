@@ -1,0 +1,161 @@
+menu_title: '&#A0FF58&lH&#3DFA80&ly&#00F2A8&lp&#00E7CF&le&#00DAF0&lr&#00CBFF&lS&#00B9FF&lh&#00A5FF&lo&#048FFF&lp&7 ➠ Tienda de Llaves'
+open_command: keyshop
+register_command: true
+size: 27
+items:
+  '0':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 11
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+
+  '10':
+    material: head-%player_name%
+    slot: 10
+    display_name: "&f&lTIENDA DE LLAVES"
+    lore:
+      - "&7ᴛɪᴇɴᴅᴀ ᴅᴇ ᴘᴜɴᴛᴏꜱ"
+      - "&7"
+      - "&7¡Aquí puedes comprar magníficas &fLlaves de Cajas&7!"
+      - "&7Con esta compra &fapoyas &7enormemente a nuestro"
+      - "&7servidor. &f¡Muchas gracias, eres genial!"
+      - "&7"
+      - "&f&lBALANCE DE PUNTOS: &e%playerpoints_points_formatted%"
+
+
+  '12':
+    material: LIME_CANDLE
+    slot: 12
+    display_name: "&a&lLlave COMÚN &7[&f1x&7]"
+    lore:
+      - "&7ᴏʙᴊᴇᴛᴏ ᴅᴇ ʟᴀ ᴛɪᴇɴᴅᴀ"
+      - "&7"
+      - "&7&lCANTIDAD:"
+      - "&a➠ 1x &aLlave de Caja Común"
+      - "&7"
+      - "&7&lPRECIO:"
+      - "&a➠ 50 Puntos"
+    click_commands:
+      - "[console] hcrates givekey CommonVault %player_name% 1"
+      - "[console] points take %player_name% 50"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &7Has comprado &a&lLlave COMÚN &7[&f1x&7]"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &e50 Puntos &7han sido retirados de tu cuenta."
+      - "[sound] BLOCK_NOTE_BLOCK_PLING"
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: "%playerpoints_points% >= 50"
+          deny_commands:
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cNo tienes suficientes puntos para comprar este objeto."
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cSolo tienes &e%playerpoints_points% &cpero necesitas &e50&c."
+
+
+  '13':
+    material: LIGHT_BLUE_CANDLE
+    slot: 13
+    display_name: "&b&lLlave RARA &7[&f1x&7]"
+    lore:
+      - "&7ᴏʙᴊᴇᴛᴏ ᴅᴇ ʟᴀ ᴛɪᴇɴᴅᴀ"
+      - "&7"
+      - "&7&lCANTIDAD:"
+      - "&b➠ 1x &bLlave de Caja Rara"
+      - "&7"
+      - "&7&lPRECIO:"
+      - "&b➠ 125 Puntos"
+    click_commands:
+      - "[console] hcrates givekey RareVault %player_name% 1"
+      - "[console] points take %player_name% 125"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &7Has comprado &b&lLlave RARA &7[&f1x&7]"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &e125 Puntos &7han sido retirados de tu cuenta."
+      - "[sound] BLOCK_NOTE_BLOCK_PLING"
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: "%playerpoints_points% >= 125"
+          deny_commands:
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cNo tienes suficientes puntos para comprar este objeto."
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cSolo tienes &e%playerpoints_points% &cpero necesitas &e125&c."
+
+
+  '14':
+    material: PURPLE_CANDLE
+    slot: 14
+    display_name: "&d&lLlave ÉPICA &7[&f1x&7]"
+    lore:
+      - "&7ᴏʙᴊᴇᴛᴏ ᴅᴇ ʟᴀ ᴛɪᴇɴᴅᴀ"
+      - "&7"
+      - "&7&lCANTIDAD:"
+      - "&d➠ 1x &dLlave de Caja Épica"
+      - "&7"
+      - "&7&lPRECIO:"
+      - "&d➠ 350 Puntos"
+    click_commands:
+      - "[console] hcrates givekey Epicvault %player_name% 1"
+      - "[console] points take %player_name% 350"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &7Has comprado &d&lLlave ÉPICA &7[&f1x&7]"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &e350 Puntos &7han sido retirados de tu cuenta."
+      - "[sound] BLOCK_NOTE_BLOCK_PLING"
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: "%playerpoints_points% >= 350"
+          deny_commands:
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cNo tienes suficientes puntos para comprar este objeto."
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cSolo tienes &e%playerpoints_points% &cpero necesitas &e350&c."
+
+
+  '15':
+    material: ORANGE_CANDLE
+    slot: 15
+    display_name: "&6&lLlave LEGENDARIA &7[&f1x&7]"
+    lore:
+      - "&7ᴏʙᴊᴇᴛᴏ ᴅᴇ ʟᴀ ᴛɪᴇɴᴅᴀ"
+      - "&7"
+      - "&7&lCANTIDAD:"
+      - "&6➠ 1x &6Llave de Caja Legendaria"
+      - "&7"
+      - "&7&lPRECIO:"
+      - "&6➠ 850 Puntos"
+    click_commands:
+      - "[console] hcrates givekey LegendaryVault %player_name% 1"
+      - "[console] points take %player_name% 650"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &7Has comprado &6&lLlave LEYENDARIA &7[&f1x&7]"
+      - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &e650 Puntos &7han sido retirados de tu cuenta."
+      - "[sound] BLOCK_NOTE_BLOCK_PLING"
+    click_requirement:
+      requirements:
+        points:
+          type: javascript
+          expression: "%playerpoints_points% >= 650"
+          deny_commands:
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cNo tienes suficientes puntos para comprar este objeto."
+            - "[message] &#8D54FF&lH&#7B69FB&ly&#6A7FF7&lp&#5894F3&le&#47AAF0&lr&#35BFEC&lS&#23D4E8&lh&#12EAE4&lo&#00FFE0&lp &7➠ &cSolo tienes &e%playerpoints_points% &cpero necesitas &e650&c."
+
+
+  '16':
+    material: BARRIER
+    slot: 16
+    display_name: '&c&lPRÓXIMAMENTE JoyJump...'

@@ -1,0 +1,185 @@
+cooldown: 14400
+permission_required: true
+custom_permission: ranks.sovereign
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: TOTEM_OF_UNDYING
+    name: '&9&lSovereign Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Netherite Armor Set &7(Prot 255 | Unb 146)'
+    - '&8- &71x Netherite Sword &7(Sharp 190 | Unb 146) + Fire Aspect II'
+    - '&8- &71x Multishot Piercing II Crossbow + 64x Arrows'
+    - '&8- &72x Totem of Undying'
+    - '&8- &74x Notch Apple'
+    - '&8- &716x Golden Apple'
+    - '&8- &712x Ender Pearl'
+    - ''
+    - '&7Cooldown: &c4 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&9&lSovereign Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fSovereign&c rank to claim this kit.'
+  cooldown:
+    id: TOTEM_OF_UNDYING
+    name: '&9&lSovereign Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: NETHERITE_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f255'
+    - '&7✦ Unbreaking &f146'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;255
+    - DURABILITY;146
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: NETHERITE_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f255'
+    - '&7✦ Unbreaking &f146'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;255
+    - DURABILITY;146
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: NETHERITE_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f255'
+    - '&7✦ Unbreaking &f146'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;255
+    - DURABILITY;146
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: NETHERITE_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f255'
+    - '&7✦ Unbreaking &f146'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;255
+    - DURABILITY;146
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: NETHERITE_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Fire Aspect &f2'
+    - '&7✦ Sharpness &f190'
+    - '&7✦ Unbreaking &f146'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - FIRE_ASPECT;2
+    - DAMAGE_ALL;190
+    - DURABILITY;146
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: CROSSBOW
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Multishot &f1'
+    - '&7✦ Piercing &f2'
+    - '&7✦ Quick Charge &f2'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - MULTISHOT;1
+    - PIERCING;2
+    - QUICK_CHARGE;2
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    - Charged|false|boolean
+    preview_slot: 5
+  '7':
+    id: ARROW
+    amount: 64
+    preview_slot: 6
+  '8':
+    id: TOTEM_OF_UNDYING
+    amount: 2
+    preview_slot: 7
+  '9':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 4
+    preview_slot: 8
+  '10':
+    id: GOLDEN_APPLE
+    amount: 16
+    preview_slot: 9
+  '11':
+    id: ENDER_PEARL
+    amount: 12
+    preview_slot: 10

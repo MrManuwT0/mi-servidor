@@ -1,0 +1,27 @@
+# DeluxeMenus 1.14.1-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/helpchat-plugins/deluxemenus
+
+use_admin_commands_in_menus_list: false
+menus_list_page_size: 10
+metas_list_page_size: 15
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  playtime_1:
+    file: playtime_1.yml
+  playtime_2:
+    file: playtime_2.yml
+  rtp:
+    file: rtp.yml
+  warps:
+    file: warps.yml
+  menu:
+    file: menu.yml
+  pointshop:
+    file: pointshop.yml
+  rankshop:
+    file: rankshop.yml
+  keyshop:
+    file: keyshop.yml

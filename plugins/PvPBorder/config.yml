@@ -1,0 +1,92 @@
+# =========================================================
+#  PvPBorder - config.yml
+#  Toda esta configuración también puede editarse en vivo
+#  mediante /pvpborder gui (permiso pvpborder.admin)
+# =========================================================
+
+combat:
+  duration: 20 # segundos que dura el combat-tag
+  reset-on-hit: true # cada golpe reinicia el contador
+  triggers:
+    projectiles: true # flechas, tridentes, etc.
+    pets: true # daño causado por mascotas/tameables
+    # 'indirect' no se detecta automáticamente de forma genérica (el origen de daño
+    # indirecto varía demasiado entre casos). Queda reservado para que otros plugins
+    # activen el combate manualmente vía la API pública: PvPBorderAPI#setCombat(...).
+    indirect: true
+    tnt: false
+    lava: false
+    fire: false
+
+worldguard:
+  check-pvp-flag: true
+  # Activa logs detallados en consola sobre qué regiones se evalúan y por qué se
+  # muestra o no la pared. Útil para diagnosticar; desactívalo en producción.
+  debug: false
+  # Distancia (en bloques) hacia delante que se comprueba en cada movimiento
+  # para detectar si el jugador está a punto de cruzar la frontera.
+  lookahead: 1
+  # Cada cuántos ticks se refresca la caché de regiones cercanas al jugador (rendimiento)
+  cache-refresh-ticks: 10
+
+barrier:
+  material: RED_STAINED_GLASS
+  height: 6
+  thickness: 1
+  knockback: true
+  knockback-strength: 0.6
+  animation: true
+  fade-on-remove: true
+  # Radio máximo (bloques) alrededor del jugador donde se generan bloques falsos
+  radius: 6
+
+sounds:
+  enter-combat: ENTITY_VILLAGER_NO
+  blocked: BLOCK_NOTE_BLOCK_BASS
+  barrier-appear: ENTITY_ENDERMAN_TELEPORT
+  leave-combat: ENTITY_EXPERIENCE_ORB_PICKUP
+  enabled: true
+
+particles:
+  barrier-appear: REDSTONE
+  barrier-remove: CLOUD
+  enabled: true
+
+bossbar:
+  enabled: true
+  color: RED
+  style: SOLID
+  text: '⚔ PvP &7| &fTiempo restante: &c%time%s'
+
+actionbar:
+  enabled: true
+  text: '&c⚔ En combate &7- &f%time%s'
+
+performance:
+  max-players-optimizations: true
+
+corpse:
+  enabled: true
+  # Muestra la skin del jugador fallecido como cabeza sobre el cadáver.
+  # Solo se usa si show-equipment es false, o si no llevaba casco al morir.
+  show-head: true
+  # Viste al cadáver con la armadura y el arma que el jugador llevaba puesta
+  # al morir (busca casco/pechera/pantalones/botas/espada entre los objetos
+  # dropeados). Es solo visual: los objetos reales para recoger siguen
+  # estando igualmente en el inventario de saqueo.
+  show-equipment: true
+  # Tamaño pequeño (ArmorStand de niño); da un aspecto más "caído" al cadáver.
+  small: true
+  # Muestra brazos, para que se vea sosteniendo el arma equipada.
+  show-arms: true
+  # Nombre visible sobre el cadáver. %player% se sustituye por el nombre del jugador.
+  name-format: '&c☠ %player%'
+  # Segundos antes de que el cadáver desaparezca solo. 0 = nunca desaparece por tiempo.
+  # Los objetos que queden dentro se sueltan al suelo en ese momento (nunca se pierden).
+  despawn-seconds: 300
+  # Título del inventario que se abre al hacer click derecho sobre el cadáver.
+  title-format: '&8&lCadáver de &c%player%'
+  sound-spawn: ITEM_ARMOR_EQUIP_LEATHER
+  sound-open: BLOCK_CHEST_OPEN
+# El permiso pvpborder.keepinventory hace que un jugador conserve su inventario
+# con normalidad al morir y que NUNCA se le genere un cadáver.

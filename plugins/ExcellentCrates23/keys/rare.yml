@@ -1,0 +1,8 @@
+Name: '&b&lRare Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:cyan_candle"}'
+    DataVersion: 4189
+ItemStackable: false

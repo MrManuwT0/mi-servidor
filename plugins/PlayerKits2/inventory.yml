@@ -1,0 +1,104 @@
+inventories:
+  main_inventory:
+    slots: 54
+    title: '&4&lKits'
+    0;1;7;8;9;17;36;44;45;46;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '20':
+      type: 'kit: master'
+    '24':
+      type: 'kit: warlord'
+    '49':
+      item:
+        id: DIAMOND_BLOCK
+        name: '&ePremium Kits'
+        amount: 1
+      open_inventory: premium_kits_inventory
+    '11':
+      type: 'kit: novice'
+    '12':
+      type: 'kit: apprentice'
+    '13':
+      type: 'kit: adept'
+    '14':
+      type: 'kit: expert'
+    '15':
+      type: 'kit: veteran'
+    '19':
+      type: 'kit: elite'
+    '21':
+      type: 'kit: grandmaster'
+    '22':
+      type: 'kit: champion'
+    '23':
+      type: 'kit: hero'
+    '25':
+      type: 'kit: sovereign'
+    '28':
+      type: 'kit: titan'
+    '29':
+      type: 'kit: ascendant'
+    '30':
+      type: 'kit: mythic'
+    '32':
+      type: 'kit: celestial'
+    '33':
+      type: 'kit: eternal'
+    '31':
+      type: 'kit: immortal'
+    '34':
+      type: 'kit: divine'
+  premium_kits_inventory:
+    slots: 54
+    title: '&e&lPremium Kits'
+    0;1;7;8;9;17;36;44;45;46;52;53:
+      item:
+        id: YELLOW_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '49':
+      item:
+        id: IRON_BLOCK
+        name: '&eNormal Kits'
+        amount: 1
+      open_inventory: main_inventory
+    '20':
+      type: 'kit: vip'
+    '22':
+      type: 'kit: estelar'
+    '24':
+      type: 'kit: ancestral'
+  preview_inventory:
+    slots: 54
+    title: '&4&lKit Preview'
+    '45':
+      item:
+        id: ARROW
+        name: '&7Go Back'
+        amount: 1
+      open_inventory: previous
+  buy_requirements_inventory:
+    slots: 27
+    title: '&4&lBuy Kit Requirements'
+    '13':
+      item:
+        id: BOOK
+        name: '&c&lRequirements'
+        amount: 1
+        lore:
+        - '%kit_requirements_message%'
+    '10':
+      type: buy_no
+      item:
+        id: RED_STAINED_GLASS_PANE
+        name: '&cGo Back'
+        amount: 1
+    '16':
+      type: buy_yes
+      item:
+        id: GREEN_STAINED_GLASS_PANE
+        name: '&aBuy'
+        amount: 1

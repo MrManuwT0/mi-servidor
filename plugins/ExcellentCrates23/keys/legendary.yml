@@ -1,0 +1,8 @@
+Name: '&6&lLegendary Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"gold","italic":false,"text":"Legendary Key"}],"text":""}''},count:1,id:"minecraft:golden_carrot"}'
+    DataVersion: 4189
+ItemStackable: true

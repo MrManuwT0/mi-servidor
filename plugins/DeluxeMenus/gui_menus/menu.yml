@@ -1,0 +1,375 @@
+# =========================================================
+#  SURVIVAL OP NETWORK — MAIN MENU (v2, Enhanced)
+#  Plugin: DeluxeMenu
+#  Open with: /menu  or  /hub
+#  Requires: PlaceholderAPI + expansions (server, player,
+#  vault, playerpoints, essentials) for full dynamic info.
+# =========================================================
+menu_title: '&8&l▪ &c&l⚔ SURVIVAL OP ⚔ &8&l▪'
+open_command: menu
+open_command_aliases:
+  - hub
+  - opmenu
+  - menu
+size: 54
+update: true
+update_interval: 20
+
+items:
+
+  # ================= BORDER & DECORATION (one item per slot) =================
+  border_black_0:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 0
+    display_name: ' '
+    priority: 1
+  border_black_1:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 1
+    display_name: ' '
+    priority: 1
+  border_black_2:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 2
+    display_name: ' '
+    priority: 1
+  border_black_6:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 6
+    display_name: ' '
+    priority: 1
+  border_black_7:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 7
+    display_name: ' '
+    priority: 1
+  border_black_8:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 8
+    display_name: ' '
+    priority: 1
+  border_black_9:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 9
+    display_name: ' '
+    priority: 1
+  border_black_17:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 17
+    display_name: ' '
+    priority: 1
+  border_black_18:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 18
+    display_name: ' '
+    priority: 1
+  border_black_26:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 26
+    display_name: ' '
+    priority: 1
+  border_black_27:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 27
+    display_name: ' '
+    priority: 1
+  border_black_35:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 35
+    display_name: ' '
+    priority: 1
+  border_black_36:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 36
+    display_name: ' '
+    priority: 1
+  border_black_44:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 44
+    display_name: ' '
+    priority: 1
+  border_black_45:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 45
+    display_name: ' '
+    priority: 1
+  border_black_46:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 46
+    display_name: ' '
+    priority: 1
+  border_black_47:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 47
+    display_name: ' '
+    priority: 1
+  border_black_51:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 51
+    display_name: ' '
+    priority: 1
+  border_black_52:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 52
+    display_name: ' '
+    priority: 1
+  border_black_53:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 53
+    display_name: ' '
+    priority: 1
+
+  border_red_3:
+    material: RED_STAINED_GLASS_PANE
+    slot: 3
+    display_name: ' '
+    priority: 1
+  border_red_5:
+    material: RED_STAINED_GLASS_PANE
+    slot: 5
+    display_name: ' '
+    priority: 1
+
+  border_orange_48:
+    material: ORANGE_STAINED_GLASS_PANE
+    slot: 48
+    display_name: ' '
+    priority: 1
+  border_orange_50:
+    material: ORANGE_STAINED_GLASS_PANE
+    slot: 50
+    display_name: ' '
+    priority: 1
+
+  # ================= HEADER: SERVER BANNER =================
+  server_banner:
+    material: NETHER_STAR
+    slot: 4
+    display_name: '&c&l⚔ &f&lSURVIVAL OP &7&lSEASON 4 &c&l⚔'
+    lore:
+      - '&7A world without limits.'
+      - '&7Where power is earned,'
+      - '&7and only the strongest survive.'
+      - ''
+      - '&8▸ &7Online: &a%server_online%&7/&f%server_max_players%'
+      - '&8▸ &7Server TPS: &a%server_tps_1%'
+      - '&8▸ &7Uptime: &f%server_uptime%'
+      - ''
+      - '&e★ &7Season 4 is now &a&lLIVE&7! ★'
+    glow: true
+    priority: 2
+
+  # ================= PLAYER PROFILE CARD =================
+  player_profile:
+    material: PLAYER_HEAD
+    slot: 13
+    display_name: '&6&l✦ %player_name%''s Profile ✦'
+    skull_owner: '%player_name%'
+    lore:
+      - '&7▸ Rank: &e%vault_rank%'
+      - '&7▸ Balance: &a$%vault_eco_balance_formatted%'
+      - '&7▸ Points: &d%playerpoints_points% &8(&7PlayerPoints&8)'
+      - '&7▸ Playtime: &b%statistic_time_played%'
+      - '&7▸ K/D: &c%statistic_player_kills% &8/ &4%statistic_deaths%'
+      - ''
+      - '&e➤ &7Click to open your Settings'
+    left_click_commands:
+      - '[player] playersettings'
+    left_click_sound: UI_BUTTON_CLICK
+    priority: 2
+
+  # ================= ROW 2: CORE FEATURES =================
+  kits_menu:
+    material: CHEST
+    slot: 31
+    display_name: '&a&l☠ KITS'
+    lore:
+      - '&7Instant gear for every'
+      - '&7stage of your journey.'
+      - ''
+      - '&7From &fStarter &7to the'
+      - '&7legendary &6&lGodly Kit&7.'
+      - ''
+      - '&a➤ &7Click to browse'
+    glow: true
+    left_click_commands:
+      - '[player] kitsmenu'
+    left_click_sound: BLOCK_CHEST_OPEN
+
+  pointshop_menu:
+    material: EMERALD_BLOCK
+    slot: 21
+    display_name: '&d&l✪ POINTSHOP'
+    lore:
+      - '&7Earned points from voting'
+      - '&7or events? Spend them here'
+      - '&7on exclusive VIP ranks!'
+      - ''
+      - '&7Your Points: &d%playerpoints_points%'
+      - ''
+      - '&d➤ &7Click to open'
+    glow: true
+    left_click_commands:
+      - '[player] pointshop'
+    left_click_sound: ENTITY_EXPERIENCE_ORB_PICKUP
+
+  warps_menu:
+    material: ENDER_PEARL
+    slot: 22
+    display_name: '&b&l✈ WARPS'
+    lore:
+      - '&7Spawn, Mines, Nether Hub,'
+      - '&7The End, Market & Arena.'
+      - ''
+      - '&b➤ &7Click to teleport'
+    left_click_commands:
+      - '[player] warpsmenu'
+    left_click_sound: ENTITY_ENDERMAN_TELEPORT
+
+  shop_menu:
+    material: EMERALD
+    slot: 23
+    display_name: '&2&l$ SHOP'
+    lore:
+      - '&7Buy and sell items, gear'
+      - '&7and OP custom loot.'
+      - ''
+      - '&2➤ &7Click to open'
+    left_click_commands:
+      - '[player] shop'
+    left_click_sound: ENTITY_VILLAGER_YES
+
+  cosmetics_menu:
+    material: FIREWORK_STAR
+    slot: 24
+    display_name: '&5&l✦ COSMETICS'
+    lore:
+      - '&7Pets, particle trails,'
+      - '&7hats and kill effects.'
+      - ''
+      - '&5➤ &7Click to customize'
+    left_click_commands:
+      - '[player] cosmeticsmenu'
+    left_click_sound: ENTITY_FIREWORK_ROCKET_LAUNCH
+
+  # ================= ROW 3: PROGRESSION & SOCIAL =================
+  auction_house:
+    material: GOLD_INGOT
+    slot: 20
+    display_name: '&e&l⚖ AUCTION HOUSE'
+    lore:
+      - '&7Bid on rare items and'
+      - '&7enchanted gear from'
+      - '&7other players.'
+      - ''
+      - '&e➤ &7Click to open'
+    left_click_commands:
+      - '[player] ah'
+    left_click_sound: BLOCK_ANVIL_USE
+
+  land_claims:
+    material: GOLDEN_SHOVEL
+    slot: 29
+    display_name: '&2&l⌂ LAND CLAIMS'
+    lore:
+      - '&7Protect your base from'
+      - '&7raiders and griefers.'
+      - ''
+      - '&7Claimed Blocks: &a%griefprevention_claimblocks%'
+      - ''
+      - '&2➤ &7Click to manage'
+    left_click_commands:
+      - '[player] claimsmenu'
+    left_click_sound: ITEM_SHOVEL_FLATTEN
+
+  discord:
+    material: WRITABLE_BOOK
+    slot: 33
+    display_name: '&9&l✉ DISCORD'
+    lore:
+      - '&7Join our community for'
+      - '&7updates and vote rewards.'
+      - ''
+      - '&9➤ &7discord.gg/survivalop'
+    left_click_commands:
+      - '[player] discord'
+    left_click_sound: BLOCK_NOTE_BLOCK_PLING
+
+  # ================= ROW 4: UTILITY =================
+  vote:
+    material: DIAMOND
+    slot: 30
+    display_name: '&b&l✦ VOTE &7& REWARDS'
+    lore:
+      - '&7Earn crate keys, cash'
+      - '&7and PlayerPoints.'
+      - ''
+      - '&7Votes Today: &a%votingplugin_total_votes_today%'
+      - ''
+      - '&b➤ &7Click to vote'
+    left_click_commands:
+      - '[player] vote'
+    left_click_sound: ENTITY_EXPERIENCE_ORB_PICKUP
+
+  staff_team:
+    material: DIAMOND_SWORD
+    slot: 39
+    display_name: '&c&l⚑ STAFF TEAM'
+    lore:
+      - '&7Meet the team keeping'
+      - '&7the server safe & fair.'
+      - ''
+      - '&c➤ &7Click to view'
+    left_click_commands:
+      - '[player] staff'
+    left_click_sound: ITEM_ARMOR_EQUIP_DIAMOND
+
+  new_player_guide:
+    material: KNOWLEDGE_BOOK
+    slot: 40
+    display_name: '&a&l✔ NEW PLAYER GUIDE'
+    lore:
+      - '&7First time here? Start'
+      - '&7with our step-by-step'
+      - '&7survival guide.'
+      - ''
+      - '&a➤ &7Click to read'
+    left_click_commands:
+      - '[player] guide'
+    left_click_sound: ITEM_BOOK_PAGE_TURN
+
+  report_bug:
+    material: REDSTONE
+    slot: 41
+    display_name: '&4&l⚠ REPORT / SUPPORT'
+    lore:
+      - '&7Report a player or bug,'
+      - '&7or open a support ticket.'
+      - ''
+      - '&4➤ &7Click to report'
+    left_click_commands:
+      - '[player] report'
+    left_click_sound: BLOCK_NOTE_BLOCK_BASS
+
+  rules:
+    material: BOOK
+    slot: 32
+    display_name: '&f&l✎ SERVER RULES'
+    lore:
+      - '&7Read the rules before'
+      - '&7you dive into chaos.'
+      - ''
+      - '&f➤ &7Click to read'
+    left_click_commands:
+      - '[player] rules'
+    left_click_sound: ITEM_BOOK_PAGE_TURN
+
+  # ================= FOOTER =================
+  close:
+    material: BARRIER
+    slot: 49
+    display_name: '&c&lCLOSE MENU'
+    left_click_commands:
+      - '[close]'
+    left_click_sound: BLOCK_CHEST_CLOSE
+    priority: 2

@@ -1,0 +1,196 @@
+# ==================================================
+#  CRATE: EPIC (Tier 3)
+# ==================================================
+Crate:
+  CrateType: CSGO
+  CrateName: "<bold><dark_purple>Epic Crate</bold>"
+  Preview-Name: "<bold><dark_purple>Epic Crate Preview</bold>"
+  StartingKeys: 0
+  RequiredKeys: 1
+  Max-Mass-Open: 10
+  InGUI: true
+  Slot: 23
+  OpeningBroadCast: true
+  BroadCast: "%prefix%<bold><dark_purple>%player%</bold><reset> <gray>is opening an <bold><dark_purple>Epic Crate.</bold>"
+  opening-command:
+    toggle: false
+    commands: []
+  sound:
+    cycle-sound:
+      toggle: true
+      value: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+      volume: 1.0
+      pitch: 1.0
+    click-sound:
+      toggle: true
+      value: "UI_BUTTON_CLICK"
+      volume: 1.0
+      pitch: 1.0
+    stop-sound:
+      toggle: true
+      value: "ENTITY_PLAYER_LEVELUP"
+      volume: 1.0
+      pitch: 1.0
+  Prize-Message:
+    - "<gray>You have won <red>%reward% <gray>from <red>%crate%."
+  Prize-Commands: []
+  Item: "DIAMOND"
+  Glowing: false
+  Name: "<bold><dark_purple>Epic Crate</bold>"
+  Lore:
+    - "<gray>High money, full sets, real points."
+    - "<gray>You have <gold>%keys% keys <gray>to open this crate with."
+    - "<gray>You have opened this crate: <gold>%crate_opened% times"
+    - "<gray>(<yellow>!<gray>) Right click to view rewards."
+  Preview:
+    Toggle: true
+    ChestLines: 3
+    Glass:
+      Toggle: true
+      Name: " "
+      Item: "PURPLE_STAINED_GLASS_PANE"
+  PhysicalKey:
+    Name: "<bold><dark_purple>Epic Key</bold>"
+    Lore:
+      - "<gray>Open it at the <bold><dark_purple>Epic</bold> <gray>crate"
+      - ""
+      - "<gray>Rewards: <white>High money, Full sets, Points"
+    Item: "TRIPWIRE_HOOK"
+    Glowing: false
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Range: 8
+    Color: "transparent"
+    Message:
+      - "<bold><dark_purple>EPIC CRATE</bold>"
+      - "<gray>Right click with the key"
+  Prizes:
+    1:
+      DisplayName: "<green>$5,000"
+      DisplayItem: "GOLD_BLOCK"
+      Lore:
+        - "<gray>A serious payday."
+        - ""
+        - "<red>Chance: <yellow>20%"
+      MaxRange: 100
+      Chance: 20
+      Commands:
+        - "eco give %player% 5000"
+      Messages:
+        - "<gray>You won <green>$5,000"
+    2:
+      DisplayName: "<green>$8,000"
+      DisplayItem: "EMERALD_BLOCK"
+      Lore:
+        - "<gray>Now we're getting somewhere."
+        - ""
+        - "<red>Chance: <yellow>12%"
+      MaxRange: 100
+      Chance: 12
+      Commands:
+        - "eco give %player% 8000"
+      Messages:
+        - "<gray>You won <green>$8,000"
+    3:
+      DisplayName: "<aqua>300 Points"
+      DisplayItem: "PRISMARINE_CRYSTALS"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>18%"
+      MaxRange: 100
+      Chance: 18
+      Commands:
+        - "points give %player% 300"
+      Messages:
+        - "<gray>You won <aqua>300 Points"
+    4:
+      DisplayName: "<aqua>600 Points"
+      DisplayItem: "HEART_OF_THE_SEA"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>10%"
+      MaxRange: 100
+      Chance: 10
+      Commands:
+        - "points give %player% 600"
+      Messages:
+        - "<gray>You won <aqua>600 Points"
+    5:
+      DisplayName: "<yellow>Diamond Kit"
+      DisplayItem: "DIAMOND_CHESTPLATE"
+      Lore:
+        - "<gray>Full diamond gear."
+        - ""
+        - "<red>Chance: <yellow>14%"
+      MaxRange: 100
+      Chance: 14
+      Commands:
+        - "kit give %player% diamond"
+      Messages:
+        - "<gray>You won the <yellow>Diamond Kit"
+    6:
+      DisplayName: "<white>Enchanted Diamond Set (Prot IV)"
+      DisplayItem: "DIAMOND_CHESTPLATE"
+      DisplayEnchantments:
+        - "PROTECTION_ENVIRONMENTAL:4"
+        - "DURABILITY:3"
+      Lore:
+        - "<gray>A full head-to-toe diamond set."
+        - ""
+        - "<red>Chance: <yellow>8%"
+      MaxRange: 100
+      Chance: 8
+      Items:
+        - "Item:DIAMOND_HELMET, Amount:1, PROTECTION_ENVIRONMENTAL:4, DURABILITY:3"
+        - "Item:DIAMOND_CHESTPLATE, Amount:1, PROTECTION_ENVIRONMENTAL:4, DURABILITY:3"
+        - "Item:DIAMOND_LEGGINGS, Amount:1, PROTECTION_ENVIRONMENTAL:4, DURABILITY:3"
+        - "Item:DIAMOND_BOOTS, Amount:1, PROTECTION_ENVIRONMENTAL:4, DURABILITY:3"
+      Messages:
+        - "<gray>You won an <white>Enchanted Diamond Set"
+    7:
+      DisplayName: "<white>Diamond Sword (Sharp V, Fire Aspect II)"
+      DisplayItem: "DIAMOND_SWORD"
+      DisplayEnchantments:
+        - "DAMAGE_ALL:5"
+        - "FIRE_ASPECT:2"
+        - "KNOCKBACK:2"
+      Lore:
+        - "<gray>A serious weapon."
+        - ""
+        - "<red>Chance: <yellow>8%"
+      MaxRange: 100
+      Chance: 8
+      Items:
+        - "Item:DIAMOND_SWORD, Amount:1, DAMAGE_ALL:5, FIRE_ASPECT:2, KNOCKBACK:2"
+      Messages:
+        - "<gray>You won an OP <white>Diamond Sword"
+    8:
+      DisplayName: "<light_purple>1x Legendary Key"
+      DisplayItem: "TRIPWIRE_HOOK"
+      Lore:
+        - "<gray>Skip straight to the next tier."
+        - ""
+        - "<red>Chance: <yellow>6%"
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - "crates give %player% Legendary 1"
+      Messages:
+        - "<gray>You won <light_purple>1x Legendary Key<gray>!"
+    9:
+      DisplayName: "<gold>Totem of Undying"
+      DisplayItem: "TOTEM_OF_UNDYING"
+      Lore:
+        - "<gray>A second chance at life."
+        - ""
+        - "<red>Chance: <yellow>4%"
+      MaxRange: 100
+      Chance: 4
+      Firework: true
+      Items:
+        - "Item:TOTEM_OF_UNDYING, Amount:1"
+      Messages:
+        - "<gray>You won a <gold>Totem of Undying"

@@ -1,0 +1,207 @@
+# =========================================================
+#  SURVIVAL OP NETWORK — POINTSHOP MENU
+#  Plugin: DeluxeMenu
+#  Open with: /pointshop
+#
+#  Currency: PlayerPoints (%playerpoints_points%)
+#  Points are typically earned through /vote, playtime
+#  rewards, or events — this gives non-paying players a
+#  free path to VIP-tier ranks.
+#
+#  IMPORTANT — ADAPT BEFORE USE:
+#  1) "points take <player> <amount>" is PlayerPoints' native
+#     command (run as console). Confirm the exact syntax for
+#     your installed version (some forks use "/points take").
+#  2) "lp user <player> parent add <group>" assumes LuckPerms.
+#     Replace with your permissions plugin's group command.
+#  3) The view_requirement/click_requirement block below uses
+#     DeluxeMenu's JS-based requirement system to compare
+#     %playerpoints_points% against the rank cost. Requirement
+#     syntax differs slightly between DeluxeMenu versions —
+#     check your version's wiki if it doesn't parse.
+# =========================================================
+menu_title: '&8&l» &d&l✪ RANKSHOP &7&l« '
+open_command:
+  - rankshop
+size: 45
+update: true
+update_interval: 20
+
+items:
+
+  # ================= BORDER =================
+  filler:
+    material: MAGENTA_STAINED_GLASS_PANE
+    slot: 0,1,2,3,4,5,6,7,8,36,37,38,39,40,41,42,43,44
+    display_name: ' '
+    priority: 1
+
+  back:
+    material: ARROW
+    slot: 36
+    display_name: '&7« &fBack to Main Menu'
+    left_click_commands:
+      - '[player] menu'
+    priority: 2
+
+  points_balance:
+    material: SUNFLOWER
+    slot: 4
+    display_name: '&d&lYour Points Balance'
+    lore:
+      - '&7You currently have:'
+      - '&d&l%playerpoints_points% Points'
+      - ''
+      - '&7Earn more by voting daily'
+      - '&7with &f/vote &7or joining events!'
+    priority: 2
+
+  # =========================================================
+  #  RANK 1 — VIP
+  # =========================================================
+  rank_vip:
+    material: IRON_HELMET
+    slot: 11
+    amount: 1
+    display_name: '&a&l✦ VIP RANK ✦'
+    lore:
+      - '&7Your first step up the'
+      - '&7ladder of power. Built for'
+      - '&7players ready to leave the'
+      - '&7struggle of Starter behind.'
+      - ''
+      - '&a&lBENEFITS:'
+      - '&8▸ &fAccess to &a/kit vip &f(every 24h)'
+      - '&8▸ &f&a3 Homes &f(up from the default 1)'
+      - '&8▸ &fColored chat name: &a[VIP] %player_name%'
+      - '&8▸ &fJoin the server with a &avip join message'
+      - '&8▸ &fAccess to &a/hat &f(wear any block)'
+      - '&8▸ &fand more!'
+      - ''
+      - '&7Cost: &d&l2,500 Points'
+      - '&7Your Points: &d%playerpoints_points%'
+      - ''
+      - '&a➤ &7Click to purchase'
+    left_click_commands:
+      - '[console] points take %player_name% 2500'
+      - '[console] lp user %player_name% parent add vip'
+      - '[message] &a&lSUCCESS! &7You are now &a&lVIP&7!'
+      - '[player] menu'
+    left_click_sound: ENTITY_PLAYER_LEVELUP
+    view_requirement:
+      requirements:
+        has_points:
+          type: 'js'
+          input: '%playerpoints_points% >= 2500'
+          output: 'true'
+          deny_commands:
+            - '[message] &c&lNOT ENOUGH POINTS! &7You need &e2,500 Points &7for VIP. &7(&f%playerpoints_points%&7/&e2500&7)'
+            - '[deny]'
+
+  # =========================================================
+  #  RANK 2 — ESTELAR
+  # =========================================================
+  rank_estelar:
+    material: NETHER_STAR
+    slot: 13
+    display_name: '&b&l✪ ESTELAR RANK ✪'
+    lore:
+      - '&7Rise beyond the ordinary.'
+      - '&7Estelar players shine among'
+      - '&7the crowd with celestial'
+      - '&7perks and real convenience.'
+      - ''
+      - '&b&lBENEFITS:'
+      - '&8▸ &fAll &aVIP &fbenefits, upgraded'
+      - '&8▸ &fAccess to &b/kit estelar &f(every 20h)'
+      - '&8▸ &f&b6 Homes &f(double the VIP amount)'
+      - '&8▸ &fColored chat name: &b[Estelar] %player_name%'
+      - '&8▸ &fExclusive &bstar particle trail &f(cosmetics)'
+      - '&8▸ &fFly enabled inside your &bclaimed land'
+      - '&8▸ &fAccess to &b/craft &f(portable crafting table)'
+      - '&8▸ &fPriority queue on a full server'
+      - '&8▸ &fand more!'
+      - ''
+      - '&7Cost: &d&l6,000 Points'
+      - '&7Your Points: &d%playerpoints_points%'
+      - ''
+      - '&b➤ &7Click to purchase'
+    glow: true
+    left_click_commands:
+      - '[console] points take %player_name% 6000'
+      - '[console] lp user %player_name% parent add estelar'
+      - '[message] &b&lSUCCESS! &7You are now &b&lESTELAR&7!'
+      - '[player] menu'
+    left_click_sound: ENTITY_ENDER_DRAGON_FLAP
+    view_requirement:
+      requirements:
+        has_points:
+          type: 'js'
+          input: '%playerpoints_points% >= 6000'
+          output: 'true'
+          deny_commands:
+            - '[message] &c&lNOT ENOUGH POINTS! &7You need &e6,000 Points &7for Estelar. &7(&f%playerpoints_points%&7/&e6000&7)'
+            - '[deny]'
+
+  # =========================================================
+  #  RANK 3 — ANCESTRAL
+  # =========================================================
+  rank_ancestral:
+    material: BEACON
+    slot: 15
+    display_name: '&6&k||&4&l⚔ ANCESTRAL RANK ⚔&6&k||'
+    lore:
+      - '&7The oldest, most powerful'
+      - '&7bloodline of the server.'
+      - '&7Ancestral is not just a rank —'
+      - '&7it''s a legacy carved in'
+      - '&7ancient netherite and gold.'
+      - ''
+      - '&4&lBENEFITS:'
+      - '&8▸ &fAll &bEstelar &fbenefits, upgraded'
+      - '&8▸ &fAccess to &4/kit ancestral &f(every 16h)'
+      - '&8▸ &f&410 Homes &f(the maximum allowed)'
+      - '&8▸ &fColored chat name: &4[Ancestral] %player_name%'
+      - '&8▸ &fExclusive &4ancestral flame aura &f(cosmetics)'
+      - '&8▸ &fFull &4/fly &fanywhere on the overworld'
+      - '&8▸ &fFirst access to new seasonal content'
+      - '&8▸ &fDedicated &4Ancestral Discord role'
+      - '&8▸ &fand more!'
+      - ''
+      - '&7Cost: &d&l15,000 Points'
+      - '&7Your Points: &d%playerpoints_points%'
+      - ''
+      - '&4➤ &7Click to purchase'
+    glow: true
+    left_click_commands:
+      - '[console] points take %player_name% 15000'
+      - '[console] lp user %player_name% parent add ancestral'
+      - '[message] &4&lSUCCESS! &7You are now &4&lANCESTRAL&7! Welcome to the legacy.'
+      - '[player] menu'
+    left_click_sound: ENTITY_WITHER_SPAWN
+    view_requirement:
+      requirements:
+        has_points:
+          type: 'js'
+          input: '%playerpoints_points% >= 15000'
+          output: 'true'
+          deny_commands:
+            - '[message] &c&lNOT ENOUGH POINTS! &7You need &e15,000 Points &7for Ancestral. &7(&f%playerpoints_points%&7/&e15000&7)'
+            - '[deny]'
+
+  # ================= HOW TO EARN POINTS =================
+  earn_points_info:
+    material: PAPER
+    slot: 31
+    display_name: '&e&lHow do I earn Points?'
+    lore:
+      - '&7▸ &fVote for the server daily'
+      - '&7   &7(&f/vote&7) &8- ~150 points per vote'
+      - '&7▸ &fParticipate in &fKOTH &7& &fevents'
+      - '&7   &8- 300-800 points per win'
+      - '&7▸ &fPlaytime rewards &7(&f/rewards&7)'
+      - '&7   &8- 25 points per hour played'
+      - ''
+      - '&e➤ &7Every player can reach VIP'
+      - '&7   &7for free through play alone!'
+    left_click_sound: ITEM_BOOK_PAGE_TURN

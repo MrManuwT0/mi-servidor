@@ -1,0 +1,641 @@
+Name: '&7&lUncommon Crate'
+Description: []
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:gray_stained_glass"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: csgo
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - uncommon
+Block:
+  Positions:
+  - 14,16,-28,spawn
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: helix
+    Particle:
+      Name: DUST
+      Color: 255,255,255
+      Size: 1.0
+Milestones:
+  Repeatable: false
+_dataver: 600
+Rewards:
+  List:
+    iron_sword:
+      Type: ITEM
+      Weight: 12.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:sharpness":2}}},count:1,id:"minecraft:iron_sword"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    iron_pickaxe:
+      Type: ITEM
+      Weight: 12.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:efficiency":2}}},count:1,id:"minecraft:iron_pickaxe"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_ae:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+    emerald:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:8,id:"minecraft:emerald"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    iron_helmet:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":1}}},count:1,id:"minecraft:iron_helmet"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    golden_apple:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:4,id:"minecraft:golden_apple"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:5,id:"minecraft:diamond"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    xp_bottle:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    saddle:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:saddle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_helmet:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:iron_boots"}'
+            DataVersion: 4189
+    enchanted_book_unbreaking:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:unbreaking":1}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+    lapis_block:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:lapis_block"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    netherite_ingot:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:netherite_ingot"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    beacon:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:beacon"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_silk_touch:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:silk_touch":1}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    obsidian:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:10,id:"minecraft:obsidian"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_mending:
+      Type: ITEM
+      Weight: 2.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:mending":1}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_efficiency:
+      Type: ITEM
+      Weight: 2.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:efficiency":3}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_chestplate:
+      Type: ITEM
+      Weight: 2.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:iron_chestplate"}'
+            DataVersion: 4189
+    diamond_leggings:
+      Type: ITEM
+      Weight: 2.0
+      Rarity: uncommon
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:iron_leggings"}'
+            DataVersion: 4189

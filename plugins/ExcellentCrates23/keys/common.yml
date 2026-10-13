@@ -1,0 +1,8 @@
+Name: '&e&lCommon Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:candle"}'
+    DataVersion: 4189
+ItemStackable: true

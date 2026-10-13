@@ -1,0 +1,41 @@
+Announcement_Line1:
+  change-interval: 15000
+  texts:
+    - '&7&nᴅɪꜱᴄᴏʀᴅ&r &8| &fꜱᴛᴏʀᴇ &8| &fʜᴇʟᴘ'
+    - '&fᴅɪꜱᴄᴏʀᴅ &8| &7&nꜱᴛᴏʀᴇ&r &8| &fʜᴇʟᴘ'
+    - '&fᴅɪꜱᴄᴏʀᴅ &8| &fꜱᴛᴏʀᴇ &8| &7&nʜᴇʟᴘ&r'
+
+
+Announcement_Line2:
+  change-interval: 15000
+  texts:
+    - '&fJoin our Discord to stay up-to-date!'
+    - '&fConsider making a purchase on our store to support us!'
+    - '&fNeed help? Just ask an online Staff Member.'
+
+Announcement_Line3:
+  change-interval: 15000
+  texts:
+    - '&#7DB7E5/discord'
+    - '&#7DB7E5/buy'
+    - '&#7DB7E5/onlinestaff'
+
+
+Timer:
+  change-interval: 1000
+  texts:
+    - '&#7DB7E5■□□□□□□□□□□□□□□'
+    - '&#7DB7E5■■□□□□□□□□□□□□□'
+    - '&#7DB7E5■■■□□□□□□□□□□□□'
+    - '&#7DB7E5■■■■□□□□□□□□□□□'
+    - '&#7DB7E5■■■■■□□□□□□□□□□'
+    - '&#7DB7E5■■■■■■□□□□□□□□□'
+    - '&#7DB7E5■■■■■■■□□□□□□□□'
+    - '&#7DB7E5■■■■■■■■□□□□□□□'
+    - '&#7DB7E5■■■■■■■■■□□□□□□'
+    - '&#7DB7E5■■■■■■■■■■□□□□□'
+    - '&#7DB7E5■■■■■■■■■■■□□□□'
+    - '&#7DB7E5■■■■■■■■■■■■□□□'
+    - '&#7DB7E5■■■■■■■■■■■■■□□'
+    - '&#7DB7E5■■■■■■■■■■■■■■□'
+    - '&#7DB7E5■■■■■■■■■■■■■■■'

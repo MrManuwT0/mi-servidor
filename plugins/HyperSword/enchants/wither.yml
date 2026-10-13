@@ -1,0 +1,31 @@
+id: wither
+name: "<dark_purple>☠ Wither</dark_purple>"
+description: "Aplica efecto Wither al enemigo al golpear."
+icon: WITHER_SKELETON_SKULL
+slot: -1
+max-level: 5
+
+cost:
+  base: 3000
+  multiplier: 2.0
+  currency: EDPRISON_TOKENS
+
+# Duración en ticks por nivel (20 ticks = 1 segundo)
+duration-per-level: 40
+# Amplificador del efecto por nivel
+amplifier-per-level: 0
+
+trigger-chance: 0.35
+trigger-sound: ENTITY_WITHER_AMBIENT
+trigger-sound-volume: 0.4
+trigger-sound-pitch: 1.5
+trigger-particle: SQUID_INK
+trigger-particle-count: 10
+
+cooldown: 3
+permission: ""
+requirements: {}
+
+show-in-lore: true
+lore-format: "<dark_purple>☠ Wither <white>%level%</white></dark_purple>"
+category: DEBUFF

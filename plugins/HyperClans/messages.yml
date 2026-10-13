@@ -1,0 +1,102 @@
+prefix: "&8[&bHyperClans&8] &r"
+
+general:
+  no-permission: "&cNo tienes permiso para hacer eso."
+  player-only: "&cEste comando solo puede ser usado por jugadores."
+  player-not-found: "&cEl jugador &e{player} &cno está en línea o no existe."
+  unknown-command: "&cComando desconocido. Usa &e/clan help &cpara ver la ayuda."
+  no-economy: "&cNo hay ningún plugin de economía (Vault) instalado."
+  not-enough-money: "&cNecesitas &e${amount} &cpara hacer eso."
+
+clan:
+  not-in-clan: "&cNo perteneces a ningún clan."
+  already-in-clan: "&cYa perteneces a un clan. Debes abandonarlo primero."
+  not-found: "&cNo existe ningún clan llamado &e{clan}&c."
+  name-taken: "&cYa existe un clan con ese nombre."
+  tag-taken: "&cYa existe un clan con ese tag."
+  invalid-name: "&cEl nombre del clan debe tener entre {min} y {max} caracteres."
+  invalid-tag: "&cEl tag del clan debe tener entre {min} y {max} caracteres."
+  created: "&a¡Has creado el clan &e{clan} &a[&b{tag}&a] correctamente!"
+  disbanded: "&cHas disuelto el clan &e{clan}&c."
+  disband-confirm: "&eEscribe &6/clan disband confirm &epara disolver tu clan permanentemente."
+  not-owner: "&cSolo el líder del clan puede hacer eso."
+  no-permission-rank: "&cTu rango no tiene permiso para hacer eso."
+  full: "&cEl clan &e{clan} &cya está al máximo de miembros ({max})."
+
+invite:
+  sent: "&aHas invitado a &e{player} &aa unirse a &e{clan}&a."
+  received: "&e{player} &fte ha invitado a unirte al clan &b{clan}&f. Usa &6/clan join {clan} &fpara aceptar."
+  already-invited: "&cEse jugador ya tiene una invitación pendiente de este clan."
+  no-invite: "&cNo tienes ninguna invitación pendiente de ese clan."
+  joined: "&a¡Te has unido al clan &e{clan}&a!"
+  player-joined-broadcast: "&e{player} &fse ha unido al clan."
+
+leave:
+  left: "&eHas abandonado el clan &e{clan}&e."
+  player-left-broadcast: "&e{player} &fha abandonado el clan."
+  owner-cannot-leave: "&cEl líder no puede abandonar el clan. Transfiere el liderazgo o disuelve el clan."
+
+kick:
+  kicked: "&eHas expulsado a &e{player} &edel clan."
+  kicked-broadcast: "&e{player} &fha sido expulsado del clan."
+  you-were-kicked: "&cHas sido expulsado del clan &e{clan}&c."
+  cannot-kick-self: "&cNo puedes expulsarte a ti mismo, usa &6/clan leave&c."
+  cannot-kick-owner: "&cNo puedes expulsar al líder del clan."
+
+rank:
+  promoted: "&a{player} &fha sido ascendido a &b{rank}&f."
+  demoted: "&e{player} &fha sido descendido a &b{rank}&f."
+  cannot-modify-owner: "&cNo puedes cambiar el rango del líder."
+  already-max-rank: "&cEse jugador ya tiene el rango máximo."
+  already-min-rank: "&cEse jugador ya tiene el rango mínimo."
+
+info:
+  header: "&8&m----------&r &bInfo del clan &8&m----------"
+  name: "&7Nombre: &f{name}"
+  tag: "&7Tag: &f{tag}"
+  owner: "&7Líder: &f{owner}"
+  members: "&7Miembros: &f{count}/{max}"
+  balance: "&7Banco: &a${balance}"
+  allies: "&7Aliados: &f{allies}"
+  enemies: "&7En guerra con: &c{enemies}"
+  created: "&7Creado: &f{date}"
+  kills: "&7Kills totales: &f{kills}"
+  kdr: "&7K/D ratio: &f{kdr}"
+
+bank:
+  deposited: "&aHas depositado &e${amount} &aen el banco del clan."
+  withdrawn: "&aHas retirado &e${amount} &adel banco del clan."
+  balance: "&7Saldo del banco: &a${balance}"
+  insufficient-clan-funds: "&cEl clan no tiene suficiente saldo."
+  invalid-amount: "&cLa cantidad debe ser un número positivo."
+
+war:
+  declared: "&c¡{clan} &cha declarado la guerra a {target}&c!"
+  already-at-war: "&cYa estás en guerra con ese clan."
+  cannot-war-self: "&cNo puedes declararte la guerra a ti mismo."
+  ended: "&aLa guerra entre &e{clan} &ay &e{target} &aha terminado."
+  not-at-war: "&cNo estás en guerra con ese clan."
+  cooldown: "&cDebes esperar antes de volver a declarar guerra a ese clan."
+
+alliance:
+  request-sent: "&aHas enviado una solicitud de alianza a &e{clan}&a."
+  request-received: "&e{clan} &fquiere formar una alianza contigo. Usa &6/clan allyaccept {clan}&f."
+  formed: "&a¡&e{clan} &ay &e{target} &ason ahora aliados!"
+  already-allied: "&cYa eres aliado de ese clan."
+  removed: "&eLa alianza entre &e{clan} &ey &e{target} &eha sido eliminada."
+  no-request: "&cNo hay ninguna solicitud de alianza pendiente de ese clan."
+  max-allies: "&cHas alcanzado el máximo de aliados permitido."
+
+chat:
+  toggled-on: "&aChat de clan activado."
+  toggled-off: "&eChat de clan desactivado."
+
+list:
+  header: "&8&m----------&r &bClanes &8&m----------"
+  entry: "&f{tag} &7- &f{name} &7({members} miembros)"
+  empty: "&7No hay clanes creados todavía."
+
+home:
+  set: "&aHome del clan establecido."
+  not-set: "&cEl clan no tiene un home establecido."
+  teleporting: "&7Teletransportando al home del clan..."

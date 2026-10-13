@@ -1,0 +1,28 @@
+prefix: "&8[&cPvPBorder&8] &r"
+
+enter-combat: "&c⚔ Has entrado en combate. No podrás acceder a zonas seguras durante &f%time%s&c."
+leave-combat: "&a✔ Ya no estás en combate. Puedes entrar a zonas seguras con normalidad."
+combat-restored: "&e⚔ Sigues en combate de antes del reinicio del servidor. Tiempo restante: &f%time%s"
+
+blocked: "&cNo puedes entrar en una zona segura mientras estás en combate."
+blocked-title: "&c⚔ Zona segura"
+blocked-subtitle: "&7Tiempo restante: &c%time%s"
+
+reload: "&aConfiguración recargada correctamente."
+no-permission: "&cNo tienes permiso para hacer esto."
+player-not-found: "&cJugador no encontrado."
+combat-set: "&aSe ha puesto a &f%player% &aen combate durante &f%time%s&a."
+combat-cleared: "&aSe ha eliminado el estado de combate de &f%player%&a."
+
+corpse-created: "&7Se ha generado tu cadáver con tus objetos. ¡Recupéralos antes de que desaparezca!"
+corpse-kept-inventory: "&aConservas tu inventario al morir."
+
+gui:
+  title-main: "&8&lPvPBorder &7- Menú"
+  title-combat: "&8&lPvPBorder &7- Combate"
+  title-barrier: "&8&lPvPBorder &7- Barrera"
+  title-messages: "&8&lPvPBorder &7- Mensajes"
+  title-corpse: "&8&lPvPBorder &7- Cadáveres"
+  awaiting-input: "&eEscribe el nuevo valor en el chat (o &c'cancelar'&e para cancelar):"
+  value-updated: "&aValor actualizado a: &f%value%"
+  input-cancelled: "&cEdición cancelada."

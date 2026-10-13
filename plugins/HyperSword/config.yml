@@ -1,0 +1,119 @@
+# ============================================================
+#  HyperSword - config.yml
+#  Plugin principal de espada personalizada por HyperCraft
+# ============================================================
+
+plugin:
+  prefix: "<gradient:#FF6B35:#FFD700><bold>HyperSword</bold></gradient>"
+  debug: false
+  auto-save-interval: 300  # seconds
+
+sword:
+  name: "<gradient:#FF6B35:#FFD700><bold>⚔ Hyper Sword</bold></gradient>"
+  material: NETHERITE_SWORD
+  # NBT key namespace
+  nbt-namespace: "hypersword"
+
+  # Si el jugador muere, ¿recupera la espada?
+  # La espada siempre se devuelve al jugador al respawnear (comportamiento fijo)
+  keep-on-death: true
+
+  # Protecciones activas
+  protection:
+    drop: true
+    trade: true
+    anvil: true
+    rename: true
+    enchant-table: true
+    repair: true
+    item-frame: true
+    shulker: true
+    hopper: true
+    break: true
+    sell: true
+
+  # Comportamiento si otro jugador intenta usar la espada
+  wrong-owner:
+    no-damage: true
+    message: "<red>Esta espada pertenece a <gold>%owner%</gold>. ¡No puedes usarla!</red>"
+    sound: ENTITY_VILLAGER_NO
+    sound-volume: 1.0
+    sound-pitch: 1.0
+    particle: FLAME
+    particle-count: 15
+
+lore:
+  separator: "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━"
+  show-owner: true
+  show-kills: true
+  show-level: true
+  show-prestige: true
+  show-xp: true
+  show-enchants: true
+  max-enchants-in-lore: 20
+
+# Estilo del lore que genera /hsword enchant al encantar CUALQUIER objeto
+# (no solo la HyperSword). Usa el mismo separador que 'lore.separator'.
+item-enchant:
+  custom-header: "<yellow>Encantamientos</yellow>"
+  # %name% = nombre del encantamiento vanilla formateado, %level% = nivel en números romanos
+  vanilla-lore-format: "<gray>✦ %name% <white>%level%</white></gray>"
+
+experience:
+  # XP por tipo de entidad
+  mob-xp:
+    default: 10
+    ZOMBIE: 10
+    SKELETON: 12
+    CREEPER: 15
+    SPIDER: 8
+    ENDERMAN: 25
+    BLAZE: 20
+    WITHER_SKELETON: 30
+    ELDER_GUARDIAN: 100
+    WITHER: 500
+    ENDER_DRAGON: 1000
+  player-xp: 50
+  # Multiplicador por mundo
+  world-multipliers:
+    world: 1.0
+    world_nether: 1.5
+    world_the_end: 2.0
+
+levels:
+  # Fórmula: base_xp * (level ^ exponent)
+  base-xp: 1000
+  exponent: 1.15
+  max-level: 1000
+
+prestige:
+  enabled: true
+  required-level: 100
+  reset-level: true
+  keep-enchants: false
+  max-prestige: 10
+  rewards:
+    # Comandos a ejecutar por prestigio (use %player%)
+    1:
+      - "give %player% diamond 5"
+    5:
+      - "give %player% netherite_ingot 3"
+    10:
+      - "broadcast %player% ha alcanzado el Prestigio MÁXIMO!"
+
+economy:
+  # Tipo de economía global: EDPRISON_TOKENS, EDPRISON_GEMS, EDPRISON_CRYSTALS, VAULT, PLAYER_POINTS
+  # HyperSword autodetecta qué plugins están instalados. Si el tipo configurado no está disponible,
+  # cae automáticamente al siguiente plugin instalado (PlayerPoints → Vault → EdPrison).
+  type: EDPRISON_TOKENS
+
+  # Si true, el tipo global override SIEMPRE la moneda individual de cada encantamiento.
+  # Recomendado: true → todo el servidor usa una única moneda.
+  # Si false, cada encantamiento puede definir su propia moneda en su YAML (cost.currency).
+  force-global: true
+
+  # Solo relevante si type: VAULT
+  vault-currency: money
+
+  # Entregar la HyperSword automáticamente la primera vez que el jugador entra al servidor
+  auto-give-on-first-join: true

@@ -1,0 +1,10 @@
+multipliers:
+  vip:
+    permission: hypermines.multiplier.vip
+    value: 1.5
+  estelar:
+    permission: hypermines.multiplier.estelar
+    value: 2.0
+  ancestral:
+    permission: hypermines.multiplier.ancestral
+    value: 3.0

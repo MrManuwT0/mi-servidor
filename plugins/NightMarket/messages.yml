@@ -1,0 +1,55 @@
+# Supports MiniMessage (<gold>, <bold>, <#ff00aa>, etc), legacy codes (&a) and PlaceholderAPI.
+prefix: "<gray>[<gold>Night Market<gray>] "
+
+no-permission: "<red>You don't have permission to do this."
+player-only: "<red>Only a player can run this command."
+config-reloaded: "<green>NightMarket configuration reloaded successfully."
+market-reset-self: "<green>Your market has been reset."
+market-reset-other: "<green>You reset <yellow><player></yellow>'s market."
+market-reset-all: "<green>Reset the markets of <yellow><count></yellow> players."
+player-not-found: "<red>Could not find player <yellow><player></yellow>."
+
+market-opening: "<gray>Opening your Night Market..."
+market-error: "<red>Something went wrong opening the market. Please try again, and let an admin know if it keeps happening."
+already-revealing: "<red>Wait for the animation to finish."
+already-bought: "<red>You already bought this offer."
+not-revealed-yet: "<red>You must reveal this offer first."
+
+purchase-success: "<green>You bought <yellow><item></yellow> for <gold><price> coins."
+purchase-not-enough-money: "<red>You don't have enough money. You're missing <gold><missing></gold> coins."
+purchase-inventory-full: "<red>Your inventory is full. Free up some space and try again."
+purchase-error: "<red>An error occurred while processing the purchase."
+
+admin-item-added: "<green>Item added to the NightMarket item pool."
+admin-item-removed: "<green>Item removed."
+admin-item-duplicated: "<green>Item duplicated successfully."
+admin-item-updated: "<green>Item updated."
+admin-invalid-number: "<red>You must enter a valid number."
+
+item-lore-price-line: "<gray>Original price: <red><original></red>"
+item-lore-discount-line: "<gray>Discount: <green>-<discount>%</green>"
+item-lore-final-line: "<gray>Final price: <yellow><final></yellow>"
+item-lore-buy-line: "<green>✔ Click to purchase"
+item-lore-bought-line: "<gray>Purchased"
+item-hidden-name: "<gold><bold>???"
+item-hidden-lore-1: "<gray>Click to discover"
+item-hidden-lore-2: "<yellow>an exclusive offer."
+
+market-cooldown-title: "<gray>Next market in: <yellow><time>"
+
+item-lore-rarity-line: "<rarity_color><rarity_name>"
+
+featured-hidden-name: "<gold><bold>★ Featured Offer ★"
+featured-hidden-lore-1: "<gray>A rarer find than usual."
+featured-hidden-lore-2: "<yellow>Click to discover it."
+featured-tag-line: "<gold><bold>★ FEATURED OFFER ★"
+featured-not-available: "<red>There's no featured offer right now."
+
+reroll-button-name: "<green><bold>Reroll Market"
+reroll-button-lore-1: "<gray>Pay to instantly reroll your"
+reroll-button-lore-2: "<gray>entire market, offers and"
+reroll-button-lore-3: "<gray>featured item included."
+reroll-button-cost-line: "<gray>Cost: <gold><cost> coins"
+reroll-disabled: "<red>Rerolling is disabled on this server."
+reroll-success: "<green>Your market has been rerolled!"
+reroll-not-enough-money: "<red>You don't have enough money to reroll. You're missing <gold><missing></gold> coins."

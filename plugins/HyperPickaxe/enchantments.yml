@@ -1,0 +1,631 @@
+# =========================================================================
+#  HyperPickaxe - Definición de encantamientos
+#
+#  Cada encantamiento se define completamente aquí: nombre, precios, slot,
+#  icono, descripción y el "effect" (la lógica Java que ejecuta, registrada
+#  en EffectRegistry). Puedes añadir encantamientos nuevos sin tocar el
+#  núcleo del plugin siempre que el "effect" ya exista, o registrar tu
+#  propio efecto a través de la API pública (HyperPickaxeAPI#registerEffect).
+# =========================================================================
+
+enchantments:
+  
+  fortune:
+    display-name: '&6Fortune'
+    category: ECONOMY
+    material: GOLD_INGOT
+    slot: 10
+    max-level: 1000
+    base-price: 500
+    price-multiplier: 1.08
+    permission: hpickaxe.enchant.fortune
+    effect: MONEY_MULTIPLIER
+    effect-params:
+      percent-per-level: 0.5
+    description:
+    - '&7Incrementa el dinero'
+    - '&7que ganas al minar.'
+  
+  tokenator:
+    display-name: '&eTokenator'
+    category: ECONOMY
+    material: GOLD_NUGGET
+    slot: 11
+    max-level: 500
+    base-price: 750
+    price-multiplier: 1.09
+    permission: hpickaxe.enchant.tokenator
+    effect: MONEY_MULTIPLIER
+    effect-params:
+      percent-per-level: 0.4
+    description:
+    - '&7Multiplica las ganancias'
+    - '&7adicionales por bloque.'
+    enabled: false
+  
+  laser:
+    display-name: '&bLaser'
+    category: MINADO
+    material: END_ROD
+    slot: 12
+    max-level: 50
+    base-price: 10000
+    price-multiplier: 1.25
+    permission: hpickaxe.enchant.laser
+    effect: LASER_LINE
+    effect-params:
+      length-per-level: 1
+      base-length: 3
+    description:
+    - '&7Perfora una línea de'
+    - '&7bloques en la dirección'
+    - '&7en la que miras.'
+  
+  jackhammer:
+    display-name: '&cJackhammer'
+    category: MINADO
+    material: NETHERITE_PICKAXE
+    slot: 13
+    max-level: 100
+    base-price: 15000
+    price-multiplier: 1.2
+    permission: hpickaxe.enchant.jackhammer
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 1
+      radius-per-levels: 20
+    
+    description:
+    - '&7Rompe bloques en un'
+    - '&7área alrededor del'
+    - '&7bloque minado.'
+  
+  explosive:
+    display-name: '&4Explosive'
+    category: MINADO
+    material: TNT
+    slot: 14
+    max-level: 100
+    base-price: 20000
+    price-multiplier: 1.22
+    permission: hpickaxe.enchant.explosive
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 1
+      radius-per-levels: 15
+    description:
+    - '&7Provoca una explosión'
+    - '&7controlada al minar.'
+    enabled: false
+  
+  nuke:
+    display-name: '&c&lNuke'
+    category: MINADO
+    material: FIRE_CHARGE
+    slot: 15
+    max-level: 50
+    base-price: 100000
+    price-multiplier: 1.3
+    permission: hpickaxe.enchant.nuke
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 10
+    description:
+    - '&7Devasta una gran zona'
+    - '&7de bloques al minar.'
+    enabled: false
+  
+  drill:
+    display-name: '&7Drill'
+    category: MINADO
+    material: IRON_PICKAXE
+    slot: 16
+    max-level: 200
+    base-price: 8000
+    price-multiplier: 1.15
+    permission: hpickaxe.enchant.drill
+    effect: LASER_LINE
+    effect-params:
+      base-length: 5
+      length-per-level: 1
+    description:
+    - '&7Perfora en profundidad'
+    - '&7hacia adelante.'
+  
+  thunder:
+    display-name: '&eThunder'
+    category: ESPECIALES
+    material: TRIDENT
+    slot: 19
+    max-level: 80
+    base-price: 50000
+    price-multiplier: 1.25
+    permission: hpickaxe.enchant.thunder
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 1
+      radius-per-levels: 12
+    description:
+    - '&7Invoca un rayo que'
+    - '&7destruye bloques cercanos.'
+    enabled: false
+  
+  meteor:
+    display-name: '&6Meteor'
+    category: ESPECIALES
+    material: MAGMA_BLOCK
+    slot: 20
+    max-level: 80
+    base-price: 60000
+    price-multiplier: 1.26
+    permission: hpickaxe.enchant.meteor
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 12
+    description:
+    - '&7Un meteorito impacta'
+    - '&7la zona de minado.'
+    enabled: false
+  
+  black_hole:
+    display-name: '&5Black Hole'
+    category: ESPECIALES
+    material: OBSIDIAN
+    slot: 21
+    max-level: 60
+    base-price: 150000
+    price-multiplier: 1.3
+    permission: hpickaxe.enchant.black_hole
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 3
+      radius-per-levels: 10
+    description:
+    - '&7Absorbe bloques cercanos'
+    - '&7hacia el vacío.'
+    enabled: false
+  
+  tornado:
+    display-name: '&fTornado'
+    category: ESPECIALES
+    material: FEATHER
+    slot: 22
+    max-level: 60
+    base-price: 120000
+    price-multiplier: 1.28
+    permission: hpickaxe.enchant.tornado
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 10
+    description:
+    - '&7Arrasa bloques a'
+    - '&7su paso.'
+  
+  vein_miner:
+    display-name: '&aVein Miner'
+    category: MINADO
+    material: DIAMOND_PICKAXE
+    slot: 23
+    max-level: 100
+    base-price: 25000
+    price-multiplier: 1.2
+    permission: hpickaxe.enchant.vein_miner
+    effect: VEIN_MINER
+    effect-params:
+      base-blocks: 8
+      blocks-per-levels: 10
+      max-blocks: 256
+    description:
+    - '&7Rompe toda la veta'
+    - '&7de mineral conectada.'
+  
+  treasure_hunter:
+    display-name: '&2Treasure Hunter'
+    category: ESPECIALES
+    material: CHEST
+    slot: 24
+    max-level: 100
+    base-price: 12000
+    price-multiplier: 1.15
+    permission: hpickaxe.enchant.treasure_hunter
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 0.5
+      chance-per-level: 0.05
+      money-min: 500
+      money-max: 5000
+    description:
+    - '&7Probabilidad de encontrar'
+    - '&7tesoros al minar.'
+  
+  lucky_block:
+    display-name: '&2Lucky Block'
+    category: ESPECIALES
+    material: GRASS_BLOCK
+    slot: 25
+    max-level: 100
+    base-price: 13000
+    price-multiplier: 1.16
+    permission: hpickaxe.enchant.lucky_block
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 0.4
+      chance-per-level: 0.04
+      money-min: 300
+      money-max: 8000
+    description:
+    - '&7Bloques con recompensas'
+    - '&7aleatorias.'
+  
+  crystal_finder:
+    display-name: '&dCrystal Finder'
+    category: ESPECIALES
+    material: AMETHYST_SHARD
+    slot: 28
+    max-level: 100
+    base-price: 14000
+    price-multiplier: 1.16
+    permission: hpickaxe.enchant.crystal_finder
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 0.3
+      chance-per-level: 0.03
+      money-min: 1000
+      money-max: 10000
+    description:
+    - '&7Encuentra cristales'
+    - '&7valiosos al minar.'
+  
+  gem_hunter:
+    display-name: '&bGem Hunter'
+    category: ESPECIALES
+    material: DIAMOND
+    slot: 29
+    max-level: 100
+    base-price: 14000
+    price-multiplier: 1.16
+    permission: hpickaxe.enchant.gem_hunter
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 0.3
+      chance-per-level: 0.03
+      money-min: 1000
+      money-max: 12000
+    description:
+    - '&7Encuentra gemas raras'
+    - '&7al minar.'
+  
+  xp_boost:
+    display-name: '&aXP Boost'
+    category: UTILIDAD
+    material: EXPERIENCE_BOTTLE
+    slot: 30
+    max-level: 200
+    base-price: 4000
+    price-multiplier: 1.1
+    permission: hpickaxe.enchant.xp_boost
+    effect: XP_BOOST
+    effect-params:
+      xp-per-level: 0.2
+    description:
+    - '&7Aumenta la experiencia'
+    - '&7obtenida al minar.'
+  
+  money_burst:
+    display-name: '&6Money Burst'
+    category: ECONOMY
+    material: SUNFLOWER
+    slot: 31
+    max-level: 150
+    base-price: 9000
+    price-multiplier: 1.13
+    permission: hpickaxe.enchant.money_burst
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 1.0
+      chance-per-level: 0.05
+      money-min: 200
+      money-max: 3000
+    description:
+    - '&7Probabilidad de recibir'
+    - '&7una explosión de dinero.'
+  
+  combo:
+    display-name: '&eCombo'
+    category: UTILIDAD
+    material: BLAZE_ROD
+    slot: 32
+    max-level: 300
+    base-price: 6000
+    price-multiplier: 1.1
+    permission: hpickaxe.enchant.combo
+    effect: MONEY_MULTIPLIER
+    effect-params:
+      percent-per-level: 0.2
+    description:
+    - '&7Mantén una racha de'
+    - '&7minado para ganar más.'
+  
+  momentum:
+    display-name: '&eMomentum'
+    category: UTILIDAD
+    material: SUGAR
+    slot: 33
+    max-level: 300
+    base-price: 6000
+    price-multiplier: 1.1
+    permission: hpickaxe.enchant.momentum
+    effect: MONEY_MULTIPLIER
+    effect-params:
+      percent-per-level: 0.2
+    description:
+    - '&7Aumenta tus ganancias'
+    - '&7cuanto más minas seguido.'
+  
+  auto_sell:
+    display-name: '&2Auto Sell'
+    category: UTILIDAD
+    material: EMERALD
+    slot: 34
+    max-level: 1
+    base-price: 500000
+    price-multiplier: 1.0
+    permission: hpickaxe.enchant.auto_sell
+    effect: AUTO_SELL
+    effect-params: {}
+    description:
+    - '&7Vende automáticamente'
+    - '&7los bloques minados.'
+  
+  auto_pickup:
+    display-name: '&2Auto Pickup'
+    category: UTILIDAD
+    material: HOPPER
+    slot: 37
+    max-level: 1
+    base-price: 50000
+    price-multiplier: 1.0
+    permission: hpickaxe.enchant.auto_pickup
+    effect: AUTO_PICKUP
+    effect-params: {}
+    description:
+    - '&7Envía los bloques minados'
+    - '&7directamente a tu inventario.'
+  
+  haste:
+    display-name: '&fHaste'
+    category: UTILIDAD
+    material: POTION
+    slot: 38
+    max-level: 5
+    base-price: 20000
+    price-multiplier: 1.4
+    permission: hpickaxe.enchant.haste
+    effect: HASTE
+    effect-params:
+      amplifier-per-level: 1
+    description:
+    - '&7Otorga el efecto Prisa'
+    - '&7mientras minas.'
+  
+  speed_mine:
+    display-name: '&fSpeed Mine'
+    category: UTILIDAD
+    material: SUGAR
+    slot: 39
+    max-level: 5
+    base-price: 20000
+    price-multiplier: 1.4
+    permission: hpickaxe.enchant.speed_mine
+    effect: SPEED
+    effect-params:
+      amplifier-per-level: 1
+    description:
+    - '&7Otorga velocidad extra'
+    - '&7mientras minas.'
+  
+  silk_collector:
+    display-name: '&bSilk Collector'
+    category: UTILIDAD
+    material: COBWEB
+    slot: 40
+    max-level: 1
+    base-price: 80000
+    price-multiplier: 1.0
+    permission: hpickaxe.enchant.silk_collector
+    effect: SILK_COLLECTOR
+    effect-params: {}
+    description:
+    - '&7Los bloques minados se'
+    - '&7recogen como con Toque de Seda.'
+  
+  energy_collector:
+    display-name: '&eEnergy Collector'
+    category: ECONOMY
+    material: REDSTONE
+    slot: 41
+    max-level: 100
+    base-price: 30000
+    price-multiplier: 1.18
+    permission: hpickaxe.enchant.energy_collector
+    effect: ENERGY_COLLECTOR
+    effect-params:
+      money-per-level-per-tick: 0.5
+      period-seconds: 60
+    description:
+    - '&7Genera dinero de forma'
+    - '&7pasiva con el tiempo.'
+  
+  shockwave:
+    display-name: '&cShockwave'
+    category: ESPECIALES
+    material: ANVIL
+    slot: 42
+    max-level: 60
+    base-price: 90000
+    price-multiplier: 1.27
+    permission: hpickaxe.enchant.shockwave
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 10
+    description:
+    - '&7Onda expansiva que'
+    - '&7rompe bloques cercanos.'
+  
+  earthquake:
+    display-name: '&6Earthquake'
+    category: ESPECIALES
+    material: BROWN_MUSHROOM
+    slot: 43
+    max-level: 60
+    base-price: 95000
+    price-multiplier: 1.27
+    permission: hpickaxe.enchant.earthquake
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 10
+    description:
+    - '&7Sacude el terreno'
+    - '&7rompiendo bloques.'
+  
+  volcano:
+    display-name: '&4Volcano'
+    category: ESPECIALES
+    material: MAGMA_CREAM
+    slot: 46
+    max-level: 60
+    base-price: 110000
+    price-multiplier: 1.28
+    permission: hpickaxe.enchant.volcano
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 3
+      radius-per-levels: 12
+    description:
+    - '&7Erupción que devasta'
+    - '&7la zona de minado.'
+  
+  galaxy:
+    display-name: '&5Galaxy'
+    category: ESPECIALES
+    material: NETHER_STAR
+    slot: 47
+    max-level: 40
+    base-price: 500000
+    price-multiplier: 1.35
+    permission: hpickaxe.enchant.galaxy
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 3
+      radius-per-levels: 8
+    description:
+    - '&7Poder cósmico que'
+    - '&7arrasa con todo.'
+  
+  rainbow:
+    display-name: '&dRainbow'
+    category: ESPECIALES
+    material: WHITE_WOOL
+    slot: 48
+    max-level: 100
+    base-price: 40000
+    price-multiplier: 1.2
+    permission: hpickaxe.enchant.rainbow
+    effect: LOOT_BONUS
+    effect-params:
+      base-chance-percent: 0.5
+      chance-per-level: 0.05
+      money-min: 500
+      money-max: 6000
+    description:
+    - '&7Colores mágicos que'
+    - '&7atraen la fortuna.'
+  
+  infinity:
+    display-name: '&f&lInfinity'
+    category: ECONOMY
+    material: NETHER_STAR
+    slot: 50
+    max-level: 1000
+    base-price: 200000
+    price-multiplier: 1.3
+    permission: hpickaxe.enchant.infinity
+    effect: MONEY_MULTIPLIER
+    effect-params:
+      percent-per-level: 0.3
+    description:
+    - '&7Multiplicador infinito'
+    - '&7de tus ganancias.'
+  
+  phoenix:
+    display-name: '&6Phoenix'
+    category: ESPECIALES
+    material: BLAZE_POWDER
+    slot: 51
+    max-level: 40
+    base-price: 300000
+    price-multiplier: 1.32
+    permission: hpickaxe.enchant.phoenix
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 3
+      radius-per-levels: 9
+    description:
+    - '&7Renace con más fuerza'
+    - '&7a cada golpe.'
+  
+  gravity:
+    display-name: '&8Gravity'
+    category: ESPECIALES
+    material: ANVIL
+    slot: 52
+    max-level: 40
+    base-price: 250000
+    price-multiplier: 1.3
+    permission: hpickaxe.enchant.gravity
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 2
+      radius-per-levels: 9
+    description:
+    - '&7Distorsiona la gravedad'
+    - '&7alrededor del bloque.'
+  
+  chaos:
+    display-name: '&4&lChaos'
+    category: ESPECIALES
+    material: WITHER_SKELETON_SKULL
+    slot: 53
+    max-level: 30
+    base-price: 750000
+    price-multiplier: 1.4
+    permission: hpickaxe.enchant.chaos
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 4
+      radius-per-levels: 8
+    description:
+    - '&7Desata caos absoluto'
+    - '&7al minar.'
+  
+  void_breaker:
+    display-name: '&0Void Breaker'
+    category: ESPECIALES
+    material: ENDER_EYE
+    slot: 44
+    max-level: 30
+    base-price: 1000000
+    price-multiplier: 1.45
+    permission: hpickaxe.enchant.void_breaker
+    effect: AREA_BREAK
+    effect-params:
+      base-radius: 4
+      radius-per-levels: 7
+    description:
+    - '&7El encantamiento definitivo.'
+    - '&7Rompe todo a su paso.'

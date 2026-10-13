@@ -1,0 +1,139 @@
+# TransactionHistoryGUI Configuration - English
+title: '&eᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ʜɪꜱᴛᴏʀʏ'
+size: 54
+
+slots:
+  back: 45
+  filter: 46
+  clear-history: 47
+  prev-page: 48
+  refresh: 49
+  next-page: 50
+  export: 52
+  statistics: 53
+
+items:
+  back: '&c&lʙᴀᴄᴋ'
+  filter: '&7ғɪʟᴛᴇʀ: &e{filter_type}'
+  clear-history: '&cᴄʟᴇᴀʀ ʜɪꜱᴛᴏʀʏ'
+  prev-page: '&c&lʙᴀᴄᴋ'
+  next-page: '&a&lɴᴇxᴛ'
+  refresh: '&eʀᴇғʀᴇꜱʜ'
+  export: '&bᴇxᴘᴏʀᴛ'
+  statistics: '&dꜱᴛᴀᴛɪꜱᴛɪᴄꜱ'
+
+materials:
+  back: SPECTRAL_ARROW
+  filter: HOPPER
+  clear-history: RED_DYE
+  prev-page: SPECTRAL_ARROW
+  prev-page-disabled: GRAY_DYE
+  next-page: SPECTRAL_ARROW
+  next-page-disabled: GRAY_DYE
+  refresh: REPEATER
+  export: BOOK
+  statistics: DIAMOND
+
+lore:
+  back-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eʀᴇᴛᴜʀɴ'
+  - '&7ᴛᴏ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜꜱᴇ'
+  filter-lore:
+  - '&7ᴄᴜʀʀᴇɴᴛ ғɪʟᴛᴇʀ: &e{filter_type}'
+  - ''
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴀɴɢᴇ ғɪʟᴛᴇʀ:'
+  - '&8• &eᴀʟʟ &7ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ'
+  - '&8• &aᴘᴜʀᴄʜᴀꜱᴇꜱ &7ᴏɴʟʏ'
+  - '&8• &cꜱᴀʟᴇꜱ &7ᴏɴʟʏ'
+  - '&8• &dᴇxᴘɪʀᴇᴅ &7ɪᴛᴇᴍꜱ'
+  clear-history-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &cᴄʟᴇᴀʀ'
+  - '&7ᴀʟʟ ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ʜɪꜱᴛᴏʀʏ'
+  - ''
+  - '&c⚠ ᴛʜɪꜱ ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴᴅᴏɴᴇ!'
+  prev-page-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ɢᴏ ᴛᴏ'
+  - '&eᴘʀᴇᴠɪᴏᴜꜱ ᴘᴀɢᴇ'
+  next-page-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ɢᴏ ᴛᴏ'
+  - '&eɴᴇxᴛ ᴘᴀɢᴇ'
+  refresh-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eʀᴇғʀᴇꜱʜ'
+  - '&7ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ʜɪꜱᴛᴏʀʏ'
+  export-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &bᴇxᴘᴏʀᴛ'
+  - '&7ʜɪꜱᴛᴏʀʏ ᴛᴏ ᴀ ғɪʟᴇ'
+  - ''
+  - '&7ᴛʜɪꜱ ᴡɪʟʟ ɢᴇɴᴇʀᴀᴛᴇ'
+  - '&7ᴀ ᴄꜱᴠ ғɪʟᴇ ғᴏʀ ʏᴏᴜ'
+  statistics-lore:
+  - '&7ᴠɪᴇᴡ ᴅᴇᴛᴀɪʟᴇᴅ'
+  - '&dꜱᴛᴀᴛɪꜱᴛɪᴄꜱ &7ᴀʙᴏᴜᴛ'
+  - '&7ʏᴏᴜʀ ᴛʀᴀᴅɪɴɢ ᴀᴄᴛɪᴠɪᴛʏ'
+
+transaction-types:
+  purchase:
+    name: '&aᴘᴜʀᴄʜᴀꜱᴇ'
+    material: EMERALD
+    lore:
+    - '&7ʏᴏᴜ ʙᴏᴜɢʜᴛ ᴛʜɪꜱ ɪᴛᴇᴍ'
+    - '&7ғʀᴏᴍ &e{seller}'
+    - ''
+    - '&7ᴘʀɪᴄᴇ: &a{price}'
+    - '&7ᴅᴀᴛᴇ: &e{date}'
+    - '&7ᴛɪᴍᴇ: &e{time}'
+  sale:
+    name: '&cꜱᴀʟᴇ'
+    material: GOLD_INGOT
+    lore:
+    - '&7ʏᴏᴜ ꜱᴏʟᴅ ᴛʜɪꜱ ɪᴛᴇᴍ'
+    - '&7ᴛᴏ &e{buyer}'
+    - ''
+    - '&7ᴘʀɪᴄᴇ: &a{price}'
+    - '&7ᴅᴀᴛᴇ: &e{date}'
+    - '&7ᴛɪᴍᴇ: &e{time}'
+  expired:
+    name: '&dᴇxᴘɪʀᴇᴅ'
+    material: CLOCK
+    lore:
+    - '&7ᴛʜɪꜱ ɪᴛᴇᴍ ᴇxᴘɪʀᴇᴅ'
+    - '&7ᴀɴᴅ ᴡᴀꜱ ʀᴇᴛᴜʀɴᴇᴅ'
+    - ''
+    - '&7ᴏʀɪɢɪɴᴀʟ ᴘʀɪᴄᴇ: &e{price}'
+    - '&7ʟɪꜱᴛᴇᴅ: &e{listed_date}'
+    - '&7ᴇxᴘɪʀᴇᴅ: &e{expired_date}'
+
+sounds:
+  open: BLOCK_CHEST_OPEN
+  click: UI_BUTTON_CLICK
+  filter: BLOCK_DISPENSER_DISPENSE
+  clear: ENTITY_ITEM_BREAK
+  export: ITEM_BOOK_PAGE_TURN
+  page: ITEM_BOOK_PAGE_TURN
+
+filters:
+  all: ᴀʟʟ
+  purchases: ᴘᴜʀᴄʜᴀꜱᴇꜱ
+  sales: ꜱᴀʟᴇꜱ
+  expired: ᴇxᴘɪʀᴇᴅ
+
+no-history:
+  title: '&7ɴᴏ ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ ғᴏᴜɴᴅ'
+  lore:
+  - '&7ʏᴏᴜ ʜᴀᴠᴇɴ''ᴛ ᴍᴀᴅᴇ ᴀɴʏ'
+  - '&7ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ ʏᴇᴛ'
+  - ''
+  - '&7ꜱᴛᴀʀᴛ ʙᴜʏɪɴɢ ᴀɴᴅ'
+  - '&7ꜱᴇʟʟɪɴɢ ɪᴛᴇᴍꜱ!'
+
+# Statistics display format
+statistics:
+  total-purchases: '&7ᴛᴏᴛᴀʟ ᴘᴜʀᴄʜᴀꜱᴇꜱ: &a{count}'
+  total-sales: '&7ᴛᴏᴛᴀʟ ꜱᴀʟᴇꜱ: &c{count}'
+  total-spent: '&7ᴛᴏᴛᴀʟ ꜱᴘᴇɴᴛ: &e{amount}'
+  total-earned: '&7ᴛᴏᴛᴀʟ ᴇᴀʀɴᴇᴅ: &a{amount}'
+  profit: '&7ɴᴇᴛ ᴘʀᴏғɪᴛ: &{color}{amount}'
+  most-expensive-purchase: '&7ᴍᴏꜱᴛ ᴇxᴘᴇɴꜱɪᴠᴇ ᴘᴜʀᴄʜᴀꜱᴇ: &e{amount}'
+  most-expensive-sale: '&7ᴍᴏꜱᴛ ᴇxᴘᴇɴꜱɪᴠᴇ ꜱᴀʟᴇ: &a{amount}'
+  avg-purchase-price: '&7ᴀᴠᴇʀᴀɢᴇ ᴘᴜʀᴄʜᴀꜱᴇ: &e{amount}'
+  avg-sale-price: '&7ᴀᴠᴇʀᴀɢᴇ ꜱᴀʟᴇ: &a{amount}'

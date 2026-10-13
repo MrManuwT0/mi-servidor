@@ -1,0 +1,32 @@
+name: Apprentice
+pos1:
+  world: mines
+  x: 22.0
+  y: 163.0
+  z: 89.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: mines
+  x: -2.0
+  y: 150.0
+  z: 65.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: mines
+  x: 25.5
+  y: 165.0
+  z: 77.5
+  yaw: 90.0766
+  pitch: -0.35603464
+reset-type: TIMER
+reset-interval-seconds: 300
+reset-percentage: 40.0
+required-permission: ranks.apprentice
+enabled: true
+autosell-enabled: true
+menu-slot: 11
+break-effects: []
+composition:
+  COAL_ORE: 100.0

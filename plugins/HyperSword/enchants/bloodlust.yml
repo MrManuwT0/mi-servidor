@@ -1,0 +1,22 @@
+id: bloodlust
+name: "<dark_red>🩸 Bloodlust</dark_red>"
+description: "Roba vida extra por combo."
+icon: REDSTONE_BLOCK
+slot: -1
+max-level: 8
+cost:
+  base: 7000
+  multiplier: 1.6
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.0
+trigger-particle: CRIT
+trigger-particle-count: 5
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<dark_red>🩸 Bloodlust</dark_red> <white>%level%</white>"
+category: UTILITY

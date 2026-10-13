@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 92.186.68.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1788206508280
+  login: 1788205653127
+money: '1100.0'
+last-account-name: NzCrypto
+lastlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 10.5
+  y: 100.0
+  z: -9.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 68.11980118347726
+  y: 112.0
+  z: -63.57916875774512
+  yaw: -107.74567413330078
+  pitch: -1.2114977836608887

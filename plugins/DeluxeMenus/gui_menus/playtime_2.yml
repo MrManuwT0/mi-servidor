@@ -1,0 +1,846 @@
+# ======================================================================================
+# Playtime Levels Configuration
+# Made By: Flaming Studio
+# If in case of any problem join my discord: hhttps://discord.gg/42pHPm2NsZ
+# My BuiltByBit other resources: 
+# If you want to play an public server join: play.brotherscraftland.xyz:4551
+# Dependencies:
+# PlaceholderAPI, Luckperms, DeluxeMenus, Vault
+# ======================================================================================
+
+menu_title: '      &0ᴘʟᴀʏᴛɪᴍᴇ ʟᴇᴠᴇʟѕ &8(&02/2&8)'
+size: 45
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 0-44
+    display_name: ' '
+  
+  'user':
+    material: head-%player_name%
+    update: true
+    display_name: '&f%player_name% &8| &#9660EFStatistics'
+    slot: 40
+    lore:
+    - "&8ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ"
+    - " "
+    - " &8• &#9660EFPlaytime: &a%statistic_hours_played%h"
+    - ""
+
+  'exit_button':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ==
+    display_name: '&cExit &8(&c✘&8)'
+    slot: 36
+    click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[message] &#9660EF&lPLAYTIME &7• &cClosing Playtime Menu...'
+      - '[close]'
+
+  'return_button':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxMzNlOTE5MTlkYjBhY2VmZGMyNzJkNjdmZDg3YjRiZTg4ZGM0NGE5NTg5NTg4MjQ0NzRlMjFlMDZkNTNlNiJ9fX0=
+    display_name: '&aReturn &8(&a←&8)'
+    slot: 44
+    click_commands:
+      - '[openguimenu] playtime_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+##################
+#
+# Playtime #11
+#
+##################
+
+  'playtime-11-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY3ZjJiNTA2MzcwYzFlODRmOTBmYmYyOWM4MGUwY2I3ZTJhYzkzMjMwMzAxYjVkOGU0MmM2OGZkZGU4OWZlMCJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#FF00FF&lLEVEL 11'
+    slot: 11
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 11'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB6C1Requirements:"
+    - " &8• &fHours &8→ &#FFB6C154h"
+    - " "
+    - "&8&l| &#FFB6C1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-11-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FF00FF&lLEVEL 11'
+    slot: 11
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 54'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB6C1Requirements:"
+    - " &8• &fHours &8→ &#FFB6C154h"
+    - " "
+    - "&8&l| &#FFB6C1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 11! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 11'
+      - '[refresh]'
+
+  'playtime-11-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY3ZjJiNTA2MzcwYzFlODRmOTBmYmYyOWM4MGUwY2I3ZTJhYzkzMjMwMzAxYjVkOGU0MmM2OGZkZGU4OWZlMCJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#FF00FF&lLEVEL 11'
+    slot: 11
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB6C1Requirements:"
+    - " &8• &fHours &8→ &#FFB6C154h"
+    - " "
+    - "&8&l| &#FFB6C1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #12
+#
+##################
+
+  'playtime-12-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1YjdhYzlmMGM3MTIzMDNjZDNiNjU0ZTY0NmNlMWM0YmYyNDNhYjM0OGE2YTI1MzcwZjI2MDNlNzlhNjJhMCJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#8FDFFF&lLEVEL 12'
+    slot: 12
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 12'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#AED6F1Requirements:"
+    - " &8• &fHours &8→ &#AED6F160h"
+    - " "
+    - "&8&l| &#AED6F1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-12-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#8FDFFF&lLEVEL 12'
+    slot: 12
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 60'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#AED6F1Requirements:"
+    - " &8• &fHours &8→ &#AED6F160h"
+    - " "
+    - "&8&l| &#AED6F1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 12! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 12'
+      - '[refresh]'
+
+  'playtime-12-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1YjdhYzlmMGM3MTIzMDNjZDNiNjU0ZTY0NmNlMWM0YmYyNDNhYjM0OGE2YTI1MzcwZjI2MDNlNzlhNjJhMCJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#8FDFFF&lLEVEL 12'
+    slot: 12
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#AED6F1Requirements:"
+    - " &8• &fHours &8→ &#AED6F160h"
+    - " "
+    - "&8&l| &#AED6F1Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #13
+#
+##################
+
+  'playtime-13-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNlOWY0ZGJhZGRlMGY3MjdjNTgwM2Q3NWQ4YmIzNzhmYjlmY2I0YjYwZDMzYmVjMTkwOTJhM2EyZTdiMDdhOSJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#00FF00&lLEVEL 13'
+    slot: 13
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 13'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFCCCBRequirements:"
+    - " &8• &fHours &8→ &#FFCCCB66h"
+    - " "
+    - "&8&l| &#FFCCCBRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-13-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#00FF00&lLEVEL 13'
+    slot: 13
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 66'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFCCCBRequirements:"
+    - " &8• &fHours &8→ &#FFCCCB66h"
+    - " "
+    - "&8&l| &#FFCCCBRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 13! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 13'
+      - '[refresh]'
+
+  'playtime-13-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNlOWY0ZGJhZGRlMGY3MjdjNTgwM2Q3NWQ4YmIzNzhmYjlmY2I0YjYwZDMzYmVjMTkwOTJhM2EyZTdiMDdhOSJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#00FF00&lLEVEL 13'
+    slot: 13
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFCCCBRequirements:"
+    - " &8• &fHours &8→ &#FFCCCB66h"
+    - " "
+    - "&8&l| &#FFCCCBRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #14
+#
+##################
+
+  'playtime-14-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4OWYzNDdmNDI0NTBjZDJhMmU5YjhhNTM5ODgwN2QyOGM3ZjQyNTRiZDk5YThhNDk5Y2U1NDM1MzIwOTU1In19fQ==
+    update: true
+    priority: 1
+    display_name: '&#FFFF00&lLEVEL 14'
+    slot: 14
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 14'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFE0B2Requirements:"
+    - " &8• &fHours &8→ &#FFE0B272h"
+    - " "
+    - "&8&l| &#FFE0B2Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-14-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FFFF00&lLEVEL 14'
+    slot: 14
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 72'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFE0B2Requirements:"
+    - " &8• &fHours &8→ &#FFE0B272h"
+    - " "
+    - "&8&l| &#FFE0B2Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 14! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 14'
+      - '[refresh]'
+
+  'playtime-14-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4OWYzNDdmNDI0NTBjZDJhMmU5YjhhNTM5ODgwN2QyOGM3ZjQyNTRiZDk5YThhNDk5Y2U1NDM1MzIwOTU1In19fQ==
+    update: true
+    priority: 3
+    display_name: '&#FFFF00&lLEVEL 14'
+    slot: 14
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFE0B2Requirements:"
+    - " &8• &fHours &8→ &#FFE0B272h"
+    - " "
+    - "&8&l| &#FFE0B2Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #15
+#
+##################
+
+  'playtime-15-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1ZjNiYWUwZDIwM2JhMTZmZTFkYzNkMTMwN2E4NmE2MzhiZTkyNDQ3MWYyM2U4MmFiZDlkNzhmOGEzZmNhIn19fQ==
+    update: true
+    priority: 1
+    display_name: '&#FF0000&lLEVEL 15'
+    slot: 15
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 15'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#E1BEE7Requirements:"
+    - " &8• &fHours &8→ &#E1BEE778h"
+    - " "
+    - "&8&l| &#E1BEE7Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-15-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FF0000&lLEVEL 15'
+    slot: 15
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 78'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#E1BEE7Requirements:"
+    - " &8• &fHours &8→ &#E1BEE778h"
+    - " "
+    - "&8&l| &#E1BEE7Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 15! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 15'
+      - '[refresh]'
+
+  'playtime-15-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1ZjNiYWUwZDIwM2JhMTZmZTFkYzNkMTMwN2E4NmE2MzhiZTkyNDQ3MWYyM2U4MmFiZDlkNzhmOGEzZmNhIn19fQ==
+    update: true
+    priority: 3
+    display_name: '&#FF0000&lLEVEL 15'
+    slot: 15
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#E1BEE7Requirements:"
+    - " &8• &fHours &8→ &#E1BEE778h"
+    - " "
+    - "&8&l| &#E1BEE7Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #16
+#
+##################
+
+  'playtime-16-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY3ZjJiNTA2MzcwYzFlODRmOTBmYmYyOWM4MGUwY2I3ZTJhYzkzMjMwMzAxYjVkOGU0MmM2OGZkZGU4OWZlMCJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#FF00FF&lLEVEL 16'
+    slot: 20
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 16'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#B5FFCARequirements:"
+    - " &8• &fHours &8→ &#B5FFCA84h"
+    - " "
+    - "&8&l| &#B5FFCARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-16-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FF00FF&lLEVEL 16'
+    slot: 20
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 84'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#B5FFCARequirements:"
+    - " &8• &fHours &8→ &#B5FFCA84h"
+    - " "
+    - "&8&l| &#B5FFCARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 16! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 16'
+      - '[refresh]'
+
+  'playtime-16-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY3ZjJiNTA2MzcwYzFlODRmOTBmYmYyOWM4MGUwY2I3ZTJhYzkzMjMwMzAxYjVkOGU0MmM2OGZkZGU4OWZlMCJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#FF00FF&lLEVEL 16'
+    slot: 20
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#B5FFCARequirements:"
+    - " &8• &fHours &8→ &#B5FFCA84h"
+    - " "
+    - "&8&l| &#B5FFCARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #17
+#
+##################
+
+  'playtime-17-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1YjdhYzlmMGM3MTIzMDNjZDNiNjU0ZTY0NmNlMWM0YmYyNDNhYjM0OGE2YTI1MzcwZjI2MDNlNzlhNjJhMCJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#ADD8E6&lLEVEL 17'
+    slot: 21
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 17'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFF2CCRequirements:"
+    - " &8• &fHours &8→ &#FFF2CC90h"
+    - " "
+    - "&8&l| &#FFF2CCRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-17-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#ADD8E6&lLEVEL 17'
+    slot: 21
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 90'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFF2CCRequirements:"
+    - " &8• &fHours &8→ &#FFF2CC90h"
+    - " "
+    - "&8&l| &#FFF2CCRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 17! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 17'
+      - '[refresh]'
+
+  'playtime-17-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1YjdhYzlmMGM3MTIzMDNjZDNiNjU0ZTY0NmNlMWM0YmYyNDNhYjM0OGE2YTI1MzcwZjI2MDNlNzlhNjJhMCJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#ADD8E6&lLEVEL 17'
+    slot: 21
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFF2CCRequirements:"
+    - " &8• &fHours &8→ &#FFF2CC90h"
+    - " "
+    - "&8&l| &#FFF2CCRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #18
+#
+##################
+
+  'playtime-18-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNlOWY0ZGJhZGRlMGY3MjdjNTgwM2Q3NWQ4YmIzNzhmYjlmY2I0YjYwZDMzYmVjMTkwOTJhM2EyZTdiMDdhOSJ9fX0=
+    update: true
+    priority: 1
+    display_name: '&#00FF00&lLEVEL 18'
+    slot: 22
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 18'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB3BARequirements:"
+    - " &8• &fHours &8→ &#FFB3BA96h"
+    - " "
+    - "&8&l| &#FFB3BARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-18-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#00FF00&lLEVEL 18'
+    slot: 22
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 96'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB3BARequirements:"
+    - " &8• &fHours &8→ &#FFB3BA96h"
+    - " "
+    - "&8&l| &#FFB3BARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 18! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 18'
+      - '[refresh]'
+
+  'playtime-18-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNlOWY0ZGJhZGRlMGY3MjdjNTgwM2Q3NWQ4YmIzNzhmYjlmY2I0YjYwZDMzYmVjMTkwOTJhM2EyZTdiMDdhOSJ9fX0=
+    update: true
+    priority: 3
+    display_name: '&#00FF00&lLEVEL 18'
+    slot: 22
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#FFB3BARequirements:"
+    - " &8• &fHours &8→ &#FFB3BA96h"
+    - " "
+    - "&8&l| &#FFB3BARewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #19
+#
+##################
+
+  'playtime-19-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4OWYzNDdmNDI0NTBjZDJhMmU5YjhhNTM5ODgwN2QyOGM3ZjQyNTRiZDk5YThhNDk5Y2U1NDM1MzIwOTU1In19fQ==
+    update: true
+    priority: 1
+    display_name: '&#FFFF00&lLEVEL 19'
+    slot: 23
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 19'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#D4D4FFRequirements:"
+    - " &8• &fHours &8→ &#D4D4FF102h"
+    - " "
+    - "&8&l| &#D4D4FFRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-19-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FFFF00&lLEVEL 19'
+    slot: 23
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 102'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#D4D4FFRequirements:"
+    - " &8• &fHours &8→ &#D4D4FF102h"
+    - " "
+    - "&8&l| &#D4D4FFRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 19! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 19'
+      - '[refresh]'
+
+  'playtime-19-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4OWYzNDdmNDI0NTBjZDJhMmU5YjhhNTM5ODgwN2QyOGM3ZjQyNTRiZDk5YThhNDk5Y2U1NDM1MzIwOTU1In19fQ==
+    update: true
+    priority: 3
+    display_name: '&#FFFF00&lLEVEL 19'
+    slot: 23
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#D4D4FFRequirements:"
+    - " &8• &fHours &8→ &#D4D4FF102h"
+    - " "
+    - "&8&l| &#D4D4FFRewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 
+
+##################
+#
+# Playtime #20
+#
+##################
+
+  'playtime-20-unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1ZjNiYWUwZDIwM2JhMTZmZTFkYzNkMTMwN2E4NmE2MzhiZTkyNDQ3MWYyM2U4MmFiZDlkNzhmOGEzZmNhIn19fQ==
+    update: true
+    priority: 1
+    display_name: '&#FF0000LEVEL 20'
+    slot: 24
+    view_requirement:
+      requirements:
+        meta:
+          type: javascript
+          expression: '%deluxemenus_meta_PlayTimeOrion_INTEGER% >= 20'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#F8BBD9Requirements:"
+    - " &8• &fHours &8→ &#F8BBD9108h"
+    - " "
+    - "&8&l| &#F8BBD9Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&#FF0000✘&l CLAIMED &#FF0000Already"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &fYou have already claimed this reward!"
+      - "[close]"
+
+  'playtime-20-available':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjY2UwZjdjZDkxYjljMTYyODBiMDliMTJlNzk4Mjk0N2JhMTJhMzhlMzdkMDJhMDQ3ZDEwNTNjMzIzOWRkYyJ9fX0=
+    update: true
+    priority: 2
+    display_name: '&#FF0000&lLEVEL 20'
+    slot: 24
+    view_requirement:
+      requirements:
+        hours:
+          type: javascript
+          expression: '%statistic_hours_played% >= 108'
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#F8BBD9Requirements:"
+    - " &8• &fHours &8→ &#F8BBD9108h"
+    - " "
+    - "&8&l| &#F8BBD9Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[broadcast] &8&l[&a&l!&8&l] &#57FF6B%player_name% is now Playtime Level 20! &7(/playtime)'
+      - '[console] eco give %player_name% 2000'
+      - '[meta] set PlayTimeOrion INTEGER 20'
+      - '[refresh]'
+
+  'playtime-20-locked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY1ZjNiYWUwZDIwM2JhMTZmZTFkYzNkMTMwN2E4NmE2MzhiZTkyNDQ3MWYyM2U4MmFiZDlkNzhmOGEzZmNhIn19fQ==
+    update: true
+    priority: 3
+    display_name: '&#FF0000&lLEVEL 20'
+    slot: 24
+    lore:
+    - "&8ʀᴇᴡᴀʀᴅs"
+    - " "
+    - "&8&l| &#F8BBD9Requirements:"
+    - " &8• &fHours &8→ &#F8BBD9108h"
+    - " "
+    - "&8&l| &#F8BBD9Rewards:"
+    - " &8• &fMoney &8→ &a$2000"
+    - " "
+    - "&e➠ &e&lCLICK&e to Rankup!"
+    click_commands:
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou dont have enough playtime to rankup to this level!"
+      - "[message] &#FF0000&lPLAYTIME&8 ➠ &8&l[&c&l!&8&l] &#FF7C7CYou only have &f%statistic_hours_played% hour(s)&#FF7C7C."
+      - "[close]" 

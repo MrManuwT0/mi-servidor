@@ -1,0 +1,22 @@
+id: lifeline
+name: "<green>💚 Lifeline</green>"
+description: "Cura al tener poca vida."
+icon: EMERALD
+slot: -1
+max-level: 5
+cost:
+  base: 4000
+  multiplier: 1.6
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.0
+trigger-particle: CRIT
+trigger-particle-count: 5
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<green>💚 Lifeline</green> <white>%level%</white>"
+category: UTILITY

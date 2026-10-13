@@ -1,0 +1,238 @@
+# DeluxeChat version 1.20.4-modernized config file
+# Created by extended_clip
+# List as many format configurations you in the formats: config section.
+# Each format configuration requires a specific layout which can be seen below.
+# Format priority must be specified per format and each priority must be unique.
+# higher value = lower priority
+# ex: guest-100, owner-1
+#   YOU MUST KEEP A 'default' TEMPLATE! 
+#   
+# Social Spy only allows %player% and %recipient% as placeholders
+#
+# You must download the placeholder expansion through PlaceholderAPI for which
+# placeholders you want to use. The example below uses Player placeholders, so
+# we need to download the player expansion: /papi ecloud download Player, /papi reload
+#
+# Color formats supported in prefix/name/suffix/chat_color/tooltips/PM formats:
+#   legacy   : &c, &b, &l, etc.
+#   hex      : &#RRGGBB or #RRGGBB   (needs deluxechat.hex / deluxechat.pm.hex permission for player-typed chat)
+#   gradient : <gradient:#RRGGBB:#RRGGBB>text</gradient>   (2 or more stops allowed)
+#   rainbow  : <rainbow>text</rainbow>  or  <rainbow:75>text</rainbow>  (optional 0-100 saturation)
+#
+# example format template:
+# formats: 
+#   default:
+#     priority: 2147483647
+#     channel: ''
+#     prefix: '&8[&7Guest&8] '
+#     name_color: '&7'
+#     name: '%player_name%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player_name% &bis a Guest'
+#     prefix_tooltip:
+#     - '&7%player_name% &bis a Guest'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player_name% 
+#     suffix_click_command: '
+#   Member:
+#     priority: 100
+#     channel: ''
+#     prefix: '&8[&aMember&8] '
+#     name_color: '&7'
+#     name: '%player_name%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player_name% &bis a Member'
+#     prefix_tooltip:
+#     - '&7%player_name% &bis a Member'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player_name% 
+#     suffix_click_command: '
+
+# DeluxeChat version 1.15.0 config file
+# Created by extended_clip
+# List as many format configurations you in the formats: config section.
+# Each format configuration requires a specific layout which can be seen below.
+# Format priority must be specified per format and each priority must be unique.
+# higher value = lower priority
+# ex: guest-100, owner-1
+#   YOU MUST KEEP A 'default' TEMPLATE! 
+#   
+# Social Spy only allows %player% and %recipient% as placeholders
+#
+# You must download the placeholder expansion through PlaceholderAPI for which
+# placeholders you want to use. The example below uses Player placeholders, so
+# we need to download the player expansion: /papi ecloud download Player, /papi reload
+#
+#
+# example format template:
+# formats: 
+#   default:
+#     priority: 2147483647
+#     channel: ''
+#     prefix: '&8[&7Guest&8] '
+#     name_color: '&7'
+#     name: '%player_name%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player_name% &bis a Guest'
+#     prefix_tooltip:
+#     - '&7%player_name% &bis a Guest'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player_name% 
+#     suffix_click_command: '
+#   Member:
+#     priority: 100
+#     channel: ''
+#     prefix: '&8[&aMember&8] '
+#     name_color: '&7'
+#     name: '%player_name%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player_name% &bis a Member'
+#     prefix_tooltip:
+#     - '&7%player_name% &bis a Member'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player_name% 
+#     suffix_click_command: '
+check_updates: true
+bungeecord:
+  enabled: false
+  server_name: Server
+  server_prefix: '&8[&cServer&8]'
+  join_global: true
+  use_server_whitelist: true
+  server_whitelist:
+  - Server2
+  - Server3
+relation_placeholders_enabled: true
+timestamp_format: MM/dd/yy HH:mm:ss
+boolean:
+  'true': '&atrue'
+  'false': '&cfalse'
+ops_use_group_format: false
+chat_filter:
+  enabled: false
+  ignore_case: true
+  list:
+  - '.; '
+  - fuck;fuck
+private_message:
+  enabled: true
+  bungeecord: false
+private_message_formats:
+  to_sender:
+    format: '&8[&cMSG&8] &7Tú &e➡ &7%recipient_player_name%&7: '
+    tooltip:
+    - '%player_name%'
+    click_command: '/r '
+    chat_color: '&f'
+  to_recipient:
+    format: '&8[&cMSG&8] &7%player_name% &e➡ &7Tú&7: '
+    tooltip:
+    - '%player_name%'
+    click_command: '/r '
+    chat_color: '&f'
+  social_spy: '&8[&3SPY&8] &f%player% &e➡ &f%recipient%&7: '
+formats:
+  default:
+    priority: 1
+    channel: ''
+    prefix: '%rankcolor_prefix% %prisonranksx_currentrank_displayname%&r'
+    name_color: '&f'
+    name: ' %rankcolor_name%'
+    suffix: ' &b» '
+    chat_color: '&7'
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '&e&lINFORMATION'
+    - ''
+    - '&3♦ &bRankup: &f%prisonranksx_currentrank_displayname%&r'
+    - '&3♦ &bPrestige: &f%prisonranksx_prestige_displayname%&r'
+    - '&3♦ &bRank: &f%luckperms_prefix%&r'
+    - '&3♦ &bMoney: &a%vault_eco_balance_formatted% &2⛁&r'
+    - '&3♦ &bHyperCoins: &a%playerpoints_points_formatted% &3₿&r'
+    - '&3♦ &bBlocks Breaks: &a%statistic_mine_block% &3⚒&r'
+    - ''
+    - '&3೭ &bClick to send a message to &e%player_name% &6&l✉&r'
+    name_tooltip:
+    - '&e&lINFORMATION'
+    - ''
+    - '&3♦ &bRankup: &f%prisonranksx_currentrank_displayname%'
+    - '&3♦ &bPrestige: &f%prisonranksx_prestige_displayname%'
+    - '&3♦ &bRank: &f%luckperms_prefix%'
+    - '&3♦ &bMoney: &a%vault_eco_balance_formatted% &2⛁'
+    - '&3♦ &bHyperCoins: &a%playerpoints_points_formatted% &3₿'
+    - '&3♦ &bBlocks Breaks: &a%statistic_mine_block% &3⚒'
+    - ''
+    - '&3೭ &bClick to send a message to &e%player_name% &6&l✉'
+    suffix_tooltip:
+    - ''
+    channel_click_command: /msg %player_name%
+    prefix_click_command: /msg %player_name%
+    name_click_command: '/msg %player_name% '
+    suffix_click_command: ''
+  usuario:
+    priority: 2
+    channel: ''
+    prefix: '%prisonranksx_currentrank_displayname%&r'
+    name_color: '&f'
+    name: ' %essentials_nickname%'
+    suffix: ' &b» '
+    chat_color: '&7'
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '&e&lINFORMATION'
+    - ''
+    - '&3♦ &bRankup: &f%prisonranksx_currentrank_displayname%'
+    - '&3♦ &bPrestige: &f%prisonranksx_prestige_displayname%'
+    - '&3♦ &bRank: &f%luckperms_prefix%'
+    - '&3♦ &bMoney: &a%vault_eco_balance_formatted% &2⛁'
+    - '&3♦ &bHyperCoins: &a%playerpoints_points_formatted% &3₿'
+    - '&3♦ &bBlocks Breaks: &a%statistic_mine_block% &3⚒'
+    - ''
+    - '&3೭ &bClick to send a message to &e%player_name% &6&l✉'
+    name_tooltip:
+    - '&e&lINFORMATION'
+    - ''
+    - '&3♦ &bRankup: &f%prisonranksx_currentrank_displayname%'
+    - '&3♦ &bPrestige: &f%prisonranksx_prestige_displayname%'
+    - '&3♦ &bRank: &f%luckperms_prefix%'
+    - '&3♦ &bMoney: &a%vault_eco_balance_formatted% &2⛁'
+    - '&3♦ &bHyperCoins: &a%playerpoints_points_formatted% &3₿'
+    - '&3♦ &bBlocks Breaks: &a%statistic_mine_block% &3⚒'
+    - ''
+    - '&3೭ &bClick to send a message to &e%player_name% &6&l✉'
+    suffix_tooltip:
+    - ''
+    channel_click_command: /msg %player_name%
+    prefix_click_command: /msg %player_name%
+    name_click_command: '/msg %player_name% '
+    suffix_click_command: ''

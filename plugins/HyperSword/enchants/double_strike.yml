@@ -1,0 +1,22 @@
+id: double_strike
+name: "<gold>⚔⚔ Double Strike</gold>"
+description: "25% de golpear 2 veces."
+icon: GOLDEN_SWORD
+slot: -1
+max-level: 10
+cost:
+  base: 4000
+  multiplier: 1.6
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.0
+trigger-particle: CRIT
+trigger-particle-count: 5
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<gold>⚔⚔ Double Strike</gold> <white>%level%</white>"
+category: DAMAGE

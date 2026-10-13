@@ -1,0 +1,22 @@
+id: inferno
+name: "<dark_red>🌋 Inferno</dark_red>"
+description: "Prende fuego masivo."
+icon: LAVA_BUCKET
+slot: -1
+max-level: 3
+cost:
+  base: 10000
+  multiplier: 1.6
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.0
+trigger-particle: CRIT
+trigger-particle-count: 5
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<dark_red>🌋 Inferno</dark_red> <white>%level%</white>"
+category: SPECIAL

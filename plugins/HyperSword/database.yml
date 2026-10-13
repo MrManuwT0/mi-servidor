@@ -1,0 +1,38 @@
+# ============================================================
+#  HyperSword - database.yml
+# ============================================================
+
+# Tipo: YAML, SQLITE, MYSQL
+type: SQLITE
+
+yaml:
+  # Directorio donde se guardan los datos de jugadores
+  folder: "playerdata"
+
+sqlite:
+  file: "hypersword.db"
+
+mysql:
+  host: "localhost"
+  port: 3306
+  database: "hypersword"
+  username: "root"
+  password: "password"
+  # Pool de conexiones HikariCP
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 2
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+  # SSL
+  use-ssl: false
+  # Propiedades adicionales
+  properties:
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    useServerPrepStmts: true
+
+# Auto-guardado en segundos (0 = desactivado, usa solo el de config.yml)
+auto-save: 300

@@ -1,0 +1,549 @@
+Name: '&b&lRare Crate'
+Description: []
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:cyan_stained_glass"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: csgo
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - rare
+Block:
+  Positions:
+  - -16,16,-37,spawn
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: helix
+    Particle:
+      Name: GLOW
+Milestones:
+  Repeatable: false
+_dataver: 600
+Rewards:
+  List:
+    diamond_sword:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:sharpness":4,"minecraft:unbreaking":3}}},count:1,id:"minecraft:diamond_sword"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_pickaxe:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:efficiency":4,"minecraft:fortune":2}}},count:1,id:"minecraft:diamond_pickaxe"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_mending:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:mending":1}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    emerald:
+      Type: ITEM
+      Weight: 9.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:emerald"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    golden_apple:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:4,id:"minecraft:golden_apple"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_helmet:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:diamond_helmet"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    totem_of_undying:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: rare
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:totem_of_undying"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_chestplate:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:diamond_chestplate"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_leggings:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":3}}},count:1,id:"minecraft:diamond_leggings"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond_boots:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:feather_falling":3}}},count:1,id:"minecraft:diamond_boots"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    name_tag:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:name_tag"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    ender_pearl:
+      Type: ITEM
+      Weight: 9.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:8,id:"minecraft:ender_pearl"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    obsidian:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:32,id:"minecraft:obsidian"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    diamond:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:5,id:"minecraft:diamond"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    xp_bottle:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    saddle:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:saddle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    horse_armor:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:diamond_horse_armor"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189

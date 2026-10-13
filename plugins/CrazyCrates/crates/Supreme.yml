@@ -1,0 +1,222 @@
+# ==================================================
+#  CRATE: SUPREME (Tier 5 - OP)
+# ==================================================
+Crate:
+  CrateType: CSGO
+  CrateName: "<bold><dark_red>SUPREME Crate</bold>"
+  Preview-Name: "<bold><dark_red>SUPREME Crate Preview</bold>"
+  StartingKeys: 0
+  RequiredKeys: 1
+  Max-Mass-Open: 5
+  InGUI: true
+  Slot: 25
+  OpeningBroadCast: true
+  BroadCast: "%prefix%<bold><dark_red>%player%</bold><reset> <gray>is opening the <bold><dark_red>SUPREME Crate!</bold>"
+  opening-command:
+    toggle: false
+    commands: []
+  sound:
+    cycle-sound:
+      toggle: true
+      value: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+      volume: 1.0
+      pitch: 1.0
+    click-sound:
+      toggle: true
+      value: "UI_BUTTON_CLICK"
+      volume: 1.0
+      pitch: 1.0
+    stop-sound:
+      toggle: true
+      value: "ENTITY_WITHER_SPAWN"
+      volume: 1.0
+      pitch: 1.0
+  Prize-Message:
+    - "<gray>You have won <red>%reward% <gray>from <red>%crate%."
+  Prize-Commands: []
+  Item: "NETHERITE_BLOCK"
+  Glowing: true
+  Name: "<bold><dark_red>SUPREME Crate</bold>"
+  Lore:
+    - "<gray>The top-tier crate of the server."
+    - "<gray>Fully OP items, massive money."
+    - "<gray>You have <gold>%keys% keys <gray>to open this crate with."
+    - "<gray>You have opened this crate: <gold>%crate_opened% times"
+    - "<gray>(<yellow>!<gray>) Right click to view rewards."
+  Preview:
+    Toggle: true
+    ChestLines: 3
+    Glass:
+      Toggle: true
+      Name: " "
+      Item: "RED_STAINED_GLASS_PANE"
+  PhysicalKey:
+    Name: "<red><obfuscated>||</obfuscated> <bold><dark_red><underlined>SUPREME</underlined></bold> <red><obfuscated>||</obfuscated>"
+    Lore:
+      - "<gray>Open it at the <bold><dark_red>Supreme</bold> <gray>crate"
+      - ""
+      - "<red>The top-tier crate of the server"
+      - "<gray>Fully OP items, massive money"
+    Item: "TRIPWIRE_HOOK"
+    Glowing: true
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Range: 8
+    Color: "transparent"
+    Message:
+      - "<bold><dark_red><underlined>SUPREME CRATE</underlined></bold>"
+      - "<gray>Right click with the key"
+  Prizes:
+    1:
+      DisplayName: "<green>$50,000"
+      DisplayItem: "NETHERITE_INGOT"
+      Lore:
+        - "<gray>A supreme payday."
+        - ""
+        - "<red>Chance: <yellow>21%"
+      MaxRange: 100
+      Chance: 21
+      Commands:
+        - "eco give %player% 50000"
+      Messages:
+        - "<gray>You won <green>$50,000"
+    2:
+      DisplayName: "<green>$100,000"
+      DisplayItem: "NETHERITE_BLOCK"
+      Lore:
+        - "<gray>Jackpot."
+        - ""
+        - "<red>Chance: <yellow>8%"
+      MaxRange: 100
+      Chance: 8
+      Firework: true
+      Commands:
+        - "eco give %player% 100000"
+      Messages:
+        - "<gray><bold>You won <green>$100,000</bold>"
+    3:
+      DisplayName: "<aqua>5,000 Points"
+      DisplayItem: "NETHER_STAR"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>16%"
+      MaxRange: 100
+      Chance: 16
+      Commands:
+        - "points give %player% 5000"
+      Messages:
+        - "<gray>You won <aqua>5,000 Points"
+    4:
+      DisplayName: "<aqua>10,000 Points"
+      DisplayItem: "BEACON"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>7%"
+      MaxRange: 100
+      Chance: 7
+      Commands:
+        - "points give %player% 10000"
+      Messages:
+        - "<gray><bold>You won <aqua>10,000 Points</bold>"
+    5:
+      DisplayName: "<yellow>Full OP Kit"
+      DisplayItem: "NETHERITE_SWORD"
+      Lore:
+        - "<gray>Everything you need to dominate."
+        - ""
+        - "<red>Chance: <yellow>14%"
+      MaxRange: 100
+      Chance: 14
+      Commands:
+        - "kit give %player% op"
+      Messages:
+        - "<gray>You won the <yellow>Full OP Kit"
+    6:
+      DisplayName: "<dark_red>SUPREME Armor Set (Prot 100)"
+      DisplayItem: "NETHERITE_CHESTPLATE"
+      DisplayEnchantments:
+        - "PROTECTION_ENVIRONMENTAL:100"
+        - "DURABILITY:20"
+        - "THORNS:10"
+      Lore:
+        - "<gray>The single best armor on the server."
+        - ""
+        - "<red>Chance: <yellow>11%"
+      MaxRange: 100
+      Chance: 11
+      Glowing: true
+      Firework: true
+      Items:
+        - "Item:NETHERITE_HELMET, Amount:1, PROTECTION_ENVIRONMENTAL:100, DURABILITY:20, THORNS:10"
+        - "Item:NETHERITE_CHESTPLATE, Amount:1, PROTECTION_ENVIRONMENTAL:100, DURABILITY:20, THORNS:10"
+        - "Item:NETHERITE_LEGGINGS, Amount:1, PROTECTION_ENVIRONMENTAL:100, DURABILITY:20, THORNS:10"
+        - "Item:NETHERITE_BOOTS, Amount:1, PROTECTION_ENVIRONMENTAL:100, DURABILITY:20, THORNS:10"
+      Commands:
+        - "broadcast <dark_red><bold>%player% just won the SUPREME ARMOR SET from the crate!</bold>"
+      Messages:
+        - "<dark_red><bold>YOU WON THE SUPREME SET!</bold>"
+    7:
+      DisplayName: "<dark_red>SUPREME Sword (Sharp 300)"
+      DisplayItem: "NETHERITE_SWORD"
+      DisplayEnchantments:
+        - "DAMAGE_ALL:300"
+        - "FIRE_ASPECT:5"
+        - "SWEEPING_EDGE:10"
+      Lore:
+        - "<gray>Matches your OP kit scaling."
+        - ""
+        - "<red>Chance: <yellow>8%"
+      MaxRange: 100
+      Chance: 8
+      Glowing: true
+      Firework: true
+      Items:
+        - "Item:NETHERITE_SWORD, Amount:1, DAMAGE_ALL:300, FIRE_ASPECT:5, SWEEPING_EDGE:10"
+      Commands:
+        - "broadcast <dark_red><bold>%player% just won the SUPREME SWORD from the crate!</bold>"
+      Messages:
+        - "<dark_red><bold>YOU WON THE SUPREME SWORD!</bold>"
+    8:
+      DisplayName: "<dark_red>SUPREME Pickaxe (Fortune 50, Efficiency 50)"
+      DisplayItem: "NETHERITE_PICKAXE"
+      DisplayEnchantments:
+        - "LOOT_BONUS_BLOCKS:50"
+        - "DIG_SPEED:50"
+        - "DURABILITY:20"
+      Lore:
+        - "<gray>Strip the mines clean."
+        - ""
+        - "<red>Chance: <yellow>8%"
+      MaxRange: 100
+      Chance: 8
+      Glowing: true
+      Firework: true
+      Items:
+        - "Item:NETHERITE_PICKAXE, Amount:1, LOOT_BONUS_BLOCKS:50, DIG_SPEED:50, DURABILITY:20"
+      Commands:
+        - "broadcast <dark_red><bold>%player% just won the SUPREME PICKAXE from the crate!</bold>"
+      Messages:
+        - "<dark_red><bold>YOU WON THE SUPREME PICKAXE!</bold>"
+    9:
+      DisplayName: "<light_purple>3x Totem of Undying"
+      DisplayItem: "TOTEM_OF_UNDYING"
+      DisplayAmount: 3
+      Lore:
+        - "<gray>Triple insurance."
+        - ""
+        - "<red>Chance: <yellow>7%"
+      MaxRange: 100
+      Chance: 7
+      Firework: true
+      Items:
+        - "Item:TOTEM_OF_UNDYING, Amount:3"
+      Messages:
+        - "<gray>You won <light_purple>3x Totem of Undying"
+
+# Nota: valores como 'DAMAGE_ALL:300' están ajustados a la misma escala
+# OP que ya usas en PlayerKits2 (Sharpness 300 / Protection 400).
+# CrazyCrates los aplica como encantamientos "unsafe", así que funcionan
+# igual que en tus kits, sin el límite vanilla de nivel.

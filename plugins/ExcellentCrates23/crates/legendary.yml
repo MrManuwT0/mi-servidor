@@ -1,0 +1,520 @@
+Name: '&6&lLegendary Crate'
+Description:
+- A legendary crate with the most powerful rewards!
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:orange_stained_glass"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: csgo
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - legendary
+Block:
+  Positions:
+  - -15,16,-33,spawn
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: helix
+    Particle:
+      Name: TOTEM_OF_UNDYING
+Milestones:
+  Repeatable: false
+_dataver: 600
+Rewards:
+  List:
+    sword_of_legends:
+      Type: ITEM
+      Weight: 12.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:fire_aspect":2,"minecraft:sharpness":6,"minecraft:unbreaking":3}}},count:1,id:"minecraft:diamond_sword"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    pickaxe_of_legends:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:efficiency":6,"minecraft:fortune":4,"minecraft:unbreaking":3}}},count:1,id:"minecraft:diamond_pickaxe"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_book_looting_3:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:looting":3}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    block_of_diamonds:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:diamond_block"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_golden_apple:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: legendary
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:5,id:"minecraft:enchanted_golden_apple"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    legendary_helmet:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":5,"minecraft:thorns":3}}},count:1,id:"minecraft:diamond_helmet"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    legendary_chestplate:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":5,"minecraft:unbreaking":3}}},count:1,id:"minecraft:diamond_chestplate"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    legendary_leggings:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:protection":5,"minecraft:unbreaking":3}}},count:1,id:"minecraft:diamond_leggings"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    legendary_boots:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:feather_falling":4,"minecraft:protection":5}}},count:1,id:"minecraft:diamond_boots"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    totem_of_undying_legendary:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: legendary
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:3,id:"minecraft:totem_of_undying"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    enchanted_bow:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:infinity":1,"minecraft:power":5,"minecraft:unbreaking":3}}},count:1,id:"minecraft:bow"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    legendary_xp_bottle:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:64,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    horse_armor_gold:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:golden_horse_armor"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    dragon_egg:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: legendary
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:turtle_helmet"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    block_of_emerald:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:8,id:"minecraft:emerald_block"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    beacon:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: legendary
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:beacon"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189

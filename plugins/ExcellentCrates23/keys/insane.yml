@@ -1,0 +1,8 @@
+Name: '&4&lInsane Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Key","underlined":false}],"text":""}''},count:1,id:"minecraft:redstone"}'
+    DataVersion: 4189
+ItemStackable: true

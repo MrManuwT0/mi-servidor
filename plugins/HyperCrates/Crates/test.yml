@@ -1,0 +1,65 @@
+name: test
+animation: ITEMVISUAL
+particle-reward: true
+preview-animation: STATIC
+rewards:
+- name: AMETHYST_SHARD
+  item: AMETHYST_SHARD
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: LEGENDARY
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: AMETHYST_SHARD
+- name: FEATHER
+  item: FEATHER
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: EPIC
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: FEATHER
+- name: DIAMOND
+  item: DIAMOND
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: EPIC
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: DIAMOND
+- name: NETHER_BRICKS
+  item: NETHER_BRICKS
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: LEGENDARY
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: NETHER_BRICKS
+- name: CHICKEN
+  item: CHICKEN
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: LEGENDARY
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: CHICKEN
+- name: BARRIER
+  item: BARRIER
+  amount: 1
+  chance: 1.0
+  give-item: true
+  rarity: LEGENDARY
+  item-stack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: BARRIER

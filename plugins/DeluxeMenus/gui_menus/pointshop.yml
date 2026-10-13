@@ -1,0 +1,203 @@
+menu_title: '        §x§f§f§e§0§6§6§lH§x§f§f§d§b§5§e§ly§x§f§f§d§7§5§6§lp§x§f§f§d§2§4§e§le§x§f§f§c§e§4§7§lr§x§f§f§c§9§3§f§lC§x§f§f§c§5§3§7§lo§x§f§f§c§0§2§f§li§x§f§f§b§c§2§7§ln§x§f§f§b§7§1§f§ls §x§f§f§b§3§1§8§lS§x§f§f§a§e§1§0§lh§x§f§f§a§a§0§8§lo§x§f§f§a§5§0§0§lp'
+open_command:
+- pointshop
+- hypershop
+register_command: true
+size: 45
+items:
+
+  '1':
+    material: YELLOW_STAINED_GLASS_PANE
+    enchantment_glint_override: true
+    display_name: "&7"
+    slots:
+    - 10
+    - 11
+    - 12
+    - 14
+    - 15
+    - 16
+
+  '2':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7"
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 22
+    - 26
+    - 27
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  '12':
+    material: BOOK
+    enchantment_glint_override: true
+    slot: 19
+    display_name: "                  &c&lRANKS"
+    lore:
+      - "               &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                      &7"
+      - "&7Here you can buy &cRanks &7to unlock"
+      - "&7exclusive perks for your &csupport!"
+      - "                      &7"
+      - "         &c➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] rankshop"
+
+
+  '13':
+    material: NAME_TAG
+    enchantment_glint_override: true
+    slot: 21
+    display_name: "                &6&lCHAT TAGS"
+    lore:
+      - "                &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                       &7"
+      - "&7Here you can buy &6Chat Tags &7to give"
+      - "      &7style to your name in &6Chat&7."
+      - "                       &7"
+      - "          &6➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    left_click_commands:
+    - '[player] tags'
+    right_click_commands:
+    - '[player] tags'
+
+
+  '14':
+    material: PAPER
+    enchantment_glint_override: true
+    slot: 34
+    display_name: "                      &f&lPERKS"
+    lore:
+      - "                   &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                          &7"
+      - "&7Here you can buy different &fPerks&7, which"
+      - "         &7are all &fcosmetic&7 in nature."
+      - "                          &7"
+      - "             &f➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] rankshop"
+
+
+  '15':
+    material: ENDER_CHEST
+    enchantment_glint_override: true
+    slot: 28
+    display_name: "        §x§f§f§8§b§d§1§lC§x§f§2§8§f§d§b§lO§x§e§5§9§3§e§5§lS§x§d§8§9§7§e§f§lM§x§c§b§9§b§f§9§lE§x§b§e§9§f§f§f§lT§x§b§1§a§8§f§f§lI§x§a§4§b§1§f§f§lC §x§9§7§b§a§f§f§lC§x§8§a§c§3§f§f§lR§x§7§d§c§c§f§f§lA§x§7§0§d§5§f§f§lT§x§6§3§d§e§f§f§lE"
+    lore:
+      - "             &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                    &7"
+      - "&7Buy exclusive colors to always"
+      - "        &7stand out in &9chat&7."
+      - "                    &7"
+      - "      &9➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] colorshop"
+
+
+  '16':
+    material: ENDER_CHEST
+    enchantment_glint_override: true
+    slot: 23
+    display_name: "         &d&lENDERCHEST UPGRADES"
+    lore:
+      - "                  &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                          &7"
+      - "&7Need more &dstorage space&7? We can help!"
+      - "&7Buy more space for your &dEnder Chest&7."
+      - "                          &7"
+      - "            &d➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] ecupgrade"
+
+
+  '19':
+    material: RAW_GOLD
+    enchantment_glint_override: true
+    slot: 13
+    display_name: "                     &f&lWEB STORE"
+    lore:
+      - "                        &7ʙᴜʏ ᴘᴏɪɴᴛꜱ"
+      - "                                &7"
+      - "        &7With a &fDonation &7to our server, you"
+      - "       &7help us keep it online! If you want to"
+      - "           &7&fdonate&7, click here to visit our"
+      - "                        &7&fweb store&7!"
+      - "                                &7"
+      - "&f| &7Your Points: &f%playerpoints_points_formatted%"
+      - "                                &7"
+      - "                     &7➠ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ"
+    click_commands:
+      - "[close]"
+      - "[message] &#8DACFF&lP&#989CFF&lO&#A38DFF&lI&#AD7DFF&lN&#B86EFF&lT&#C35EFF&lS&#CE4EFF&lH&#D83FFF&lO&#E32FFF&lP &7➠ &7Visit our store here: &fhttps://tienda.hypercrafts.es/"
+
+
+  '21':
+    material: FEATHER
+    enchantment_glint_override: true
+    slot: 25
+    display_name: "               &2&lPARTICLES / TRAILS"
+    lore:
+      - "                      &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                             &7"
+      - "    &7Want to walk in &2style&7? Get some &2Trails"
+      - "&7to make your character &2shine &7with new light."
+      - "                             &7"
+      - "                &2➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] trailshop"
+
+
+  '22':
+    material: TRIPWIRE_HOOK
+    enchantment_glint_override: true
+    slot: 20
+    display_name: "             &e&lKEY SHOP"
+    lore:
+      - "            &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                    &7"
+      - "&7Get amazing loot by picking up"
+      - "        &7some &eCrate Keys&7!"
+      - "                    &7"
+      - "      &e➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] keyshop"
+
+  '23':
+    material: CHEST
+    enchantment_glint_override: true
+    slot: 24
+    display_name: "           &5&lBACKPACK UPGRADES"
+    lore:
+      - "                  &7ᴘᴏɪɴᴛ ꜱʜᴏᴘ"
+      - "                          &7"
+      - "&7Need more &5storage space&7? We can help!"
+      - "  &7Buy more space for your &5Backpack&7."
+      - "                          &7"
+      - "            &5➠ ᴄʟɪᴄᴋ ᴛᴏ ɴᴀᴠɪɢᴀᴛᴇ"
+    click_commands:
+      - "[openguimenu] bpupgrade"

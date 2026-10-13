@@ -1,0 +1,174 @@
+cooldown: 21600
+permission_required: true
+custom_permission: ranks.warlord
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: NETHERITE_CHESTPLATE
+    name: '&5&lWarlord Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Netherite Armor Set &7(Prot 215 | Unb 130)'
+    - '&8- &71x Netherite Sword &7(Sharp 160 | Unb 130)'
+    - '&8- &71x Quick Charge I Crossbow + 64x Arrows'
+    - '&8- &72x Notch Apple'
+    - '&8- &712x Golden Apple'
+    - '&8- &78x Ender Pearl'
+    - ''
+    - '&7Cooldown: &c6 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&5&lWarlord Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fWarlord&c rank to claim this kit.'
+  cooldown:
+    id: NETHERITE_CHESTPLATE
+    name: '&5&lWarlord Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: NETHERITE_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f215'
+    - '&7✦ Unbreaking &f130'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;215
+    - DURABILITY;130
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: NETHERITE_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f215'
+    - '&7✦ Unbreaking &f130'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;215
+    - DURABILITY;130
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: NETHERITE_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f215'
+    - '&7✦ Unbreaking &f130'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;215
+    - DURABILITY;130
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: NETHERITE_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f215'
+    - '&7✦ Unbreaking &f130'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;215
+    - DURABILITY;130
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: NETHERITE_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f160'
+    - '&7✦ Unbreaking &f130'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;160
+    - DURABILITY;130
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: CROSSBOW
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Quick Charge &f1'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - QUICK_CHARGE;1
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    - Charged|false|boolean
+    preview_slot: 5
+  '7':
+    id: ARROW
+    amount: 64
+    preview_slot: 6
+  '8':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 2
+    preview_slot: 7
+  '9':
+    id: GOLDEN_APPLE
+    amount: 12
+    preview_slot: 8
+  '10':
+    id: ENDER_PEARL
+    amount: 8
+    preview_slot: 9

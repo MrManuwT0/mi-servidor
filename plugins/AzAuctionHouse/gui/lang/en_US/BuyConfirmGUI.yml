@@ -1,0 +1,27 @@
+# BuyConfirmGUI Configuration - English
+slots:
+  confirm: 11
+  cancel: 15
+  item-display: 13
+
+items:
+  confirm: '&aᴄᴏɴғɪʀᴍ ᴘᴜʀᴄʜᴀsᴇ'
+  cancel: '&cᴄᴀɴᴄᴇʟ'
+
+lore:
+  divider: '&6------------'
+  price: '&7ᴘʀɪᴄᴇ: &e{price}'
+  seller: '&7sᴇʟʟᴇʀ: &e{seller}'
+  confirm-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &aᴄᴏɴғɪʀᴍ &7ᴛʜᴇ ᴘᴜʀᴄʜᴀsᴇ'
+  cancel-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &cᴄᴀɴᴄᴇʟ &7ᴛʜᴇ ᴘᴜʀᴄʜᴀsᴇ'
+
+titles:
+  buy-confirm: '&8ᴄᴏɴғɪʀᴍ ᴘᴜʀᴄʜᴀsᴇ'
+
+# Confirmation GUI materials
+materials:
+  confirm: LIME_SHULKER_BOX
+  cancel: SPECTRAL_ARROW
+  filler: BLACK_STAINED_GLASS_PANE

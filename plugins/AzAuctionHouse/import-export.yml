@@ -1,0 +1,238 @@
+# Import/Export Configuration for AzAuctionHouse
+# This file contains settings for importing and exporting auction data
+# from/to other auction house plugins
+
+# General import/export settings
+general:
+  # Enable import/export functionality
+  enabled: true
+  
+  # Backup original data before import
+  backup-before-import: true
+  
+  # Maximum items to process in one batch
+  batch-size: 100
+  
+  # Delay between batches (in milliseconds)
+  batch-delay: 50
+  
+  # Log import/export operations
+  log-operations: true
+
+# Supported plugin formats
+supported-plugins:
+  zAuctionHouse:
+    enabled: true
+    # Database table name for zAuctionHouse
+    table-name: "zAuctionHouseV3"
+    # Field mappings from zAuctionHouse to AzAuctionHouse
+    field-mappings:
+      id: "id"
+      seller: "seller"
+      seller-uuid: "sellerUUID"
+      item-name: "itemName"
+      item-data: "itemStack"
+      price: "price"
+      time: "time"
+      server: "server"
+      world: "world"
+    # Data conversion settings
+    conversion:
+      # Convert old time format to new format
+      time-format: "timestamp"
+      # Handle server-specific data
+      cross-server: false
+  
+  AxAuctionHouse:
+    enabled: true
+    table-name: "auctionhouse"
+    field-mappings:
+      id: "id"
+      seller: "seller"
+      seller-uuid: "uuid"
+      item-name: "item_name"
+      item-data: "item"
+      price: "price"
+      time: "listed_time"
+      expire-time: "expire_time"
+    conversion:
+      time-format: "unix"
+      cross-server: true
+  
+  AuctionHouse:
+    enabled: true
+    table-name: "auction_house"
+    field-mappings:
+      id: "id"
+      seller: "seller_name"
+      seller-uuid: "seller_uuid"
+      item-name: "item_name"
+      item-data: "item_data"
+      price: "price"
+      time: "creation_time"
+      expire-time: "expiration_time"
+    conversion:
+      time-format: "datetime"
+      cross-server: false
+  
+  CrazyAuctions:
+    enabled: true
+    table-name: "crazyauctions_items"
+    field-mappings:
+      id: "id"
+      seller: "seller"
+      seller-uuid: "seller_uuid"
+      item-name: "item_name"
+      item-data: "item"
+      price: "price"
+      time: "time"
+    conversion:
+      time-format: "timestamp"
+      cross-server: false
+
+# Export settings
+export:
+  # Default export format
+  default-format: "json"
+  
+  # Available export formats
+  formats:
+    json:
+      enabled: true
+      file-extension: ".json"
+      pretty-print: true
+    
+    csv:
+      enabled: true
+      file-extension: ".csv"
+      include-headers: true
+      delimiter: ","
+    
+    sql:
+      enabled: true
+      file-extension: ".sql"
+      table-name: "auction_items"
+      include-create-table: true
+  
+  # Export file naming
+  filename-format: "auction_export_{timestamp}"
+  
+  # Include expired items in export
+  include-expired: false
+  
+  # Include sold items in export
+  include-sold: false
+
+# Import settings
+import:
+  # Validation settings
+  validation:
+    # Validate item data before import
+    validate-items: true
+    
+    # Skip invalid items instead of failing
+    skip-invalid: true
+    
+    # Validate seller UUIDs
+    validate-uuids: true
+    
+    # Check for duplicate items
+    check-duplicates: true
+  
+  # Conflict resolution
+  conflicts:
+    # How to handle duplicate IDs: skip, overwrite, rename
+    duplicate-ids: "skip"
+    
+    # How to handle items from unknown sellers: skip, import, assign-admin
+    unknown-sellers: "skip"
+    
+    # How to handle expired items: skip, import, extend
+    expired-items: "skip"
+  
+  # Post-import actions
+  post-import:
+    # Refresh GUI after import
+    refresh-gui: true
+    
+    # Send notification to online admins
+    notify-admins: true
+    
+    # Generate import report
+    generate-report: true
+
+# Database connection settings for external plugins
+database:
+  # Connection timeout (in seconds)
+  timeout: 30
+  
+  # Use SSL connection
+  use-ssl: false
+  
+  # Connection pool settings
+  pool:
+    minimum-idle: 1
+    maximum-pool-size: 5
+    connection-timeout: 30000
+
+# File import/export settings
+file-handling:
+  # Import/export directory (relative to plugin folder)
+  directory: "import-export"
+  
+  # Automatically create directory if it doesn't exist
+  auto-create-directory: true
+  
+  # Maximum file size for imports (in MB)
+  max-file-size: 50
+  
+  # Supported file formats for import
+  supported-import-formats:
+    - "json"
+    - "csv"
+    - "sql"
+  
+  # File encoding
+  encoding: "UTF-8"
+
+# Logging settings
+logging:
+  # Log level: DEBUG, INFO, WARN, ERROR
+  level: "INFO"
+  
+  # Log to separate file
+  separate-file: true
+  
+  # Log file name
+  filename: "import-export.log"
+  
+  # Maximum log file size (in MB)
+  max-file-size: 10
+  
+  # Number of log files to keep
+  max-files: 5
+
+# Messages for import/export operations
+messages:
+  import:
+    started: "&aStarting import from {plugin}..."
+    progress: "&eImported {current}/{total} items..."
+    completed: "&aImport completed! Imported {count} items in {time}ms"
+    failed: "&cImport failed: {error}"
+    no-data: "&eNo data found to import from {plugin}"
+  
+  export:
+    started: "&aStarting export to {format}..."
+    progress: "&eExported {current}/{total} items..."
+    completed: "&aExport completed! Exported {count} items to {file}"
+    failed: "&cExport failed: {error}"
+    no-data: "&eNo auction data found to export"
+  
+  validation:
+    invalid-item: "&cSkipping invalid item: {reason}"
+    duplicate-found: "&eDuplicate item found: {id}"
+    unknown-seller: "&eUnknown seller: {seller}"
+  
+  permissions:
+    no-permission: "&cYou don't have permission to use this command"
+    admin-only: "&cThis command is for administrators only"

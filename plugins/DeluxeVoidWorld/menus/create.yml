@@ -1,0 +1,77 @@
+#         Developed by Ruben_Artz and Artz Studio
+#
+#   ▄▄▄▄▄▄     ▄▄▄▄▄▄▄   ▄▄▄     ▄▄▄  ▄▄   ▄▄▄   ▄▄▄   ▄▄▄▄▄▄▄
+#  █▀██▀▀██   █▀██▀▀▀   ▀██▀    █▀██  ██  █▀▀██ ██▀   █▀██▀▀▀
+#    ██   ██    ██       ██       ██  ██     ▀█▄█▀      ██
+#    ██   ██    ████     ██       ██  ██      ███       ████
+#  ▄ ██   ██    ██       ██       ██  ██    ▄█▀██▄      ██
+#  ▀██▀███▀     ▀█████  ████████  ▀█████▄ ▀██▀  ▀██▄    ▀█████
+#
+
+MAIN:
+  TITLE: DeluxeVoidWorld &7- &9Creator
+  NORMAL:
+    NAME: '&a&lNORMAL &7- &7''&b&l{World}&7'' &7(Right/Left Click)'
+    MATERIAL: GRASS_BLOCK
+    SLOT: 10
+    LORE:
+    - ''
+    - '&7Creates a flat world'
+    - '&7without any biomes or structures.'
+    - '&7This is the &anormal/default &7type.'
+    - ''
+    - '&7Plugin API: &a{Plugin}'
+    - ''
+    - '&eClick on this item to create the world!'
+  NETHER:
+    NAME: '&c&lNETHER &7- &7''&b&l{World}&7'' &7(Right/Left Click)'
+    MATERIAL: NETHERRACK
+    SLOT: 13
+    LORE:
+    - ''
+    - '&7Creates a flat world'
+    - '&7without any biomes or structures.'
+    - '&7This type of world uses &cNether &7blocks.'
+    - ''
+    - '&7Plugin API: &a{Plugin}'
+    - ''
+    - '&eClick on this item to create the world!'
+  THE_END:
+    NAME: '&8&lTHE_END &7- &7''&b&l{World}&7'' &7(Right/Left Click)'
+    MATERIAL: END_STONE
+    SLOT: 16
+    LORE:
+    - ''
+    - '&7Creates a flat world'
+    - '&7without any biomes or structures.'
+    - '&7This type of world is &bThe End&7.'
+    - ''
+    - '&7Plugin API: &a{Plugin}'
+    - ''
+    - '&eClick on this item to create the world!'
+  RETURN:
+    MATERIAL: ARROW
+    SLOT: 27
+    NAME: '&aReturn &7(Right Click)'
+    LORE:
+    - ''
+    - '&7Back to main menu.'
+  CLOSE:
+    MATERIAL: RED_DYE
+    SLOT: 31
+    NAME: '&cClose &7(Right click)'
+    LORE:
+    - '&7Return to game'
+
+# DO NOT TOUCH!
+version: 3
+
+#
+#   ▄▄▄▄▄▄▄   ▄▄     ▄▄▄   ▄▄▄▄▄▄
+#  █▀██▀▀▀    ██▄   ██▀   █▀██▀▀██
+#    ██       ███▄  ██      ██   ██
+#    ████     ██ ▀█▄██      ██   ██
+#    ██       ██   ▀██    ▄ ██   ██
+#    ▀█████ ▀██▀    ██    ▀██▀███▀
+#
+# Developed by Ruben_Artz and Artz Studio

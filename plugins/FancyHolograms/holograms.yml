@@ -1,0 +1,979 @@
+version: 2 # DO NOT CHANGE
+holograms:
+  crazycrates-0d3eba89-a53b-4473-83f3-6a912a821a36:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 70.5
+      y: 114.5
+      z: -64.5
+      yaw: 0.0
+      pitch: 0.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 8
+    visible_by_default: true
+    text:
+    - <bold><dark_red><underlined>SUPREME CRATE</underlined></bold>
+    - <gray>Right click with the key
+    text_shadow: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Shop:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 34.5
+      y: 102.12000274658203
+      z: -21.5
+      yaw: 65.345604
+      pitch: 0.3564458
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Shop
+    text:
+    - '&a&lSHOP'
+    - '&7'
+    - '&7Fair prices, fast deals, zero haggling.'
+    - '&7'
+    - '&7&o/shop'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  FishermanHolo:
+    type: TEXT
+    location:
+      world: world
+      x: -3.4226112365722656
+      y: 15.670000076293945
+      z: 9.448272705078125
+      yaw: 43.500546
+      pitch: -3.1500103
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: Fisherman
+    text:
+    - '&6&lFISHERMAN'
+    - '&7'
+    - '&7"Patience catches more than luck ever will." &6- Old Marlow'
+    - '&7'
+    - '&7&o/emf shop'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Top10Points:
+    type: TEXT
+    location:
+      world: world
+      x: -35.46000671386719
+      y: 13.356915473937988
+      z: -33.47032928466797
+      yaw: 12.3544855
+      pitch: 90.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    text:
+    - '&e&l★ LEADERBOARD ★'
+    - '&a'
+    - '&eTop 10 ➠ Points'
+    - '&a'
+    - '&e%ajlb_lb_playerpoints_points_1_alltime_name% &f- &e%ajlb_lb_playerpoints_points_1_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_2_alltime_name% &f- &e%ajlb_lb_playerpoints_points_2_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_3_alltime_name% &f- &e%ajlb_lb_playerpoints_points_3_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_4_alltime_name% &f- &e%ajlb_lb_playerpoints_points_4_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_5_alltime_name% &f- &e%ajlb_lb_playerpoints_points_5_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_6_alltime_name% &f- &e%ajlb_lb_playerpoints_points_6_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_7_alltime_name% &f- &e%ajlb_lb_playerpoints_points_7_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_8_alltime_name% &f- &e%ajlb_lb_playerpoints_points_8_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_9_alltime_name% &f- &e%ajlb_lb_playerpoints_points_9_alltime_value%'
+    - '&e%ajlb_lb_playerpoints_points_10_alltime_name% &f- &e%ajlb_lb_playerpoints_points_10_alltime_value%'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: 120
+    background: transparent
+  FishingInfo:
+    type: TEXT
+    location:
+      world: world
+      x: -6.462112903594971
+      y: 14.5
+      z: 8.567267417907715
+      yaw: 0.0
+      pitch: 0.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&#FC913A🎣 &#FC9539F&#FC9638i&#FD9838s&#FD9A37h&#FD9C37i&#FD9D36n&#FD9F36g
+      &#FDA335I&#FEA434n&#FEA634f&#FEA833o&#FEAA33r&#FEAB32m&#FEAD32a&#FEAF31t&#FFB131i&#FFB230o&#FFB430n'
+    - '&7ᴄᴜꜱᴛᴏᴍ ꜰɪꜱʜɪɴɢ ꜱʏꜱᴛᴇᴍ'
+    - '&7'
+    - '&7Every catch comes in its own size, big or small.'
+    - '&7Compete daily for the biggest haul in town.'
+    - '&6/emf shop &7- Cash in your custom Fish'
+    - '&6/emf top &7- See the current Competition LB'
+    - '&7'
+    - '&7Need to &6sell fast&7? Visit the'
+    - '&6NPC &7waiting to your &6right&7.'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Cosmetics:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 18.5
+      y: 102.12000274658203
+      z: -34.5
+      yaw: 23.088528
+      pitch: -0.4273466
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Cosmetics
+    text:
+    - '&#B88DFF&lC&#B581FF&lO&#B276FF&lS&#AF6AFF&lM&#AC5EFF&lE&#A852FF&lT&#A547FF&lI&#A23BFF&lC&#9F2FFF&lS'
+    - '&7'
+    - '&7Look the part before you play the part.'
+    - '&7'
+    - '&7&o/cosmetics'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  SPARKLERankNPC:
+    type: TEXT
+    location:
+      world: world
+      x: -18.466318130493164
+      y: 17.670000076293945
+      z: -15.475252151489258
+      yaw: 1.331543
+      pitch: -0.60000634
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    text:
+    - '&#FF8DEE&lS&#FF7DED&lP&#FF6EEC&lA&#FF5EEC&lR&#FF4EEB&lK&#FF3FEA&lL&#FF2FE9&lE
+      &7%player_name%'
+    - '&7'
+    - '&7A little sparkle goes a long way'
+    - '&7'
+    - '&7ᴘʀᴇᴍɪᴜᴍ ʀᴀɴᴋ'
+    - '&7'
+    - '&7Purchase at: &6/pointshop'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Skills:
+    type: TEXT
+    location:
+      world: world
+      x: -11.61147403717041
+      y: 15.670000076293945
+      z: 1.4739718437194824
+      yaw: 90.81323
+      pitch: -2.8500047
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Skills
+    text:
+    - '&f&lPLAYERWARPS'
+    - '&7'
+    - '&7No matter how far you roam, home is one click away.'
+    - '&7'
+    - '&7&o/pw'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Warps:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 18.487201690673828
+      y: 102.67000579833984
+      z: -17.522493362426758
+      yaw: 45.816162
+      pitch: -2.0661783
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Warps
+    text:
+    - '&9&lWARPS'
+    - '&7'
+    - '&7"Why walk the map when you can skip it?" &9- Pip'
+    - '&7'
+    - '&7&o/warps'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Nightmarket:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 41.53512954711914
+      y: 102.67000579833984
+      z: 15.207221031188965
+      yaw: 169.7409
+      pitch: 3.633499E-4
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: Nightmarket
+    text:
+    - '&#2F2F2F&lN&#2D2D2D&li&#2C2C2C&lg&#2A2A2A&lh&#292929&lt&#272727&lm&#252525&la&#242424&lr&#222222&lk&#212121&le&#1F1F1F&lt'
+    - '&7'
+    - '&7My stalls only open once the sun goes down'
+    - '&7'
+    - '&7&o/nm'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Top10Playtime:
+    type: TEXT
+    location:
+      world: world
+      x: -20.50609016418457
+      y: 13.356915473937988
+      z: -39.480228424072266
+      yaw: 12.3544855
+      pitch: 90.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    text:
+    - '&9&l★ LEADERBOARD ★'
+    - '&a'
+    - '&9Top 10 ➠ Playtime'
+    - '&a'
+    - '&9%ajlb_lb_statistic_hours_played_1_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_1_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_2_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_2_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_3_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_3_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_4_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_4_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_5_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_5_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_6_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_6_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_7_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_7_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_8_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_8_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_9_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_9_alltime_value%h'
+    - '&9%ajlb_lb_statistic_hours_played_10_alltime_name% &f- &9%ajlb_lb_statistic_hours_played_10_alltime_value%h'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: 120
+    background: transparent
+  JobsInfo:
+    type: TEXT
+    location:
+      world: world
+      x: -14.484521865844727
+      y: 14.5
+      z: -13.502530097961426
+      yaw: 0.0
+      pitch: 0.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&#FCE73A⛏ &#FDDF38P&#FDDB37l&#FDD736a&#FDD335y&#FECF35e&#FECA34r &#FEC232J&#FFBE31o&#FFBA30b&#FFB62Fs'
+    - '&7ᴊᴏɪɴ ᴀ ᴊᴏʙ ᴛᴏ ᴍᴀᴋᴇ ᴍᴏɴᴇʏ'
+    - '&7'
+    - '&7Turn your playtime into real profit!'
+    - '&e/sj jobs &7- Browse all available Jobs'
+    - '&e/sj jobs join <Job> &7- Sign up for a Job'
+    - '&e/sj jobs leave <Job> &7- Quit a Job'
+    - '&e/sj info &7- Check your current Job'
+    - '&7'
+    - '&7Prefer clicking? &eJoin a Job &7through the'
+    - '&eNPC &7standing to your &eright&7.'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  CrateKeyShop:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 48.66637420654297
+      y: 114.67000579833984
+      z: -56.560813903808594
+      yaw: -21.799377
+      pitch: 1.9240746
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: CrateKeyShop
+    text:
+    - '&#8DACFF&lC&#83B5F1&lR&#78BEE3&lA&#6EC8D5&lT&#63D1C7&lE &#4EE3AB&lK&#44ED9D&lE&#39F68F&lY&#2FFF81&lS'
+    - '&7'
+    - '&7Pick a key, take a chance, unlock a treasure.'
+    - '&7'
+    - '&7&o/keyshop'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  GLINTRankNPC:
+    type: TEXT
+    location:
+      world: world
+      x: -21.46458625793457
+      y: 16.670000076293945
+      z: -13.50534725189209
+      yaw: -5.411133
+      pitch: -2.099953
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    text:
+    - '&#F45454&lG&#F73F3F&lL&#FA2A2A&lI&#FC1515&lN&#FF0000&lT &7%player_name%'
+    - '&7'
+    - '&7Wear the crimson, earn the respect'
+    - '&7'
+    - '&7ᴘʀᴇᴍɪᴜᴍ ʀᴀɴᴋ'
+    - '&7'
+    - '&7Purchase at: &6/pointshop'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  CratesSpawn:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 51.89955520629883
+      y: 134.3671417236328
+      z: -54.151485443115234
+      yaw: 42.90765
+      pitch: 18.171316
+    scale_x: 19.0
+    scale_y: 19.0
+    scale_z: 19.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&x&f&f&7&7&2&eᴄ&x&f&f&8&a&4&2ʀ&x&f&f&9&e&5&7ᴀ&x&f&f&b&1&6&bᴛ&x&f&f&c&5&8&0ᴇ&x&f&f&d&8&9&4ѕ'
+    text_shadow: false
+    text_alignment: center
+    update_text_interval: -1
+  Welcome:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 8.455105781555176
+      y: 102.0
+      z: -7.522270202636719
+      yaw: 40.0
+      pitch: 10.200729
+    scale_x: 2.0
+    scale_y: 2.0
+    scale_z: 2.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&7A new story begins on &#FFB656&lSURVIVAL OP'
+    - '&7ѕᴇʀᴠᴇʀɴᴀмᴇ.ɴᴇᴛ'
+    - '&7'
+    - '&7Not sure where to land? Try &#FFB656/rtp'
+    - '&7Lost already? &#FFB656/tutorial &7has your back'
+    - '&7'
+    - '&7Grab your pickaxe, the adventure starts on &#FFB656Server&7!'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Coinshop:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 14.5
+      y: 102.12000274658203
+      z: -34.5
+      yaw: -1.2109896
+      pitch: 1.9243364
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Coinshop
+    text:
+    - '&#8DACFF&lP&#989CFF&lO&#A38DFF&lI&#AD7DFF&lN&#B86EFF&lT&#C35EFF&lS&#CE4EFF&lH&#D83FFF&lO&#E32FFF&lP'
+    - '&7'
+    - '&7Cash in your points for something shiny'
+    - '&7'
+    - '&7&o/pointshop'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  AFKPool:
+    type: TEXT
+    location:
+      world: world
+      x: 6.873991966247559
+      y: 18.146053314208984
+      z: -12.005525588989258
+      yaw: -270.0
+      pitch: 10.200729
+    scale_x: 2.0
+    scale_y: 2.0
+    scale_z: 2.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&d&lAFK House'
+    - '&7'
+    - '&7Kick back in the &dAFK House&7 - the rewards'
+    - '&7come to &dyou&7, one roll every &d15min&7!'
+    - '&7'
+    - '&7- 1x &dAFK Key &7(50% Chance)'
+    - '&7- 5 &dPremium Points &7(50% Chance)'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Enderchest:
+    type: TEXT
+    location:
+      world: world
+      x: -56.49162673950195
+      y: 16.544675827026367
+      z: -1.4672547578811646
+      yaw: -0.0010713637
+      pitch: 90.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    text:
+    - '&#A960FF❃ &#9656E1E&#8D51D2n&#834CC4d&#7A47B5e&#7042A6r&#673E97c&#5D3988h&#543479e&#4A2F6Bs&#412A5Ct
+      &#2E203E❃'
+    - '&7'
+    - '&7Need more room? &7/pointshop &7has you covered!'
+    - '&7'
+    - ↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Enchanting:
+    type: TEXT
+    location:
+      world: world
+      x: -14.51814079284668
+      y: 15.158146858215332
+      z: 32.38677978515625
+      yaw: 179.84557
+      pitch: 3.8999949
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&#963DFF&lE&#9F3BFF&lN&#A73AFF&lC&#B038FF&lH&#B837FF&lA&#C135FF&lN&#C934FF&lT&#D232FF&lI&#DA31FF&lN&#E32FFF&lG
+      &#963DFF[&#A13BFFᴘ&#AC39FFᴜ&#B737FFʙ&#C235FFʟ&#CD33FFɪ&#D831FFᴄ&#E32FFF]'
+    - '&7'
+    - '&7No table? No problem - &#963DFFenchant &7your'
+    - '&7gear right here, no crafting'
+    - '&7required, no &#963DFFEnchanting Table &7needed!'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  SkillsNPC:
+    type: TEXT
+    location:
+      world: world
+      x: -25.43949317932129
+      y: 16.670000076293945
+      z: -3.4405877590179443
+      yaw: -51.30414
+      pitch: -1.3499951
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: SkillsNPC
+    text:
+    - '&c&lRPG SKILLS'
+    - '&7'
+    - '&7Grind it out, level it up, master it'
+    - '&7'
+    - '&7&o/skills'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Top10Levels:
+    type: TEXT
+    location:
+      world: world
+      x: -14.50968074798584
+      y: 13.356915473937988
+      z: -34.4802131652832
+      yaw: 12.3544855
+      pitch: 90.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    text:
+    - '&6&l★ LEADERBOARD ★'
+    - '&a'
+    - '&6Top 10 ➠ Level'
+    - '&a'
+    - '&6%ajlb_lb_clv_player_level_1_alltime_name% &f- &6%ajlb_lb_clv_player_level_1_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_2_alltime_name% &f- &6%ajlb_lb_clv_player_level_2_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_3_alltime_name% &f- &6%ajlb_lb_clv_player_level_3_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_4_alltime_name% &f- &6%ajlb_lb_clv_player_level_4_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_5_alltime_name% &f- &6%ajlb_lb_clv_player_level_5_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_6_alltime_name% &f- &6%ajlb_lb_clv_player_level_6_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_7_alltime_name% &f- &6%ajlb_lb_clv_player_level_7_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_8_alltime_name% &f- &6%ajlb_lb_clv_player_level_8_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_9_alltime_name% &f- &6%ajlb_lb_clv_player_level_9_alltime_value%'
+    - '&6%ajlb_lb_clv_player_level_10_alltime_name% &f- &6%ajlb_lb_clv_player_level_10_alltime_value%'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: 120
+    background: transparent
+  STARRankNPC:
+    type: TEXT
+    location:
+      world: world
+      x: -23.46095085144043
+      y: 18.670000076293945
+      z: -16.3677978515625
+      yaw: -15.004883
+      pitch: 1.5001755
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    text:
+    - '&#B88DFF&lS&#B06EFF&lT&#A74EFF&lA&#9F2FFF&lR &7%player_name%'
+    - '&7'
+    - '&7Shine bright, stand apart from the crowd'
+    - '&7'
+    - '&7ᴘʀᴇᴍɪᴜᴍ ʀᴀɴᴋ'
+    - '&7'
+    - '&7Purchase at: &6/pointshop'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Jobs:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 26.5
+      y: 102.12000274658203
+      z: -31.5
+      yaw: 39.97705
+      pitch: 0.14255431
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: Jobs
+    text:
+    - '&e&lPLAYER JOBS'
+    - '&7'
+    - '&7Pick a trade, stack that paycheck'
+    - '&7'
+    - '&7&o/sj jobs'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Top10Money:
+    type: TEXT
+    location:
+      world: world
+      x: -40.46554946899414
+      y: 13.356915473937988
+      z: -27.466163635253906
+      yaw: 12.3544855
+      pitch: 90.0
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    text:
+    - '&a&l★ LEADERBOARD ★'
+    - '&a'
+    - '&aTop 10 ➠ Money'
+    - '&a'
+    - '&a%ajlb_lb_vault_eco_balance_1_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_1_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_2_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_2_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_3_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_3_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_4_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_4_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_5_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_5_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_6_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_6_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_7_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_7_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_8_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_8_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_9_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_9_alltime_value%'
+    - '&a%ajlb_lb_vault_eco_balance_10_alltime_name% &f- &a%ajlb_lb_vault_eco_balance_10_alltime_value%'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: 120
+    background: transparent
+  DailyQuests:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 22.5
+      y: 102.12000274658203
+      z: -33.5
+      yaw: 34.84637
+      pitch: -3.776709
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: DailyQuests
+    text:
+    - '&e&lDAILY QUESTS'
+    - '&7'
+    - '&7Small tasks, steady rewards, one page at a time.'
+    - '&7'
+    - '&7&o/quests'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  PlaytimeRewards1:
+    type: TEXT
+    location:
+      world: world
+      x: -47.01472854614258
+      y: 15.670000076293945
+      z: 12.843147277832031
+      yaw: 125.035645
+      pitch: -4.2024145
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: PlaytimeRewards
+    text:
+    - '&6&lPLAYTIME REWARDS'
+    - '&7'
+    - '&7"Stick around long enough, and the server pays you back."'
+    - '&7'
+    - '&7&o/playtimelevels'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  RTPNpc:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 10.404451370239258
+      y: 103.67000579833984
+      z: 4.321351051330566
+      yaw: 121.42235
+      pitch: 3.5633774
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    linkedNpc: RTP
+    text:
+    - '&#A960FF&lR&#9A58E7&lA&#8A50CF&lN&#7B48B7&lD&#6C409F&lO&#5C3886&lM &#3D2856&lT&#2E203E&lP'
+    - '&7'
+    - '&7Spin the map, land wherever it lands.'
+    - '&7'
+    - '&7&o/rtp'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  PlaytimeRewards2:
+    type: TEXT
+    location:
+      world: world
+      x: 0.4960711598396301
+      y: 15.670000076293945
+      z: 30.469757080078125
+      yaw: 147.54785
+      pitch: -2.0999022
+    scale_x: 1.15
+    scale_y: 1.15
+    scale_z: 1.15
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: PlaytimeRewards2
+    text:
+    - '&6&lPLAYTIME REWARDS'
+    - '&7'
+    - '&7The clock is on your side here.'
+    - '&7'
+    - '&7&o/playtimelevels'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Kits:
+    type: TEXT
+    location:
+      world: Spawn
+      x: 32.5
+      y: 102.12000274658203
+      z: -25.5
+      yaw: 51.948833
+      pitch: -2.493911
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: Kits
+    text:
+    - '&d&lKITS'
+    - '&7'
+    - '&7Gear up fast, no grinding required.'
+    - '&7'
+    - '&7&o/kits'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Crates:
+    type: TEXT
+    location:
+      world: world
+      x: -19.48729133605957
+      y: 21.164052963256836
+      z: 24.299762725830078
+      yaw: -180.0
+      pitch: 10.200729
+    scale_x: 5.0
+    scale_y: 5.0
+    scale_z: 5.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    billboard: fixed
+    text:
+    - '&c&lCRATES'
+    - '&7/ᴘᴏɪɴᴛꜱʜᴏᴘ ꜰᴏʀ ᴋᴇʏꜱ'
+    - '&7'
+    - '&7Every &cKey &7hides a gamble worth taking'
+    - '&c↓ &7crack one open below &c↓'
+    - '&7'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  DailyRewards1:
+    type: TEXT
+    location:
+      world: Spawn
+      x: -3.5
+      y: 103.12000274658203
+      z: -9.5
+      yaw: -43.183327
+      pitch: 4.275733
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: 200
+    visible_by_default: true
+    linkedNpc: DailyRewards
+    text:
+    - '&2&lDAILY REWARDS'
+    - '&7'
+    - '&7Log in, cash in, come back tomorrow'
+    - '&7'
+    - '&7&o/daily'
+    - '&7'
+    - '&a↓ ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ ↓'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+  Statistics:
+    type: TEXT
+    location:
+      world: world
+      x: -24.51280975341797
+      y: 15.544839859008789
+      z: -6.509103298187256
+      yaw: -88.65155
+      pitch: -2.1000817
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    visibility_distance: -1
+    visible_by_default: true
+    text:
+    - '&#FFB656⚡ Y&#FDB151o&#FBAC4Cu&#F9A747r &#F59C3DS&#F39738t&#F19233a&#EE8D2Et&#EC8829i&#EA8324s&#E87D1Ft&#E6781Ai&#E47315c&#E26E10s
+      ⚡'
+    - '&7'
+    - '&f☺ &7Name: &f%player_name% &7(Level: &#FFB656%clv_player_level%&7)'
+    - '&b⌚ &7Join Date: &b%player_first_join_date%'
+    - '&9⌛ &7Playtime: &9%statistic_time_played:days%d %statistic_time_played:hours%h'
+    - '&a◆ &7Money: &a%vault_eco_balance_formatted%'
+    - '&e★ &7Points: &e%playerpoints_points_formatted%'
+    - '&7'
+    - '&5✔ &7Claimblocks: &5%griefprevention_remainingclaims%'
+    - '&d⛏ &7Blocks Mined: &d%statistic_mine_block%'
+    - '&a⚔ &7Kills: &a%statistic_player_kills%'
+    - '&c☠ &7Deaths: &c%statistic_deaths%'
+    - '&7'
+    - '&#EC9EFF✩ &7Keyall: &#EC9EFF%zschedulers_time_keyall%'
+    text_shadow: true
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent

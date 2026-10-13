@@ -1,0 +1,22 @@
+id: ice_nova
+name: "<aqua>❄ Ice Nova</aqua>"
+description: "Congela enemigos cercanos."
+icon: PACKED_ICE
+slot: -1
+max-level: 5
+cost:
+  base: 7000
+  multiplier: 1.6
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.0
+trigger-particle: CRIT
+trigger-particle-count: 5
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<aqua>❄ Ice Nova</aqua> <white>%level%</white>"
+category: SPECIAL

@@ -1,0 +1,22 @@
+id: critical_chance
+name: "<gold>🎯 Critical Chance</gold>"
+description: "Aumenta la probabilidad de crítico."
+icon: GOLDEN_SWORD
+slot: -1
+max-level: 10
+cost:
+  base: 4000
+  multiplier: 1.7
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_PLAYER_ATTACK_CRIT
+trigger-sound-volume: 0.6
+trigger-sound-pitch: 1.3
+trigger-particle: CRIT
+trigger-particle-count: 10
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<gold>🎯 Critical Chance <white>%level%</white></gold>"
+category: DAMAGE

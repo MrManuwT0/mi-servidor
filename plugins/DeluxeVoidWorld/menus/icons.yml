@@ -1,0 +1,50 @@
+#         Developed by Ruben_Artz and Artz Studio
+#
+#   ▄▄▄▄▄▄     ▄▄▄▄▄▄▄   ▄▄▄     ▄▄▄  ▄▄   ▄▄▄   ▄▄▄   ▄▄▄▄▄▄▄
+#  █▀██▀▀██   █▀██▀▀▀   ▀██▀    █▀██  ██  █▀▀██ ██▀   █▀██▀▀▀
+#    ██   ██    ██       ██       ██  ██     ▀█▄█▀      ██
+#    ██   ██    ████     ██       ██  ██      ███       ████
+#  ▄ ██   ██    ██       ██       ██  ██    ▄█▀██▄      ██
+#  ▀██▀███▀     ▀█████  ████████  ▀█████▄ ▀██▀  ▀██▄    ▀█████
+#
+
+MAIN:
+  TITLE: '{Name World} > Select Icon'
+  RETURN:
+    MATERIAL: ARROW
+    SLOT: 45
+    NAME: '&aReturn &7(Right Click)'
+    LORE:
+    - ''
+    - '&7Back to main menu.'
+  CLOSE:
+    MATERIAL: RED_DYE
+    SLOT: 49
+    NAME: '&cClose &7(Right click)'
+    LORE:
+    - '&7Return to game'
+  PREVIOUS_PAGE:
+    NAME: '&ePrevious Page'
+    MATERIAL: ARROW
+    SLOT: 46
+    LORE:
+    - '&7Go to page &f{page}'
+  NEXT_PAGE:
+    NAME: '&eNext Page'
+    MATERIAL: ARROW
+    SLOT: 51
+    LORE:
+    - '&7Go to page &f{page}'
+
+# DO NOT TOUCH!
+version: 3
+
+#
+#   ▄▄▄▄▄▄▄   ▄▄     ▄▄▄   ▄▄▄▄▄▄
+#  █▀██▀▀▀    ██▄   ██▀   █▀██▀▀██
+#    ██       ███▄  ██      ██   ██
+#    ████     ██ ▀█▄██      ██   ██
+#    ██       ██   ▀██    ▄ ██   ██
+#    ▀█████ ▀██▀    ██    ▀██▀███▀
+#
+# Developed by Ruben_Artz and Artz Studio

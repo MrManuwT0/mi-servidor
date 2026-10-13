@@ -1,0 +1,154 @@
+# English (US) Language File for AzAuctionHouse
+# Plugin developed by GamingHuzai for help add me on Discord https://discord.gg/86xXYfHCgu
+
+# General messages
+general:
+  prefix: '&6[&eᴀᴢᴀᴜᴄᴛɪᴏɴʜᴏᴜsᴇ&6] &r'
+  no-permission: '&cʏᴏᴜ ᴅᴏɴ''ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴜsᴇ ᴛʜɪs!'
+  player-only: '&cᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ʙʏ ᴘʟᴀʏᴇʀs!'
+  reload-success: '&aᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ ʀᴇʟᴏᴀᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!'
+  reload-failed: '&cғᴀɪʟᴇᴅ ᴛᴏ ʀᴇʟᴏᴀᴅ ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ!'
+  unknown-command: '&cᴜɴᴋɴᴏᴡɴ ᴄᴏᴍᴍᴀɴᴅ! ᴜsᴇ &e/ah help &cғᴏʀ ʜᴇʟᴘ.'
+  loading: '&eʟᴏᴀᴅɪɴɢ...'
+  processing: '&eᴘʀᴏᴄᴇssɪɴɢ...'
+  
+# Economy messages
+economy:
+  insufficient-funds: '&cʏᴏᴜ ᴅᴏɴ''ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴍᴏɴᴇʏ! ɴᴇᴇᴅᴇᴅ: &e{amount}'
+  purchase-success: '&aʏᴏᴜ ʙᴏᴜɢʜᴛ &e{item} &aғᴏʀ &e{price}'
+  sale-success: '&aʏᴏᴜ sᴏʟᴅ &e{item} &aғᴏʀ &e{price}'
+  listing-fee: '&7ʟɪsᴛɪɴɢ ғᴇᴇ: &e{fee}'
+  refund: '&aʏᴏᴜ ʀᴇᴄᴇɪᴠᴇᴅ ᴀ ʀᴇғᴜɴᴅ ᴏғ &e{amount}'
+  tax-applied: '&7ᴛᴀx ᴀᴘᴘʟɪᴇᴅ: &e{tax}'
+  balance: '&7ʏᴏᴜʀ ʙᴀʟᴀɴᴄᴇ: &e{balance}'
+  
+# Auction messages
+auction:
+  listed-successfully: '&aɪᴛᴇᴍ ʟɪsᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ғᴏʀ &e{price} &aғᴏʀ &e{duration}'
+  listing-failed: '&cғᴀɪʟᴇᴅ ᴛᴏ ʟɪsᴛ ɪᴛᴇᴍ!'
+  item-purchased: '&aʏᴏᴜʀ &e{item} &ᴀᴡᴀs ᴘᴜʀᴄʜᴀsᴇᴅ ʙʏ &e{buyer} &aғᴏʀ &e{price}'
+  item-expired: '&cʏᴏᴜʀ &e{item} &cʜᴀs ᴇxᴘɪʀᴇᴅ ᴀɴᴅ ʙᴇᴇɴ ʀᴇᴛᴜʀɴᴇᴅ'
+  item-cancelled: '&7ʏᴏᴜ ᴄᴀɴᴄᴇʟʟᴇᴅ ʏᴏᴜʀ ʟɪsᴛɪɴɢ ғᴏʀ &e{item}'
+  cannot-buy-own: '&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ʙᴜʏ ʏᴏᴜʀ ᴏᴡɴ ɪᴛᴇᴍ!'
+  item-not-found: '&cɪᴛᴇᴍ ɴᴏᴛ ғᴏᴜɴᴅ!'
+  auction-closed: '&cᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴄʟᴏsᴇᴅ!'
+  
+# Listing limits
+limits:
+  max-listings-reached: '&cʏᴏᴜ ʜᴀᴠᴇ ʀᴇᴀᴄʜᴇᴅ ʏᴏᴜʀ ᴍᴀxɪᴍᴜᴍ ʟɪsᴛɪɴɢ ʟɪᴍɪᴛ! (&e{limit}&c)'
+  current-listings: '&7ᴄᴜʀʀᴇɴᴛ ʟɪsᴛɪɴɢs: &e{current}&7/&e{max}'
+  price-too-low: '&cᴘʀɪᴄᴇ ᴛᴏᴏ ʟᴏᴡ! ᴍɪɴɪᴍᴜᴍ: &e{min}'
+  price-too-high: '&cᴘʀɪᴄᴇ ᴛᴏᴏ ʜɪɢʜ! ᴍᴀxɪᴍᴜᴍ: &e{max}'
+  duration-too-short: '&cᴅᴜʀᴀᴛɪᴏɴ ᴛᴏᴏ sʜᴏʀᴛ! ᴍɪɴɪᴍᴜᴍ: &e{min}'
+  duration-too-long: '&cᴅᴜʀᴀᴛɪᴏɴ ᴛᴏᴏ ʟᴏɴɢ! ᴍᴀxɪᴍᴜᴍ: &e{max}'
+  
+# Item validation
+items:
+  invalid-item: '&cɪɴᴠᴀʟɪᴅ ɪᴛᴇᴍ!'
+  empty-hand: '&cʏᴏᴜ ᴍᴜsᴛ ʙᴇ ʜᴏʟᴅɪɴɢ ᴀɴ ɪᴛᴇᴍ!'
+  blacklisted-item: '&cᴛʜɪs ɪᴛᴇᴍ ᴄᴀɴɴᴏᴛ ʙᴇ sᴏʟᴅ!'
+  damaged-item: '&cᴅᴀᴍᴀɢᴇᴅ ɪᴛᴇᴍs ᴄᴀɴɴᴏᴛ ʙᴇ sᴏʟᴅ!'
+  item-too-expensive: '&cᴛʜɪs ɪᴛᴇᴍ ɪs ᴛᴏᴏ ᴇxᴘᴇɴsɪᴠᴇ ᴛᴏ ʟɪsᴛ!'
+  shulker-preview-disabled: '&csʜᴜʟᴋᴇʀ ᴘʀᴇᴠɪᴇᴡ ɪs ᴅɪsᴀʙʟᴇᴅ!'
+  
+# Search and filtering
+search:
+  no-results: '&7ɴᴏ ɪᴛᴇᴍs ғᴏᴜɴᴅ ᴍᴀᴛᴄʜɪɴɢ ʏᴏᴜʀ sᴇᴀʀᴄʜ!'
+  search-too-short: '&csᴇᴀʀᴄʜ ᴛᴇʀᴍ ᴍᴜsᴛ ʙᴇ ᴀᴛ ʟᴇᴀsᴛ {min} ᴄʜᴀʀᴀᴄᴛᴇʀs!'
+  search-results: '&7ғᴏᴜɴᴅ &e{count} &7ɪᴛᴇᴍ(s) ᴍᴀᴛᴄʜɪɴɢ &e"{query}"'
+  search-cleared: '&7sᴇᴀʀᴄʜ ᴄʟᴇᴀʀᴇᴅ!'
+  filter-applied: '&7ғɪʟᴛᴇʀ ᴀᴘᴘʟɪᴇᴅ: &e{filter}'
+  filter-cleared: '&7ғɪʟᴛᴇʀ ᴄʟᴇᴀʀᴇᴅ!'
+  
+# Time and duration
+time:
+  expired: '&cᴇxᴘɪʀᴇᴅ'
+  expires-in: '&7ᴇxᴘɪʀᴇs ɪɴ: &e{time}'
+  listed-ago: '&7ʟɪsᴛᴇᴅ: &e{time} ᴀɢᴏ'
+  invalid-duration: '&cɪɴᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ғᴏʀᴍᴀᴛ!'
+  duration-examples: '&7ᴇxᴀᴍᴘʟᴇs: 1h, 30m, 1d, 2w'
+  time-remaining: '&e{time} &7ʀᴇᴍᴀɪɴɪɴɢ'
+  
+# Cooldowns
+cooldowns:
+  sell-cooldown: '&cʏᴏᴜ ᴍᴜsᴛ ᴡᴀɪᴛ &e{time} &cʙᴇғᴏʀᴇ sᴇʟʟɪɴɢ ᴀɢᴀɪɴ!'
+  search-cooldown: '&cᴘʟᴇᴀsᴇ ᴡᴀɪᴛ &e{time} &cʙᴇғᴏʀᴇ sᴇᴀʀᴄʜɪɴɢ ᴀɢᴀɪɴ!'
+  
+# GUI messages
+gui:
+  loading-items: '&eʟᴏᴀᴅɪɴɢ ɪᴛᴇᴍs...'
+  no-items: '&7ɴᴏ ɪᴛᴇᴍs ᴛᴏ ᴅɪsᴘʟᴀʏ'
+  page-info: '&7ᴘᴀɢᴇ &e{current}&7/&e{total}'
+  click-to-buy: '&7ᴄʟɪᴄᴋ ᴛᴏ &ᴀʙᴜʏ'
+  click-to-cancel: '&7ᴄʟɪᴄᴋ ᴛᴏ &cᴄᴀɴᴄᴇʟ'
+  click-to-view: '&7ᴄʟɪᴄᴋ ᴛᴏ &ᴇᴠɪᴇᴡ'
+  right-click-info: '&7ʀɪɢʜᴛ ᴄʟɪᴄᴋ ғᴏʀ ɪɴғᴏ'
+  
+# History and statistics
+history:
+  no-history: '&7ɴᴏ ᴛʀᴀɴsᴀᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ ғᴏᴜɴᴅ!'
+  history-cleared: '&7ᴛʀᴀɴsᴀᴄᴛɪᴏɴ ʜɪsᴛᴏʀʏ ᴄʟᴇᴀʀᴇᴅ!'
+  total-purchases: '&7ᴛᴏᴛᴀʟ ᴘᴜʀᴄʜᴀsᴇs: &e{count}'
+  total-sales: '&7ᴛᴏᴛᴀʟ sᴀʟᴇs: &e{count}'
+  total-spent: '&7ᴛᴏᴛᴀʟ sᴘᴇɴᴛ: &e{amount}'
+  total-earned: '&7ᴛᴏᴛᴀʟ ᴇᴀʀɴᴇᴅ: &e{amount}'
+  net-profit: '&7ɴᴇᴛ ᴘʀᴏғɪᴛ: &{color}{amount}'
+  
+# Notifications
+notifications:
+  item-sold: '&a[ᴀᴜᴄᴛɪᴏɴ] &ʏᴏᴜʀ {item} sᴏʟᴅ ғᴏʀ &e{price}'
+  item-bought: '&a[ᴀᴜᴄᴛɪᴏɴ] &ʏᴏᴜ ʙᴏᴜɢʜᴛ {item} ғᴏʀ &e{price}'
+  item-expired-notification: '&c[ᴀᴜᴄᴛɪᴏɴ] &ʏᴏᴜʀ {item} ᴇxᴘɪʀᴇᴅ'
+  outbid: '&c[ᴀᴜᴄᴛɪᴏɴ] &ʏᴏᴜ ᴡᴇʀᴇ ᴏᴜᴛʙɪᴅ ᴏɴ {item}'
+  
+# Admin messages
+admin:
+  cleanup-started: '&ᴇsᴛᴀʀᴛɪɴɢ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ ᴄʟᴇᴀɴᴜᴘ...'
+  cleanup-completed: '&ᴀᴄʟᴇᴀɴᴜᴘ ᴄᴏᴍᴘʟᴇᴛᴇᴅ! ʀᴇᴍᴏᴠᴇᴅ &e{count} &ᴀᴇxᴘɪʀᴇᴅ ɪᴛᴇᴍs'
+  player-not-found: '&cᴘʟᴀʏᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ!'
+  force-removed: '&ᴀғᴏʀᴄɪʙʟʏ ʀᴇᴍᴏᴠᴇᴅ {item} ʙʏ {player}'
+  database-saved: '&ᴀᴅᴀᴛᴀʙᴀsᴇ sᴀᴠᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!'
+  statistics-exported: '&ᴀsᴛᴀᴛɪsᴛɪᴄs ᴇxᴘᴏʀᴛᴇᴅ ᴛᴏ &e{file}'
+  
+# Error messages
+errors:
+  database-error: '&cᴅᴀᴛᴀʙᴀsᴇ ᴇʀʀᴏʀ! ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴀɴ ᴀᴅᴍɪɴ.'
+  economy-error: '&cᴇᴄᴏɴᴏᴍʏ ᴇʀʀᴏʀ! ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ.'
+  internal-error: '&cɪɴᴛᴇʀɴᴀʟ ᴇʀʀᴏʀ! ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴛʜɪs.'
+  gui-error: '&cɢᴜɪ ᴇʀʀᴏʀ! ʀᴇᴏᴘᴇɴɪɴɢ...'
+  item-error: '&cɪᴛᴇᴍ ᴘʀᴏᴄᴇssɪɴɢ ᴇʀʀᴏʀ!'
+  network-error: '&cɴᴇᴛᴡᴏʀᴋ ᴇʀʀᴏʀ! ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ.'
+  
+# Help messages
+help:
+  header: '&6━━━━━━━━ &eᴀᴢᴀᴜᴄᴛɪᴏɴʜᴏᴜsᴇ ʜᴇʟᴘ &6━━━━━━━━'
+  footer: '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  command-ah: '&e/ah &7- ᴏᴘᴇɴ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ'
+  command-sell: '&e/ah sell <price> [duration] &7- sᴇʟʟ ʜᴇʟᴅ ɪᴛᴇᴍ'
+  command-reload: '&e/ah reload &7- ʀᴇʟᴏᴀᴅ ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ'
+  usage-sell: '&7ᴜsᴀɢᴇ: &e/ah sell <price> [duration]'
+  usage-examples: '&7ᴇxᴀᴍᴘʟᴇs: &e/ah sell 100&7, &e/ah sell 100 1d'
+  
+# Placeholders for future translations
+placeholders:
+  item-name: '{item}'
+  player-name: '{player}'
+  price: '{price}'
+  duration: '{duration}'
+  time: '{time}'
+  amount: '{amount}'
+  count: '{count}'
+  limit: '{limit}'
+  
+# Broadcast messages
+broadcast:
+  item-listed: '&6✿ {player} &7selling &6{amount} &7of &6{material} &7for &6{price} &7[/ah]'
+  action-bar:
+    item-listed: '&6✿ {player} &7selling &6{amount} &7of &6{material} &7for &6{price} &7[/ah]'
+
+# Format patterns
+formats:
+  currency: '${amount}'
+  large-number: '{number}k'
+  percentage: '{percent}%'
+  decimal: '{number}'

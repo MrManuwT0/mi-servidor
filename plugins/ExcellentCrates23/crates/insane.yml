@@ -1,0 +1,518 @@
+Name: '&c&lInsane Crate'
+Description:
+- An insane crate with the most OP rewards you can imagine!
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:red_stained_glass"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: enclosing
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - insane
+Block:
+  Positions:
+  - -1,16,-30,spawn
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: vortex
+    Particle:
+      Name: ANGRY_VILLAGER
+Milestones:
+  Repeatable: false
+_dataver: 600
+Rewards:
+  List:
+    godly_sword:
+      Type: ITEM
+      Weight: 15.0
+      Rarity: insane
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Sword","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:fire_aspect":2,"minecraft:looting":3,"minecraft:mending":1,"minecraft:sharpness":10,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_sword"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_pickaxe:
+      Type: ITEM
+      Weight: 12.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Pick","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:efficiency":10,"minecraft:fortune":5,"minecraft:mending":1,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_pickaxe"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_armor_helmet:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Helm","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:aqua_affinity":1,"minecraft:mending":1,"minecraft:protection":10,"minecraft:respiration":3,"minecraft:thorns":3,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_helmet"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_armor_chestplate:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Chestplate","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:fire_protection":10,"minecraft:mending":1,"minecraft:protection":10,"minecraft:thorns":3,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_chestplate"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_armor_boots:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Pants","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:mending":1,"minecraft:protection":10,"minecraft:swift_sneak":3,"minecraft:thorns":3,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_leggings"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_armor_leggings:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Boots","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:depth_strider":3,"minecraft:feather_falling":4,"minecraft:mending":1,"minecraft:protection":10,"minecraft:soul_speed":3,"minecraft:thorns":3,"minecraft:unbreaking":3}}},count:1,id:"minecraft:netherite_boots"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    insane_golden_apple:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: insane
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:10,id:"minecraft:enchanted_golden_apple"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    insane_totem_of_undying:
+      Type: ITEM
+      Weight: 8.0
+      Rarity: insane
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:totem_of_undying"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    insane_diamond_block:
+      Type: ITEM
+      Weight: 6.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:32,id:"minecraft:diamond_block"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    insane_diamond:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:64,id:"minecraft:diamond"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_enchanted_book:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:stored_enchantments":{levels:{"minecraft:efficiency":10,"minecraft:fortune":5,"minecraft:sharpness":10,"minecraft:unbreaking":3}}},count:1,id:"minecraft:enchanted_book"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    beacon_of_powers:
+      Type: ITEM
+      Weight: 5.0
+      Rarity: insane
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:3,id:"minecraft:beacon"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_bow:
+      Type: ITEM
+      Weight: 7.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:enchantments":{levels:{"minecraft:infinity":1,"minecraft:power":10,"minecraft:unbreaking":3}}},count:1,id:"minecraft:bow"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    godly_xp_bottle:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:experience_bottle"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    dragon_head:
+      Type: ITEM
+      Weight: 4.0
+      Rarity: insane
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:dragon_head"}'
+            DataVersion: 4189
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    insane_kit:
+      Type: COMMAND
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_data":{PublicBukkitValues:{"excellentcrates:crate.id":"insanekit"}},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"dark_red","italic":false,"obfuscated":false,"strikethrough":false,"text":"Insane Kit","underlined":false}],"text":""}'',"minecraft:max_stack_size":1},count:1,id:"minecraft:ender_chest"}'
+          DataVersion: 4189
+      Weight: 4.0
+      Rarity: insane
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Name: <!italic><!underlined><!strikethrough><bold><!obfuscated><dark_red>Insane Kit
+      Description: []
+      Commands:
+      - crate give %player_name% insanekit 3

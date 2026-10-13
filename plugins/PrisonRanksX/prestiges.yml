@@ -1,0 +1,147 @@
+# Everything you can put in ranks.yml, you can put it here too such as (randomcmds,actionbar,etc..).
+Prestiges:
+  P1:
+    display: '&8[&9P1&8]'
+    cost: 5000000.0
+    nextprestige: P2
+    executecmds: []
+    broadcast: []
+    msg: []
+    rankup_cost_increase_percentage: 125.0
+  P2:
+    display: '&8[&9P2&8]'
+    cost: 1.5E7
+    nextprestige: I
+    executecmds: []
+    broadcast: []
+    msg: []
+    rankup_cost_increase_percentage: 200.0
+  I:
+    nextprestige: II
+    cost: 1.0E7
+    display: '&e[&6I&e]'
+    rankup_cost_increase_percentage: 0.0
+  II:
+    nextprestige: III
+    cost: 2.0E7
+    display: '&e[&6II&e]'
+    rankup_cost_increase_percentage: 0.0
+  III:
+    nextprestige: IV
+    cost: 3.0E7
+    display: '&e[&6III&e]'
+    rankup_cost_increase_percentage: 0.0
+  IV:
+    nextprestige: V
+    cost: 4.0E7
+    display: '&e[&6IV&e]'
+    rankup_cost_increase_percentage: 0.0
+  V:
+    nextprestige: LASTPRESTIGE
+    cost: 7.0E7
+    display: '&e[&6V&e]'
+    rankup_cost_increase_percentage: 0.0
+Ranks:
+  default:
+    B:
+      nextrank: Apprentice
+      cost: 5000.0
+      display: '&7[&2B&7]'
+      executecmds:
+      - '[console] give %player% diamond 1'
+      - '[player] warp %rankup%'
+      - say %player% ranked up from A to B!
+      broadcast:
+      - '&7&m-----------------'
+      - '&7%player% &6ranked up to &7%rankup%'
+      - '&7&m-----------------'
+      msg:
+      - '&7You got &c1 &7Diamond.'
+      - '&c$5000 &4has been taken from you for ranking up!'
+      actions:
+      - '[MESSAGE] Hi, I got executed by ActionUtil.'
+      addpermission:
+      - essentials.warps.B
+      delpermission:
+      - essentials.warps.A
+    Apprentice:
+      cost: 5000.0
+      display: '&7Apprentice'
+      nextrank: Adept
+      executecmds:
+      - '[console] give %player% diamond 1'
+      - '[player] warp %rankup%'
+      - say %player% ranked up from A to B!
+      broadcast:
+      - '&7&m-----------------'
+      - '&7%player% &6ranked up to &7%rankup%'
+      - '&7&m-----------------'
+      msg:
+      - '&7You got &c1 &7Diamond.'
+      - '&c$5000 &4has been taken from you for ranking up!'
+      actions:
+      - '[MESSAGE] Hi, I got executed by ActionUtil.'
+      addpermission:
+      - essentials.warps.B
+      delpermission:
+      - essentials.warps.A
+    LASTRANK:
+      cost: 0.0
+    Adept:
+      cost: 75000.0
+      display: '&2Adept'
+      nextrank: Veteran
+    Veteran:
+      cost: 100000.0
+      display: '&3Veteran'
+      nextrank: Elite
+    Elite:
+      cost: 125000.0
+      display: '&aElite'
+      nextrank: Master
+    Novice:
+      cost: 0.0
+      display: '&8Novice'
+      nextrank: Apprentice
+    Master:
+      cost: 175000.0
+      display: '&5Master'
+      nextrank: Grandmaster
+    Grandmaster:
+      cost: 225000.0
+      display: '&9Grandmaster'
+      nextrank: Champion
+    Champion:
+      cost: 400000.0
+      display: '&6Champion'
+      nextrank: Hero
+    Hero:
+      cost: 500000.0
+      display: '&f&lHero'
+      nextrank: Mythic
+    Mythic:
+      cost: 700000.0
+      display: '&d&lMythic'
+      nextrank: Immortal
+    Immortal:
+      cost: 850000.0
+      display: '&c&lImmortal'
+      nextrank: Ascendant
+    Ascendant:
+      cost: 1000000.0
+      display: '&b&lAscendant'
+      nextrank: LASTRANK
+    A:
+      nextrank: B
+      cost: 0.0
+      display: '&7[&1A&7]'
+Rebirths:
+  R1:
+    nextrebirth: R2
+    cost: 1.23456789E8
+    prestige_cost_increase_percentage: 125.0
+    required_prestiges: 10
+  R2:
+    nextrebirth: LASTREBIRTH
+    cost: 1.234567899E9
+    prestige_cost_increase_percentage: 0.0

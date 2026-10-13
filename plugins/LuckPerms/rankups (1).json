@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "generatedBy": "Console"
+  },
+  "groups": {
+    "novice":{"nodes":[{"type":"permission","key":"essentials.warps.novice","value":true},{"type":"permission","key":"ranks.novice","value":true},{"type":"weight","key":"weight.2","value":true}]},
+    "apprentice":{"nodes":[{"type":"permission","key":"essentials.warps.apprentice","value":true},{"type":"inheritance","key":"group.novice","value":true},{"type":"permission","key":"ranks.apprentice","value":true},{"type":"weight","key":"weight.3","value":true}]},
+    "adept":{"nodes":[{"type":"permission","key":"essentials.warps.adept","value":true},{"type":"inheritance","key":"group.apprentice","value":true},{"type":"permission","key":"ranks.adept","value":true},{"type":"weight","key":"weight.4","value":true}]},
+    "expert":{"nodes":[{"type":"permission","key":"essentials.warps.expert","value":true},{"type":"inheritance","key":"group.adept","value":true},{"type":"permission","key":"ranks.expert","value":true},{"type":"weight","key":"weight.5","value":true}]},
+    "veteran":{"nodes":[{"type":"permission","key":"essentials.warps.veteran","value":true},{"type":"inheritance","key":"group.expert","value":true},{"type":"permission","key":"ranks.veteran","value":true},{"type":"weight","key":"weight.6","value":true}]},
+    "elite":{"nodes":[{"type":"permission","key":"essentials.warps.elite","value":true},{"type":"inheritance","key":"group.veteran","value":true},{"type":"permission","key":"ranks.elite","value":true},{"type":"weight","key":"weight.7","value":true}]},
+    "master":{"nodes":[{"type":"permission","key":"essentials.warps.master","value":true},{"type":"inheritance","key":"group.elite","value":true},{"type":"permission","key":"ranks.master","value":true},{"type":"weight","key":"weight.8","value":true}]},
+    "grandmaster":{"nodes":[{"type":"permission","key":"essentials.warps.grandmaster","value":true},{"type":"inheritance","key":"group.master","value":true},{"type":"permission","key":"ranks.grandmaster","value":true},{"type":"weight","key":"weight.9","value":true}]},
+    "champion":{"nodes":[{"type":"permission","key":"essentials.warps.champion","value":true},{"type":"inheritance","key":"group.grandmaster","value":true},{"type":"permission","key":"ranks.champion","value":true},{"type":"weight","key":"weight.10","value":true}]},
+    "hero":{"nodes":[{"type":"permission","key":"essentials.warps.hero","value":true},{"type":"inheritance","key":"group.champion","value":true},{"type":"permission","key":"ranks.hero","value":true},{"type":"weight","key":"weight.11","value":true}]},
+    "warlord":{"nodes":[{"type":"permission","key":"essentials.warps.warlord","value":true},{"type":"inheritance","key":"group.hero","value":true},{"type":"permission","key":"ranks.warlord","value":true},{"type":"weight","key":"weight.12","value":true}]},
+    "overlord":{"nodes":[{"type":"permission","key":"essentials.warps.overlord","value":true},{"type":"inheritance","key":"group.warlord","value":true},{"type":"permission","key":"ranks.overlord","value":true},{"type":"weight","key":"weight.13","value":true}]},
+    "sovereign":{"nodes":[{"type":"permission","key":"essentials.warps.sovereign","value":true},{"type":"inheritance","key":"group.overlord","value":true},{"type":"permission","key":"ranks.sovereign","value":true},{"type":"weight","key":"weight.14","value":true}]},
+    "titan":{"nodes":[{"type":"permission","key":"essentials.warps.titan","value":true},{"type":"inheritance","key":"group.sovereign","value":true},{"type":"permission","key":"ranks.titan","value":true},{"type":"weight","key":"weight.15","value":true}]},
+    "ascendant":{"nodes":[{"type":"permission","key":"essentials.warps.ascendant","value":true},{"type":"inheritance","key":"group.titan","value":true},{"type":"permission","key":"ranks.ascendant","value":true},{"type":"weight","key":"weight.16","value":true}]},
+    "mythic":{"nodes":[{"type":"permission","key":"essentials.warps.mythic","value":true},{"type":"inheritance","key":"group.ascendant","value":true},{"type":"permission","key":"ranks.mythic","value":true},{"type":"weight","key":"weight.17","value":true}]},
+    "immortal":{"nodes":[{"type":"permission","key":"essentials.warps.immortal","value":true},{"type":"inheritance","key":"group.mythic","value":true},{"type":"permission","key":"ranks.immortal","value":true},{"type":"weight","key":"weight.18","value":true}]},
+    "celestial":{"nodes":[{"type":"permission","key":"essentials.warps.celestial","value":true},{"type":"inheritance","key":"group.immortal","value":true},{"type":"permission","key":"ranks.celestial","value":true},{"type":"weight","key":"weight.19","value":true}]},
+    "eternal":{"nodes":[{"type":"permission","key":"essentials.warps.eternal","value":true},{"type":"inheritance","key":"group.celestial","value":true},{"type":"permission","key":"ranks.eternal","value":true},{"type":"weight","key":"weight.20","value":true}]},
+    "divine":{"nodes":[{"type":"permission","key":"essentials.warps.divine","value":true},{"type":"inheritance","key":"group.eternal","value":true},{"type":"permission","key":"ranks.divine","value":true},{"type":"weight","key":"weight.21","value":true}]}
+  }
+}

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 92.186.68.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1784151676638
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1784153415352
+  login: 1784152987554
+money: '671.72000000000085086'
+last-account-name: MrManuHC
+logoutlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 14.601989876017768
+  y: 99.5
+  z: -11.118292475195757
+  yaw: 34.2776985168457
+  pitch: 2.280348300933838
+lastlocation:
+  world: fcadfaf8-5764-4831-97ca-0ce5922427e0
+  world-name: mines
+  x: -1025.8633879008212
+  y: 163.0
+  z: 74.02880884453405
+  yaw: 138.9580078125
+  pitch: 21.520889282226562

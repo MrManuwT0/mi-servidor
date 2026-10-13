@@ -1,0 +1,8 @@
+Name: '&7&lUncommon Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:light_gray_candle"}'
+    DataVersion: 4189
+ItemStackable: true

@@ -1,0 +1,146 @@
+cooldown: 79200
+permission_required: true
+custom_permission: ranks.apprentice
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: CHAINMAIL_CHESTPLATE
+    name: '&7&lApprentice Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Chainmail Armor Set &7(Prot 35 | Unb 58)'
+    - '&8- &71x Stone Sword &7(Sharp 25 | Unb 58)'
+    - '&8- &71x Stone Axe'
+    - '&8- &716x Cooked Beef'
+    - ''
+    - '&7Cooldown: &c22 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&7&lApprentice Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fApprentice&c rank to claim this kit.'
+  cooldown:
+    id: CHAINMAIL_CHESTPLATE
+    name: '&7&lApprentice Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: CHAINMAIL_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f35'
+    - '&7✦ Unbreaking &f58'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;35
+    - DURABILITY;58
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: CHAINMAIL_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f35'
+    - '&7✦ Unbreaking &f58'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;35
+    - DURABILITY;58
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: CHAINMAIL_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f35'
+    - '&7✦ Unbreaking &f58'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;35
+    - DURABILITY;58
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: CHAINMAIL_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f35'
+    - '&7✦ Unbreaking &f58'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;35
+    - DURABILITY;58
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: STONE_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f25'
+    - '&7✦ Unbreaking &f58'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;25
+    - DURABILITY;58
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: STONE_AXE
+    amount: 1
+    preview_slot: 5
+  '7':
+    id: COOKED_BEEF
+    amount: 16
+    preview_slot: 6

@@ -1,0 +1,130 @@
+# =======================================================================
+#  KothPlugin - messages.yml
+#  Every message supports MiniMessage formatting: <gold>, <bold>, <gradient:a:b>, etc.
+#  {prefix} is automatically replaced with the "prefix" value below.
+# =======================================================================
+
+prefix: '<gradient:gold:yellow>KOTH</gradient> <dark_gray>»</dark_gray> '
+
+commands:
+  no-permission: '{prefix}<red>You do not have permission to do that.'
+  unknown-subcommand: '{prefix}<red>Unknown subcommand. Use <yellow>/koth help<red>
+    for a list.'
+  generic-error: '{prefix}<red><error>'
+  no-spawn-set: '{prefix}<red>This KOTH has no spawn location set.'
+  
+  help-header: '{prefix}<gold><bold>KOTH Commands</bold></gold>'
+  help-body: <gray>Use <yellow>/koth <subcommand><gray> - see the plugin wiki or README
+    for the full list.
+  
+  reload-success: '{prefix}<green>Configuration reloaded.'
+  
+  list-header: '{prefix}<yellow><count> KOTH(s) registered:'
+  list-entry: <gray> - <white><id> <dark_gray>[<state>/<mode>]
+  
+  create-success: '{prefix}<green>Created KOTH <yellow><koth></yellow>. Now set its
+    region with /koth wand + /koth setregion.'
+  delete-success: '{prefix}<green>Deleted KOTH <yellow><koth></yellow>.'
+  
+  start-success: '{prefix}<green>Started <yellow><koth></yellow>.'
+  stop-success: '{prefix}<red>Stopped <yellow><koth></yellow>.'
+  pause-success: '{prefix}<yellow>Paused <koth>.'
+  resume-success: '{prefix}<green>Resumed <koth>.'
+  
+  setspawn-success: '{prefix}<green>Spawn point set for <yellow><koth></yellow>.'
+  setlobby-success: '{prefix}<green>Lobby point set for <yellow><koth></yellow>.'
+  wand-given: '{prefix}<green>You received the region selection wand.'
+  setregion-success: '{prefix}<green>Region saved for <yellow><koth></yellow>.'
+  setcapturepoint-success: '{prefix}<green>Capture point set for <yellow><koth></yellow>.'
+  showregion-success: '{prefix}<green>Showing region outline for <yellow><koth></yellow>.'
+  
+  setdisplayname-success: '{prefix}<green>Display name updated for <yellow><koth></yellow>.'
+  settime-success: '{prefix}<green>Duration for <yellow><koth></yellow> set to <seconds>s.'
+  setcapturetime-success: '{prefix}<green>Capture time for <yellow><koth></yellow>
+    set to <seconds>s.'
+  setmode-success: '{prefix}<green>Mode for <yellow><koth></yellow> set to <mode>.'
+  setworld-success: '{prefix}<green>World for <yellow><koth></yellow> set to <world>.'
+  setminplayers-success: '{prefix}<green>Minimum players updated for <yellow><koth></yellow>.'
+  setmaxplayers-success: '{prefix}<green>Maximum players updated for <yellow><koth></yellow>.'
+  
+  reward-add-success: '{prefix}<green>Reward <yellow><id></yellow> added to <koth>.'
+  reward-remove-success: '{prefix}<green>Reward removed from <koth>.'
+  schedule-add-success: '{prefix}<green>Schedule <yellow><id></yellow> added to <koth>.'
+  schedule-remove-success: '{prefix}<green>Schedule removed from <koth>.'
+  
+  tp-success: '{prefix}<green>Teleported to <koth>.'
+  
+  info: '{prefix}<yellow><koth> <gray>- mode <white><mode> <gray>- state <white><state>
+    <gray>- time left <white><time>'
+  next-none: '{prefix}<gray>There is no scheduled KOTH.'
+  next-found: '{prefix}<yellow><koth> <gray>starts <white><when>.'
+  
+  top-header: '{prefix}<gold><bold>Top KOTH (<column>)</bold></gold>'
+  top-entry: <gray>#<position> <white><player> <dark_gray>- <yellow><value>
+  
+  stats-header: '{prefix}<gold><bold>Stats for <player></bold></gold>'
+  stats-body: "<gray>Wins: <white><wins> <gray>| Played: <white><played> <gray>| Captures:\
+    \ <white><captures> \n<gray>Points: <white><points> <gray>| Playtime: <white><playtime>\
+    \ <gray>| Kills: <white><kills> <gray>| Deaths: <white><deaths>"
+  
+  join-success: '{prefix}<green>You joined <koth>.'
+  leave-success: '{prefix}<gray>You left the KOTH area.'
+  status: '{prefix}<koth> <gray>- <white><state> <gray>(<contest>)'
+
+region:
+  pos1-set: '{prefix}<green>Position 1 set at <white><x>, <y>, <z>.'
+  pos2-set: '{prefix}<green>Position 2 set at <white><x>, <y>, <z>.'
+
+protection:
+  command-blocked: '{prefix}<red>That command is disabled while inside an active KOTH.'
+  teleport-blocked: '{prefix}<red>You cannot teleport away while capturing the hill.'
+  flight-blocked: '{prefix}<red>Flight is disabled inside the KOTH zone.'
+
+notifications:
+  koth-active-on-join: '{prefix}<yellow><koth> <gray>is currently active! Type <white>/koth
+    info <koth><gray> for details.'
+
+actionbar:
+  capturing: <yellow>Capturando... <percent>%
+  contested: <red><bold>Zona contestada!</bold>
+
+broadcast:
+  koth-started: '{prefix}<green><bold><koth></bold> <gray>has started! Duration: <white><time></white>.
+    Head to the hill!'
+  koth-overtime: '{prefix}<red><bold>OVERTIME!</bold> <gray><koth> is contested as
+    time runs out!'
+  koth-won: '{prefix}<gold><bold><winner></bold> <gray>has captured <yellow><koth></yellow><gray>!'
+  koth-ended-no-winner: '{prefix}<gray><koth> has ended with no winner.'
+
+rewards:
+  money-received: '{prefix}<green>You received <yellow><amount></yellow> for the KOTH
+    event!'
+
+gui:
+  type-create-command: '{prefix}<yellow>Type <white>/koth create <name><yellow> in
+    chat to create a new KOTH.'
+  reward-type-chance: '{prefix}<yellow>Type a chance percentage (0-100) in chat.'
+  reward-type-command: '{prefix}<yellow>Type the command to run (without the leading
+    /). You can use <white>%player%<yellow> and <white>%koth%<yellow>.'
+  reward-type-amount: '{prefix}<yellow>Type the money amount to give in chat.'
+  reward-invalid-number: '{prefix}<red>That''s not a valid number. Try again.'
+  reward-invalid-command: '{prefix}<red>The command cannot be empty. Try again.'
+  reward-invalid-item: '{prefix}<red>You must hold an item in your main hand first.'
+
+visuals:
+  no-capturer: None
+  bossbar-format: <gold><bold><koth></bold></gold> <gray>| <white><time> <gray>| <yellow><capturer>
+    <gray>(<percent>%)
+  scoreboard-title: <gradient:gold:yellow><bold>⚔ KING OF THE HILL ⚔</bold></gradient>
+  scoreboard-lines:
+  - ' '
+  - '<gray>Event: <white><bold>{koth}</bold>'
+  - '<gray>Mode: <white>{mode}'
+  - '<gray>Status: {state}'
+  - '  '
+  - '<gray>Time Left: <yellow><bold>{time}</bold>'
+  - '<gray>{owner_label}: <gold><bold>{capturer}</bold>'
+  - '<gray>Progress: <white>{progress}%'
+  - '{bar}'
+  - '   '
+  - <yellow>servername.net

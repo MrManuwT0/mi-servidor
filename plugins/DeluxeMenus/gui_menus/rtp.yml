@@ -1,0 +1,199 @@
+menu_title: '&8[ &b&lRANDOM &f&lTELEPORT &8]'
+open_command:
+  - rtp
+  - wild
+  - randomtp
+
+size: 54
+
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: server.use.rtp
+      denied_commands:
+        - '[message] &cYou do not have permission to use RTP.'
+
+items:
+
+  border_glass:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: ' '
+    priority: 1
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 50
+      - 51
+      - 52
+      - 53
+
+  player_info:
+    material: PLAYER_HEAD
+    slot: 4
+    display_name: '&b&l%player_name%'
+    lore:
+      - '&7──────────────────'
+      - '&fCurrent world: &e%player_world%'
+      - '&fCoordinates: &e%player_x%, %player_y%, %player_z%'
+      - '&fCooldown: &c%cooldown_rtp_time_left%'
+      - '&7──────────────────'
+    item_flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_ENCHANTS
+
+  world_overworld:
+    material: GRASS_BLOCK
+    slot: 13
+    glow: true
+    display_name: '&a&lOverworld'
+    lore:
+      - '&7You are here.'
+      - '&7Browse the biomes below.'
+    left_click_commands:
+      - '[message] &7You are already browsing &aOverworld&7.'
+
+  rtp_forest:
+    material: OAK_SAPLING
+    slot: 20
+    display_name: '&a&lForest'
+    lore:
+      - '&7Peaceful green woodlands.'
+      - ''
+      - '&8➤ &7Biome: &aForest'
+      - '&8➤ &7Radius: &f2500-5000'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% forest'
+      - '[close]'
+
+  rtp_desert:
+    material: SAND
+    slot: 22
+    display_name: '&e&lDesert'
+    lore:
+      - '&7Hot dunes and temples.'
+      - ''
+      - '&8➤ &7Biome: &eDesert'
+      - '&8➤ &7Radius: &f3000-6000'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% desert'
+      - '[close]'
+
+  rtp_snow:
+    material: SNOW_BLOCK
+    slot: 24
+    display_name: '&f&lSnow'
+    lore:
+      - '&7Frozen lands.'
+      - ''
+      - '&8➤ &7Biome: &fSnow'
+      - '&8➤ &7Radius: &f2500-5500'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% snow'
+      - '[close]'
+
+  rtp_ocean:
+    material: PRISMARINE_SHARD
+    slot: 29
+    display_name: '&b&lOcean'
+    lore:
+      - '&7Random ocean islands.'
+      - ''
+      - '&8➤ &7Biome: &bOcean'
+      - '&8➤ &7Radius: &f4000-7000'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% ocean'
+      - '[close]'
+
+  rtp_mountains:
+    material: STONE
+    slot: 31
+    display_name: '&7&lMountains'
+    lore:
+      - '&7High peaks.'
+      - ''
+      - '&8➤ &7Biome: &7Mountains'
+      - '&8➤ &7Radius: &f3000-6500'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% mountains'
+      - '[close]'
+
+  rtp_jungle:
+    material: JUNGLE_SAPLING
+    slot: 33
+    display_name: '&2&lJungle'
+    lore:
+      - '&7Dense jungle.'
+      - ''
+      - '&8➤ &7Biome: &2Jungle'
+      - '&8➤ &7Radius: &f3500-6000'
+      - ''
+      - '&e▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% jungle'
+      - '[close]'
+
+  rtp_any:
+    material: ENDER_PEARL
+    slot: 40
+    glow: true
+    display_name: '&d&l✦ Surprise Me ✦'
+    lore:
+      - '&7Teleport anywhere.'
+      - ''
+      - '&8➤ &7Radius: &f0-10000'
+      - ''
+      - '&5▶ Click'
+    left_click_commands:
+      - '[console] rtp %player_name% any'
+      - '[close]'
+
+  close_menu:
+    material: BARRIER
+    slot: 49
+    display_name: '&c&lClose'
+    lore:
+      - '&7Exit this menu.'
+    left_click_commands:
+      - '[close]'
+
+  help_info:
+    material: BOOK
+    slot: 53
+    display_name: '&6&lHelp'
+    lore:
+      - '&7Select a biome.'
+      - '&7You will be randomly'
+      - '&7teleported there.'
+      - ''
+      - '&7Cooldown: &e60 seconds'
+    left_click_commands:
+      - '[message] &7Cooldown: &e60 seconds'

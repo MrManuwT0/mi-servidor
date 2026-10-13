@@ -1,0 +1,8 @@
+locations:
+  world,100,64,200: Legendaria
+  Spawn,70,113,-65: test
+holograms:
+  world,100,64,200: '&b%crate%'
+  Spawn,70,113,-65: '&6&l✦ &e&l%crate% &6&l✦'
+subtitles:
+  Spawn,70,113,-65: '&7▶ &fClic derecho para abrir'

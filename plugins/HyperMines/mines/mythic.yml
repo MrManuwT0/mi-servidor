@@ -1,0 +1,32 @@
+name: Mythic
+pos1:
+  world: mines
+  x: -1294.0
+  y: 163.0
+  z: 89.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: mines
+  x: -1318.0
+  y: 150.0
+  z: 65.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: mines
+  x: -1290.5
+  y: 165.0
+  z: 77.5
+  yaw: 89.791626
+  pitch: 7.0552673
+reset-type: PERCENTAGE
+reset-interval-seconds: 300
+reset-percentage: 40.0
+required-permission: ranks.mythic
+enabled: true
+autosell-enabled: true
+menu-slot: 29
+break-effects: []
+composition:
+  PURPUR_BLOCK: 100.0

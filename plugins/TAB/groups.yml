@@ -1,0 +1,180 @@
+Owner:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+admin:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+Mod:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+Helper:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+ancestral:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+estelar:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+VIP:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+divine:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+eternal:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+celestial:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+immortal:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+mythic:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+ascendant:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+titan:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+sovereign:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+overlord:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+warlord:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+hero:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+champion:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+grandmaster:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+master:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+elite:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+veteran:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+expert:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+adept:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+apprentice:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+novice:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+
+Default:
+  tabprefix: "%luckperms_prefix% &f"
+  tabsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  tagprefix: "%luckperms_prefix% &f"
+  tagsuffix: " &a( %prisonranksx_currentrank_displayname% &a)"
+  
+per-world:
+  world1:
+    Owner:
+      tabprefix: '&0&l[&a&lOwner&0&l] &a'
+      tagprefix: '&2&lOwner &a'
+
+_DEFAULT_:
+  tabprefix: '%vault-prefix%'
+  tagprefix: '%vault-prefix%'
+  tabsuffix: ''
+  tagsuffix: ''
+  customtabname: '%player_name%'

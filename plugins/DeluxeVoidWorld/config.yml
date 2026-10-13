@@ -1,0 +1,119 @@
+#         Developed by Ruben_Artz and Artz Studio
+#
+#   ▄▄▄▄▄▄     ▄▄▄▄▄▄▄   ▄▄▄     ▄▄▄  ▄▄   ▄▄▄   ▄▄▄   ▄▄▄▄▄▄▄
+#  █▀██▀▀██   █▀██▀▀▀   ▀██▀    █▀██  ██  █▀▀██ ██▀   █▀██▀▀▀
+#    ██   ██    ██       ██       ██  ██     ▀█▄█▀      ██
+#    ██   ██    ████     ██       ██  ██      ███       ████
+#  ▄ ██   ██    ██       ██       ██  ██    ▄█▀██▄      ██
+#  ▀██▀███▀     ▀█████  ████████  ▀█████▄ ▀██▀  ▀██▄    ▀█████
+#
+#  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ ██╗   ██╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+# ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ ██║   ██║██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+# ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗██║   ██║██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║
+# ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║██║   ██║██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+# ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝╚██████╔╝██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+#  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+#
+
+ADMIN-CONFIG:
+  RATE_LIMIT: ENTER THE LICENSE IF PURCHASED FROM POLYMART OR BUILTBYBIT.
+  DATABASE:
+    ENABLED: false
+    HOST: localhost
+    USER: root
+    PASSWORD: ''
+    DATABASE: ''
+    MIN_CONNECTIONS: 1
+    MAX_CONNECTIONS: 10
+    PARAMETERS:
+    - useSSL=true
+    - allowPublicKeyRetrieval=false
+    - useUnicode=true
+    - characterEncoding=utf8
+    - autoReconnect=true
+  LANGUAGE: en_US
+  AUTOMATICALLY-DETECT-NEW-WORLDS: true
+  PLACEHOLDER:
+    ENABLED: '&aEnabled'
+    DISABLED: '&cDisabled'
+  SOUNDS:
+    ENABLED_VOID_TP: DOOR_OPEN, 10.0f, 10.0f
+    DISABLED_VOID_TP: ENDERDRAGON_WINGS, 10.0f, 10.0f
+    DELETED_WORLD_MENU: ENDERDRAGON_WINGS, 10.0f, 10.0f
+    CREATE_WORLD_MENU: NOTE_PLING, 10.0f, 10.0f
+    CHANGE_Y_LESS_ZERO: ENDERDRAGON_WINGS, 10.0f, 10.0f
+    CHANGE_Y_NO_WORDS: ENDERDRAGON_WINGS, 10.0f, 10.0f
+    MESSAGE_CLICK_HELP_COMMANDS: NOTE_PLING, 10.0f, 10.0f
+    CLICK_COMMAND_HELP: NOTE_PLING, 10.0f, 10.0f
+    SOUND_THERE_IS_NO_WORLD: ENDERDRAGON_WINGS, 10.0f, 10.0f
+    ENABLED_ITEM: VILLAGER_YES, 10.0f, 10.0f
+    DISABLED-ITEM: ENDERDRAGON_WINGS, 10.0f, 10.0f
+ON_VOID_TP:
+  SETTINGS:
+    # Sets which option will be set as default in the /empty or /void command.
+    # TELEPORT, JUMP, LIGHTNING, PARTICLES
+    DEFAULT_OPTION: TELEPORT
+    BACKGROUND_EFFECT:
+      ENABLED: true
+      TIME-REMOVE: 20
+    FIREWORK:
+      ENABLED: true
+      # Types of effects: BALL_LARGE, BALL, BURST, CREEPER, STAR
+      TYPE: BALL_LARGE
+      COLORS:
+      - YELLOW
+      - WHITE
+      - AQUA
+      - BLUE
+      - FUCHSIA
+      - GRAY
+      - MAROON
+      - NAVY
+      - OLIVE
+      - ORANGE
+      - PURPLE
+      - RED
+      - TEAL
+      - YELLOW
+    PARTICLES:
+      ENABLED: true
+      LIST:
+      - TOTEM;50;2.0;2.0;2.0;2.0
+      - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+      - VILLAGER_HAPPY;50;2.0;2.0;2.0;2.0
+      - NOTE;60;2.0;2.0;2.0;2.0
+      - MOB_APPEARANCE;50;2.0;2.0;2.0;2.0
+    JUMP:
+      BOOST: 3
+    COMMANDS:
+      ENABLED: false
+      TYPE: CONSOLE
+      COMMANDS:
+      - tell {Player} &aYou have been teleported to the lobby, after falling into
+        the void!
+    SOUNDS:
+      ENABLED: true
+      SOUND: ZOMBIE_WOODBREAK
+    BOSSBAR:
+      ENABLED: true
+      # Colors -> PURPLE, PINK, YELLOW, GREEN, BLUE, RED, WHITE
+      BAR_COLOR: PINK
+    TITLES:
+      ENABLED: true
+    MESSAGES:
+      ENABLED: true
+    ACTIONBAR:
+      ENABLED: true
+
+# DO NOT TOUCH!
+version: 3
+
+#
+#   ▄▄▄▄▄▄▄   ▄▄     ▄▄▄   ▄▄▄▄▄▄
+#  █▀██▀▀▀    ██▄   ██▀   █▀██▀▀██
+#    ██       ███▄  ██      ██   ██
+#    ████     ██ ▀█▄██      ██   ██
+#    ██       ██   ▀██    ▄ ██   ██
+#    ▀█████ ▀██▀    ██    ▀██▀███▀
+#
+# Developed by Ruben_Artz and Artz Studio

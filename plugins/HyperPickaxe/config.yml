@@ -1,0 +1,75 @@
+# ================================
+#   HyperPickaxe - Configuración
+# ================================
+
+storage:
+  # Tipos soportados: SQLITE, MYSQL, MARIADB
+  type: SQLITE
+  sqlite:
+    file: "data.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "hyperpickaxe"
+    username: "root"
+    password: ""
+    useSSL: false
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 2
+    connection-timeout-ms: 5000
+
+# Intervalo (en segundos) del guardado periódico asíncrono de todos los picos en caché
+autosave-interval-seconds: 300
+
+gui:
+  place-pickaxe:
+    title: "&8Coloca tu Pico"
+    size: 27
+    pickaxe-slot: 13
+    invalid-item-message: "&cSolo puedes colocar un pico."
+
+  main-menu:
+    title: "&8&lHyperPickaxe"
+    size: 54
+    pickaxe-slot: 49
+    info-slot: 4
+    decoration:
+      enabled: true
+      material: "GRAY_STAINED_GLASS_PANE"
+      slots: [0,1,2,3,5,6,7,8,45]
+      alt-material: "LIGHT_BLUE_STAINED_GLASS_PANE"
+      alt-slots: [9,17,18,26,27,35,36]
+
+  sounds:
+    purchase: "ENTITY_PLAYER_LEVELUP"
+    purchase-max: "ENTITY_FIREWORK_ROCKET_LAUNCH"
+    error: "ENTITY_VILLAGER_NO"
+    place-pickaxe: "BLOCK_ANVIL_USE"
+
+  particles:
+    purchase: "HAPPY_VILLAGER"
+
+info-item:
+  material: "PLAYER_HEAD"
+  name: "&b&lInformación del Pico"
+  lore:
+    - "&7Nivel: &f%hpickaxe_level%"
+    - "&7Bloques rotos: &f%hpickaxe_blocks%"
+    - "&7Dinero generado: &f%hpickaxe_money%"
+    - ""
+    - "&7Click para ver todos tus"
+    - "&7niveles de encantamientos."
+
+messages:
+  prefix: "&8[&bHyperPickaxe&8] "
+  no-pickaxe: "&cNecesitas tener un pico en tu inventario."
+  not-enough-money: "&cNo tienes suficiente dinero."
+  max-level-reached: "&cEste encantamiento ya está al nivel máximo."
+  purchase-success: "&aHas comprado &f%levels% &anivel(es) de &f%enchant%&a."
+  reload-success: "&aConfiguración recargada correctamente."
+  give-success: "&aSe ha entregado un HyperPickaxe a &f%player%&a."
+  reset-success: "&aSe ha reseteado el pico de &f%player%&a."
+  setlevel-success: "&aNivel de &f%enchant% &aestablecido a &f%level% &apara &f%player%&a."
+  no-permission: "&cNo tienes permiso para hacer esto."
+  player-only: "&cSolo un jugador puede ejecutar este comando."

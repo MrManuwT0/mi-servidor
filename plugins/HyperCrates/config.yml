@@ -1,0 +1,127 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# HyperCrates - config.yml
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Cooldowns por crate (en segundos) ────────────────────────────────────────
+# "default" aplica a todas las crates que no tengan valor específico.
+# Pon 0 para desactivar cooldown en esa crate.
+cooldowns:
+  default: 0
+  # Ejemplos:
+  # Legendaria: 3600   # 1 hora
+  # Comun: 60
+
+# ── Broadcast de premios raros ────────────────────────────────────────────────
+# Si la chance del premio es <= a este valor se hace broadcast global.
+# Pon 0 para desactivar.
+broadcast-threshold: 5.0
+
+broadcast-message: "&6★ &e%player% &6ganó &f[%reward%] &6en la crate &e%crate%&6! ★"
+
+# ── Historial de aperturas ────────────────────────────────────────────────────
+log-openings: true
+
+# ── Sistema de llaves ─────────────────────────────────────────────────────────
+# Activa o desactiva cada tipo de llave a nivel global. Si activas las dos,
+# la llave virtual tiene prioridad (si el jugador tiene, se gasta esa antes
+# que el item físico de la mano).
+keys:
+  # Llave física: el jugador necesita tener el item de llave (configurado con
+  # /hypercrates setkey) en la mano para abrir.
+  physical-enabled: true
+  # Llave virtual: un contador guardado por jugador y por crate, sin ocupar
+  # espacio en el inventario. Se entregan con /hypercrates givevirtualkey.
+  virtual-enabled: true
+
+# ── Efectos ambientales en las crates físicas ─────────────────────────────────
+# Hace que las crates del mundo se vean vivas: el holograma flota suavemente,
+# un icono (la llave de la crate, o un cofre por defecto) gira sobre el bloque,
+# y un anillo de partículas rota a su alrededor con destellos periódicos.
+ambient-effects:
+  enabled: true
+
+  # El texto del holograma sube y baja suavemente (respiración).
+  hologram-bob: true
+
+  # Icono flotante y giratorio justo encima del bloque de la crate.
+  floating-icon:
+    enabled: true
+    spin-speed: 4.0        # grados que gira por tick (mayor = gira más rápido)
+
+  # Partículas ambientales alrededor del icono.
+  particles:
+    enabled: true
+    type: "END_ROD"                  # partícula del anillo que rota sin parar
+    ring-radius: 0.85
+    ring-points: 10
+    burst-interval-seconds: 6        # cada cuántos segundos hay un destello extra
+    burst-particle: "TOTEM_OF_UNDYING"
+
+  # ── Animación de ESPERA tipo CYCLE (estilo ExcellentCrates) ──────────────
+  # Se activa por crate con /hypercrates previewanim <crate> CYCLE.
+  # En vez de mostrar siempre la llave, el icono flotante rota entre los
+  # premios de la crate (el premio ocupa el lugar del holograma/icono) y el
+  # holograma muestra el nombre del premio actual, con una transición suave
+  # (partículas + sonido) cada vez que cambia.
+  preview:
+    cycle-seconds: 3.5                # segundos que se muestra cada premio antes de rotar
+    hologram-format: "&e✦ &f%reward% &e✦"   # texto del holograma durante el ciclo (%reward%, %crate%)
+    transition-sound: "BLOCK_AMETHYST_BLOCK_CHIME"
+
+# ══════════════════════════════════════════════════════════════════════════
+# RAREZA DE LOS PREMIOS
+#
+#  Cada premio tiene un "rarity" (por defecto COMMON). Se cambia con clic
+#  central sobre el premio en el editor (/hypercrates → Editar Crate).
+#
+#  color               → letra de color de Minecraft (f, a, 9, d, 6, c...)
+#  particle             → partícula usada en el anillo/brillo de ese tier
+#  sound                → sonido al revelar un premio de ese tier
+#  glow                 → si el item flotante brilla (contorno de color) al ganarlo
+#  broadcast            → si se anuncia a todo el servidor al ganarlo
+#  firework-amount      → cuántos fuegos artificiales se lanzan (1-8)
+#  suspense-multiplier  → alarga la animación de suspenso (1.0 = normal)
+#
+#  El orden de abajo hacia arriba es el orden en que "Clic central" cicla
+#  los tiers en el editor. Puedes añadir/quitar/renombrar tiers libremente.
+# ══════════════════════════════════════════════════════════════════════════
+rarities:
+  COMMON:
+    display: "Común"
+    color: "7"
+    particle: "CRIT"
+    sound: "ENTITY_ITEM_PICKUP"
+    glow: false
+    broadcast: false
+    firework-amount: 1
+    suspense-multiplier: 1.0
+
+  RARE:
+    display: "Raro"
+    color: "9"
+    particle: "ENCHANT"
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    glow: false
+    broadcast: false
+    firework-amount: 2
+    suspense-multiplier: 1.15
+
+  EPIC:
+    display: "Épico"
+    color: "d"
+    particle: "WITCH"
+    sound: "ENTITY_PLAYER_LEVELUP"
+    glow: true
+    broadcast: true
+    firework-amount: 3
+    suspense-multiplier: 1.3
+
+  LEGENDARY:
+    display: "Legendario"
+    color: "6"
+    particle: "TOTEM_OF_UNDYING"
+    sound: "UI_TOAST_CHALLENGE_COMPLETE"
+    glow: true
+    broadcast: true
+    firework-amount: 5
+    suspense-multiplier: 1.5

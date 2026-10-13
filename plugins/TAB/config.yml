@@ -1,0 +1,236 @@
+header-footer:
+  enabled: true
+  designs:
+    world-test:
+      display-condition: '%world%=test'
+      header:
+      - Test header in world test
+      footer:
+      - Test footer in world test
+    default:
+      header:
+      - <gradient:#FCD05C:#F7E4C1:#FCD05C>&m                                                            &r
+      - '                    <gradient:#FCD05C:#F7E4C1:#FCD05C><b>ѕᴇʀᴠᴇʀɴᴀмᴇ</gradient>&r                    '
+      - '&7YOU ARE PLAYING ON &fSERVERNAME.NET'
+      - '&r'
+      footer:
+      - ''
+      - '%animation:Announcement_Line1%'
+      - ''
+      - '%animation:Announcement_Line2%'
+      - '%animation:Announcement_Line3%'
+      - ''
+      - '%animation:Timer%'
+      - <gradient:#FCD05C:#F7E4C1:#FCD05C>&m                                                            &r
+
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+  - GROUPS:owner,admin,mod,helper,builder,vip,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+
+playerlist-objective:
+  enabled: false
+  value: '%ping%'
+  fancy-value: '&7Ping: %ping%'
+  title: TAB
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+
+belowname-objective:
+  enabled: true
+  value: '%health%'
+  title: '&c❤'
+  fancy-value: '&c%health%'
+  fancy-value-default: NPC
+  disable-condition: '%world%=disabledworld'
+
+prevent-spectator-effect:
+  enabled: false
+
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    default:
+      title: <#8B5E3C>&lSERVERNAME
+      lines:
+      - '&b&m---------------------------'
+      - '&7%player_name% '
+      - '&b ▐ &7Prestige&f: &a%prisonranksx_prestige_displayname% &r'
+      - '&b ▐ &7Rankup&f: &b%prisonranksx_currentrank_displayname% &r'
+      - '&7'
+      - '&b ▐ &7Clan&f: %hyperclans_name%'
+      - '&b ▐ &7Online Players&f: &a%serveronline%'
+      - '&7'
+      - '&b ▐ &7HyperCoins: &6%playerpoints_points_formatted%'
+      - '&b ▐ &7Money: &a%vault_eco_balance_formatted%'
+      - '&b&m---------------------------'
+      - '&a         <#8B5E3C>&lSERVERNAME.NET'
+
+layout:
+  enabled: true
+  direction: COLUMNS
+  default-skin: mineskin:37e93c8e12cd426cb28fce31969e0674
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 10
+  layouts:
+    default:
+      fixed-slots:
+      - 2|&r <#FCD05C>&lPlayers|texture:879e54cbe87867d14b2fbdf3f1870894352048dfecd962846dea893b2154c85
+      - '3| <#FCD05C>➥ &7Total Players: &f%online%'
+      - 43|&r <#FCD05C>&lStatistics|texture:8a6d2f471b54047148b355255c7f556e2187fd4e8338b111dbf3adcd2850c498
+      - '45| <#FCD05C>🗡 &7Kills: &f%statistic_player_kills%'
+      - '46| <#FCD05C>☠ &7Deaths: &f%statistic_deaths%'
+      - '48| <#FCD05C>⛏ &7Blocks Mined: &f%statistic_mine_block%'
+      - '49| <#FCD05C>⌚ &7Play Time: &f%statistic_time_played%'
+      - '58| <#FCD05C>☄ &7Players: &f%online%|texture:b0f10e85418e334f82673eb4940b208ecaee0c95c287685e9eaf24751a315bfa'
+      - 63| <#FCD05C>&lBUY A RANK IN OUR STORE!|texture:6d7f5e2e5235b679f8db9c42e859c88aa7827b1fb5182c07703c456e9125cf5f
+      - 65| &7We currently have a
+      - 66| &7Variety of rank benefits
+      - 67| &7Items and much more in our store!
+      - 69| &7CHECK IT OUT RIGHT NOW AT!
+      - 70| &fhttps://store.servername.net
+      - 72| <#FCD05C>&lSERVER ANNOUNCEMENT|texture:3cbecabc068d5e13b2d10d385531e9f1b3ab97e7139894ddb813d00b89af5bce
+      - "74| \t\t&7Make sure to join"
+      - "75| \t&7our Discord server to"
+      - 76| &7stay up to date with the latest news and much more!
+      - 77| &7
+      - 78| &fhttps://discord.servername.net
+      groups:
+        players:
+          slots:
+          - 5-40
+
+ping-spoof:
+  enabled: false
+  value: 0
+
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+  spy-servers:
+  - spyserver1
+  - spyserver2
+  server-groups:
+    lobbies:
+    - lobby1
+    - lobby2
+    group2:
+    - server1
+    - server2
+
+placeholders:
+  date-format: E, MMM dd
+  time-format: '[HH:mm:s/ h:mm a]'
+  time-offset: 0
+  register-tab-expansion: false
+  locale: en-US
+
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+
+assign-groups-by-permissions: false
+
+primary-group-finding-list:
+- Owner
+- Admin
+- Mod
+- Helper
+- default
+
+permission-refresh-interval: 1000
+
+debug: false
+
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: redis://:password@localhost:6379/0
+  rabbitmq:
+    exchange: plugin
+    url: amqp://guest:guest@localhost:5672/%2F
+  channel-name-suffix: TAB
+
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+
+config-version: 6
+
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+
+compensate-for-packetevents-bug: false
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true

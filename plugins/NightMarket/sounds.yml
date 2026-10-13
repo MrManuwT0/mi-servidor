@@ -1,0 +1,15 @@
+# Valid sound names: any value from the org.bukkit.Sound enum
+sounds:
+  gui-open: UI_TOOLBAR_TAKE_RESULT
+  animation-tick: UI_BUTTON_CLICK
+  animation-tick-fast: BLOCK_AMETHYST_BLOCK_HIT
+  experience-during-animation: ENTITY_EXPERIENCE_ORB_PICKUP
+  beacon-during-animation: BLOCK_BEACON_AMBIENT
+  reveal-finish: ENTITY_PLAYER_LEVELUP
+  purchase-success: ENTITY_VILLAGER_YES
+  purchase-fail: ENTITY_VILLAGER_NO
+  already-bought-click: BLOCK_NOTE_BLOCK_BASS
+  admin-item-saved: BLOCK_ANVIL_USE
+
+volume: 1.0
+pitch: 1.0

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 92.186.68.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1784659251302
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1784661592868
+  login: 1784661230902
+money: '158.25000000000002110'
+last-account-name: TheVaro_YT
+lastlocation:
+  world: c06ad42d-fe5f-47db-9674-dedc5be99257
+  world-name: Void
+  x: 67.1764147210313
+  y: 225.7748570671112
+  z: 263.57801779517445
+  yaw: -98.75381469726562
+  pitch: -30.808025360107422
+logoutlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 63.322653262631384
+  y: 112.0
+  z: -74.03641452778498
+  yaw: -70.71473693847656
+  pitch: 14.427509307861328

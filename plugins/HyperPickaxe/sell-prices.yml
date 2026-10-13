@@ -1,0 +1,29 @@
+# Precios usados por el encantamiento "Auto Sell" al vender bloques minados
+# automáticamente. Añade o modifica materiales según la economía de tu servidor.
+# Cualquier material no listado usa "default".
+
+prices:
+  default: 1.0
+  COAL_ORE: 5.0
+  DEEPSLATE_COAL_ORE: 5.0
+  IRON_ORE: 8.0
+  DEEPSLATE_IRON_ORE: 8.0
+  COPPER_ORE: 6.0
+  DEEPSLATE_COPPER_ORE: 6.0
+  GOLD_ORE: 15.0
+  DEEPSLATE_GOLD_ORE: 15.0
+  REDSTONE_ORE: 10.0
+  DEEPSLATE_REDSTONE_ORE: 10.0
+  LAPIS_ORE: 12.0
+  DEEPSLATE_LAPIS_ORE: 12.0
+  DIAMOND_ORE: 50.0
+  DEEPSLATE_DIAMOND_ORE: 50.0
+  EMERALD_ORE: 60.0
+  DEEPSLATE_EMERALD_ORE: 60.0
+  ANCIENT_DEBRIS: 200.0
+  NETHER_QUARTZ_ORE: 7.0
+  NETHER_GOLD_ORE: 9.0
+  AMETHYST_BLOCK: 20.0
+  STONE: 0.5
+  DEEPSLATE: 0.5
+  COBBLESTONE: 0.2

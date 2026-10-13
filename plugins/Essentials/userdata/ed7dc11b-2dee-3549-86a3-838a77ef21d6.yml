@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 139.47.49.129
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1784154674510
+  login: 1784153683545
+money: '223567.01'
+last-account-name: Nabilbg18
+lastlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 0.5
+  y: 100.0
+  z: -5.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: fcadfaf8-5764-4831-97ca-0ce5922427e0
+  world-name: mines
+  x: -378.3619555110584
+  y: 165.0
+  z: 62.67214512517184
+  yaw: 32.271820068359375
+  pitch: 8.42951774597168

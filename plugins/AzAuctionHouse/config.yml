@@ -1,0 +1,204 @@
+#=========================================
+#     AzAuctionHouse Configuration
+#     Author: GamingHuzai
+#     Version: 1.0.0
+#     Support: https://discord.gg/86xXYfHCgu
+#=========================================
+
+# Plugin Settings
+plugin:
+  # Maximum items a player can have listed at once
+  max-sell-per-player: 5
+  
+  # Default auction duration in hours
+  auction-duration-hours: 24
+  
+  # Maximum price allowed for items
+  max-price: 1000000000000000000
+  
+  # Commission percentage taken from sellers (0 = no commission)
+  seller-commission-percent: 0
+  
+  # How long expired items are kept (in days)
+  expired-item-retention-days: 31
+  
+  # How often to check for expired items (in minutes)
+  expired-item-check-interval: 15
+
+# Language Settings
+language: "en_US"
+
+# GUI Behavior
+gui:
+  # Reopen auction GUI after selling an item
+  reopen-auction-after-sell: false
+  
+  # Reopen auction GUI after buying an item
+  reopen-auction-after-buy: true
+
+# Economy Settings
+economy:
+  # Enable money formatting (1000 -> 1K)
+  enable-money-formatting: true
+  
+  # Currency symbol
+  currency-symbol: "$"
+  
+  # Position of currency symbol (before/after)
+  currency-symbol-position: "before"
+  
+  # Case for suffixes (uppercase/lowercase)
+  suffix-case: "uppercase"
+
+# Broadcasting
+broadcast:
+  # Broadcast expensive sales to all players
+  shop-m-broadcast: true
+  
+  # Broadcast when items are listed
+  item-listed:
+    enabled: true
+    # Enhanced broadcast message with eye-catching formatting
+    message: |
+      §6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+      §e                🏪 ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜѕᴇ 🏪
+      §6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+      §7📦 ᴘʟᴀʏᴇʀ: §e{player}
+      §7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}
+      §7💰 ᴘʀɪᴄᴇ: §6{price}
+      §7⏰ ᴅᴜʀᴀᴛɪᴏɴ: §b{duration}
+      §6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+      §e§l       ᴛʏᴘᴇ §f⁄ᴀʜ §eᴛᴏ ᴠɪѕɪᴛ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜѕᴇ!
+      §6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    
+    # Alternative simple broadcast message (set simple-mode to true to use this)
+    simple-mode: true
+    simple-message: "§6✿ {player} §7selling §6{amount} §7of §6{material_name} §7for §6{price} §7[/ah]"
+    
+    # Show item material name instead of display name
+    show-material-name: true
+    
+    # Show item amount in broadcast
+    show-amount: true
+    
+    # Action bar notification settings
+    action-bar:
+      enabled: true
+      message: "&6✿ {player} &7selling &6{amount} &7of &6{material_name} &7for &6{price} &7[/ah]"
+      # Duration to show action bar (in seconds)
+      duration: 5
+
+# Time Display
+time-units:
+  days: "ᴅᴀʏs"
+  day: "ᴅᴀʏ"
+  hours: "ʜᴏᴜʀs"
+  hour: "ʜᴏᴜʀ"
+  minutes: "ᴍɪɴᴜᴛᴇs"
+  minute: "ᴍɪɴᴜᴛᴇ"
+
+# Duration Settings for /ah sell command
+# Format: /ah sell <price> <duration>
+# Available durations: 1m, 5m, 10m, 30m, 1h, 2h, 6h, 12h, 1d, 2d, 3d, 1w
+duration:
+  # Minimum duration (in minutes)
+  min-duration-minutes: 1
+  
+  # Maximum duration (in hours)
+  max-duration-hours: 168  # 1 week
+  
+  # Default duration if not specified (in hours)
+  default-duration-hours: 48
+
+# Storage Settings
+storage:
+  # Storage type: yaml, mysql (currently only yaml is supported)
+  type: "yaml"
+  
+  # Auto-save settings
+  auto-save-enabled: true
+  
+  # Auto-save interval in minutes
+  auto-save-interval: 5
+  
+  # Save on server shutdown/restart
+  save-on-shutdown: true
+  
+  # YAML storage specific settings
+  yaml:
+    # Data folder path (relative to plugin folder)
+    data-folder: "data"
+    
+    # Backup settings
+    backup:
+      enabled: true
+      # Keep backups for X days
+      retention-days: 7
+      # Create backup every X auto-saves
+      backup-frequency: 12  # Every hour if auto-save is 5 minutes
+
+# Custom Head Settings
+custom-heads:
+  # Enable custom head textures for GUI navigation
+  enabled: true
+  
+  # Use custom head textures instead of default materials
+  use-for-navigation: true
+  
+  # Custom textures (base64 encoded)
+  textures:
+    # Navigation arrows
+    previous-page: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2EyYzEyY2IyMjkxODM4NGUwYTgxYzgyYTFlZDk5YWViZGNlOTRiMmVjMjc1NDgwMDk3MjMxOWI1NzkwMGFmYiJ9fX0="
+    next-page: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkxYWM0MzJhYTQwZDdlN2E2ODdhYTg1MDQxZGU2MzY3MTJkNGYwMjI2MzJkZDUzNTZjODgwNTIxYWYyNzIzYSJ9fX0="
+    back: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2EyYzEyY2IyMjkxODM4NGUwYTgxYzgyYTFlZDk5YWViZGNlOTRiMmVjMjc1NDgwMDk3MjMxOWI1NzkwMGFmYiJ9fX0="
+    
+    # Action buttons
+    confirm: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVjNzg2MWI1MWIxNjRiYjJmNTYwOWQzN2RhYWU2YTA1NTBkZDYyYzhmNGM1NDA3MDU0NjVhZGUyY2VlYTZhNCJ9fX0="
+    cancel: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ="
+    
+    # Utility buttons
+    search: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI0M2E0OTc2MzUxNWQ1NGE4NzNjNDQzNzNkZGNhOTEzNzgxNTc4NzQzNzgzZjQ4NzE5YjBkNzc5NDY5OGRmNyJ9fX0="
+    info: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxYWZlOTczYzU0ODJmZGM3MWU2YWExMDY5ODgzM2M3OWM0MzdmMjEzMDhlYTlhMWEwOTU3NDZlYzI3NGEwZiJ9fX0="
+    settings: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTdiNDQ4ZDNlNGNmMDlkNWE4OTM5NTk0M2YyNGJkYjBkNWY3ZDEyM2NjNTQzOTk0ODcwNzNiM2Y1ZjRlYyJ9fX0="
+
+# GUI Auto-Reload Settings
+gui:
+  auto-reload:
+    # Enable automatic reloading of GUI configuration files when they are modified
+    enabled: true
+    
+    # How often to check for file changes (in ticks, 20 ticks = 1 second)
+    check-interval: 40
+    
+    # Delay before reloading after a file change is detected (in ticks)
+    # This prevents reloading while the file is still being written
+    delay-ticks: 20
+    
+    # Notify administrators when files are automatically reloaded
+    notify-admins: true
+
+# Color Theme (Yellow theme as requested)
+colors:
+  primary: "&e"      # Yellow
+  secondary: "&6"    # Gold
+  success: "&a"      # Green
+  error: "&c"        # Red
+  info: "&b"         # Aqua
+  warning: "&e"      # Yellow
+
+# Update Checker Settings
+updater:
+  # Enable automatic update checking
+  enabled: true
+  
+  # How often to check for updates (in hours)
+  check-interval-hours: 24
+  
+  # Notify admins when updates are available
+  notify-admins: true
+
+#=========================================
+# For updates and support, join:
+# Discord: https://discord.gg/86xXYfHCgu
+# Author: GamingHuzai
+#=========================================

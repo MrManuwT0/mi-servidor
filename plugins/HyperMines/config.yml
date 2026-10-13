@@ -1,0 +1,19 @@
+# HyperMines configuration
+settings:
+  broadcast-reset: false
+  broadcast-format: '&8[&bHyperMines&8] &7La mina &b%mine% &7ha sido reseteada.'
+  gui-title-color: '&8'
+  autosave-interval-seconds: 300
+  
+  autosell:
+    # Requiere Vault + un plugin de economía (EssentialsX, CMI, etc.)
+    enabled: true
+    # Cada cuánto se envía el resumen de ventas al jugador, en segundos.
+    summary-interval-seconds: 60
+    # Si un bloque minado no tiene precio configurado en prices.yml, se le da el item
+    # normalmente en vez de venderlo.
+    give-item-if-no-price: true
+    require-worldguard-region: true
+  reset-countdown-seconds: 0
+
+# Mines are stored individually under /mines/<name>.yml — this file only holds global settings.

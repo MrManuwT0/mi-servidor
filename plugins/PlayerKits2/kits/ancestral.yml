@@ -1,0 +1,188 @@
+cooldown: 57600
+permission_required: true
+custom_permission: group.ancestral
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: NETHERITE_INGOT
+    name: '&4&lAncestral Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Netherite Armor Set &7(Prot &f400&7, Unb &f200&7)'
+    - '&8- &71x Netherite Sword &7(Sharp &f300&7, Unb &f200&7)'
+    - '&8- &71x Elytra &8+ &764x Fireworks'
+    - '&8- &71x Totem of Undying'
+    - '&8- &72x Notch Apple &8+ &78x Golden Apple'
+    - '&8- &712x Ender Pearl'
+    - '&8- &764x Experience Bottle'
+    - '&8- &71x Nether Star &8(&7decorative&8)'
+    - ''
+    - '&7Cooldown: &c16 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&4&lAncestral Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fAncestral&c rank to claim this kit.'
+    - '&7Available on our store!'
+  cooldown:
+    id: NETHERITE_INGOT
+    name: '&4&lAncestral Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: NETHERITE_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f400'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;400
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: NETHERITE_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f400'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;400
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: NETHERITE_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f400'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;400
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: NETHERITE_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f400'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;400
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: NETHERITE_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f300'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;300
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: ELYTRA
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Unbreaking &f200'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DURABILITY;200
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 5
+  '7':
+    id: TOTEM_OF_UNDYING
+    amount: 1
+    preview_slot: 6
+  '8':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 2
+    preview_slot: 7
+  '9':
+    id: GOLDEN_APPLE
+    amount: 8
+    preview_slot: 8
+  '10':
+    id: ENDER_PEARL
+    amount: 12
+    preview_slot: 9
+  '11':
+    id: EXPERIENCE_BOTTLE
+    amount: 64
+    preview_slot: 10
+  '12':
+    id: NETHER_STAR
+    amount: 1
+    preview_slot: 11
+  '13':
+    id: FIREWORK_ROCKET
+    amount: 64
+    preview_slot: 12

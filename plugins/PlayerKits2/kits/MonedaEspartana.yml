@@ -1,0 +1,46 @@
+cooldown: 3600
+one_time: false
+auto_armor: false
+permission_required: true
+clear_inventory: false
+save_original_items: false
+allow_placeholders_on_original_items: false
+display:
+  default:
+    id: IRON_SWORD
+    name: '&6&lMonedaEspartana &aKit'
+    amount: 1
+    lore:
+    - '&7This is a description of the kit.'
+    - '&7You can add multiples &alines&7.'
+  no_permission:
+    id: BARRIER
+    name: '&6&lMonedaEspartana &aKit'
+    amount: 1
+    lore:
+    - '&cYou don''t have permissions to claim'
+    - '&cthis kit.'
+  cooldown:
+    id: STONE_SWORD
+    name: '&c&l%kit_name% &cKit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+items:
+  '1':
+    id: FIRE_CHARGE
+    name: '&1&k...&2 ⚔ &6&lM&e&loneda &4&lE&c&lspartana &2⚔ &1&k...'
+    amount: 2
+    lore:
+    - ''
+    - '&c&m-------------------------------'
+    - '&dCanjea está gema en &e/warp Banco'
+    - '&dPara obtener objetos únicos'
+    - '&c&m-------------------------------'
+    enchants:
+    - LURE;4341
+    item_flags:
+    - HIDE_ENCHANTS

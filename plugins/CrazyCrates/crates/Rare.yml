@@ -1,0 +1,191 @@
+# ==================================================
+#  CRATE: RARE (Tier 2)
+# ==================================================
+Crate:
+  CrateType: CSGO
+  CrateName: "<bold><green>Rare Crate</bold>"
+  Preview-Name: "<bold><green>Rare Crate Preview</bold>"
+  StartingKeys: 0
+  RequiredKeys: 1
+  Max-Mass-Open: 10
+  InGUI: true
+  Slot: 22
+  OpeningBroadCast: false
+  BroadCast: "%prefix%<bold><green>%player%</bold><reset> <gray>is opening a <bold><green>Rare Crate.</bold>"
+  opening-command:
+    toggle: false
+    commands: []
+  sound:
+    cycle-sound:
+      toggle: true
+      value: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+      volume: 1.0
+      pitch: 1.0
+    click-sound:
+      toggle: true
+      value: "UI_BUTTON_CLICK"
+      volume: 1.0
+      pitch: 1.0
+    stop-sound:
+      toggle: true
+      value: "ENTITY_PLAYER_LEVELUP"
+      volume: 1.0
+      pitch: 1.0
+  Prize-Message:
+    - "<gray>You have won <red>%reward% <gray>from <red>%crate%."
+  Prize-Commands: []
+  Item: "GOLD_INGOT"
+  Glowing: false
+  Name: "<bold><green>Rare Crate</bold>"
+  Lore:
+    - "<gray>Better odds, better loot."
+    - "<gray>You have <gold>%keys% keys <gray>to open this crate with."
+    - "<gray>You have opened this crate: <gold>%crate_opened% times"
+    - "<gray>(<yellow>!<gray>) Right click to view rewards."
+  Preview:
+    Toggle: true
+    ChestLines: 3
+    Glass:
+      Toggle: true
+      Name: " "
+      Item: "LIME_STAINED_GLASS_PANE"
+  PhysicalKey:
+    Name: "<bold><green>Rare Key</bold>"
+    Lore:
+      - "<gray>Open it at the <bold><green>Rare</bold> <gray>crate"
+      - ""
+      - "<gray>Rewards: <white>Money, Kits, Enchanted items"
+    Item: "TRIPWIRE_HOOK"
+    Glowing: false
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Range: 8
+    Color: "transparent"
+    Message:
+      - "<bold><green>RARE CRATE</bold>"
+      - "<gray>Right click with the key"
+  Prizes:
+    1:
+      DisplayName: "<green>$1,000"
+      DisplayItem: "GOLD_INGOT"
+      Lore:
+        - "<gray>Solid payday."
+        - ""
+        - "<red>Chance: <yellow>19%"
+      MaxRange: 100
+      Chance: 19
+      Commands:
+        - "eco give %player% 1000"
+      Messages:
+        - "<gray>You won <green>$1,000"
+    2:
+      DisplayName: "<green>$2,000"
+      DisplayItem: "GOLD_BLOCK"
+      Lore:
+        - "<gray>Nice chunk of change."
+        - ""
+        - "<red>Chance: <yellow>13%"
+      MaxRange: 100
+      Chance: 13
+      Commands:
+        - "eco give %player% 2000"
+      Messages:
+        - "<gray>You won <green>$2,000"
+    3:
+      DisplayName: "<aqua>75 Points"
+      DisplayItem: "PRISMARINE_SHARD"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>17%"
+      MaxRange: 100
+      Chance: 17
+      Commands:
+        - "points give %player% 75"
+      Messages:
+        - "<gray>You won <aqua>75 Points"
+    4:
+      DisplayName: "<aqua>150 Points"
+      DisplayItem: "PRISMARINE_CRYSTALS"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>10%"
+      MaxRange: 100
+      Chance: 10
+      Commands:
+        - "points give %player% 150"
+      Messages:
+        - "<gray>You won <aqua>150 Points"
+    5:
+      DisplayName: "<yellow>Warrior Kit"
+      DisplayItem: "IRON_SWORD"
+      Lore:
+        - "<gray>Combat-ready gear."
+        - ""
+        - "<red>Chance: <yellow>13%"
+      MaxRange: 100
+      Chance: 13
+      Commands:
+        - "kit give %player% warrior"
+      Messages:
+        - "<gray>You won the <yellow>Warrior Kit"
+    6:
+      DisplayName: "<yellow>Blacksmith Kit"
+      DisplayItem: "ANVIL"
+      Lore:
+        - "<gray>Everything you need to repair and craft."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Commands:
+        - "kit give %player% blacksmith"
+      Messages:
+        - "<gray>You won the <yellow>Blacksmith Kit"
+    7:
+      DisplayName: "<white>Enchanted Iron Sword"
+      DisplayItem: "IRON_SWORD"
+      DisplayEnchantments:
+        - "DAMAGE_ALL:3"
+        - "FIRE_ASPECT:1"
+      Lore:
+        - "<gray>Sharp and burning."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Items:
+        - "Item:IRON_SWORD, Amount:1, DAMAGE_ALL:3, FIRE_ASPECT:1"
+      Messages:
+        - "<gray>You won an <white>Enchanted Iron Sword"
+    8:
+      DisplayName: "<white>Diamond Pickaxe (Fortune II)"
+      DisplayItem: "DIAMOND_PICKAXE"
+      DisplayEnchantments:
+        - "LOOT_BONUS_BLOCKS:2"
+        - "DIG_SPEED:3"
+      Lore:
+        - "<gray>Mine smarter, not harder."
+        - ""
+        - "<red>Chance: <yellow>7%"
+      MaxRange: 100
+      Chance: 7
+      Items:
+        - "Item:DIAMOND_PICKAXE, Amount:1, LOOT_BONUS_BLOCKS:2, DIG_SPEED:3"
+      Messages:
+        - "<gray>You won an enchanted <white>Diamond Pickaxe"
+    9:
+      DisplayName: "<light_purple>1x Epic Key"
+      DisplayItem: "TRIPWIRE_HOOK"
+      Lore:
+        - "<gray>Skip straight to the next tier."
+        - ""
+        - "<red>Chance: <yellow>3%"
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - "crates give %player% Epic 1"
+      Messages:
+        - "<gray>You won <light_purple>1x Epic Key<gray>!"

@@ -1,0 +1,122 @@
+#         Developed by Ruben_Artz and Artz Studio
+#
+#   ▄▄▄▄▄▄     ▄▄▄▄▄▄▄   ▄▄▄     ▄▄▄  ▄▄   ▄▄▄   ▄▄▄   ▄▄▄▄▄▄▄
+#  █▀██▀▀██   █▀██▀▀▀   ▀██▀    █▀██  ██  █▀▀██ ██▀   █▀██▀▀▀
+#    ██   ██    ██       ██       ██  ██     ▀█▄█▀      ██
+#    ██   ██    ████     ██       ██  ██      ███       ████
+#  ▄ ██   ██    ██       ██       ██  ██    ▄█▀██▄      ██
+#  ▀██▀███▀     ▀█████  ████████  ▀█████▄ ▀██▀  ▀██▄    ▀█████
+#
+
+# DO NOT TOUCH!
+version: 3
+WORLDS:
+  Spawn:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aSpawn'
+    MATERIAL: STONE
+    SPAWN: Spawn,0.0,100.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  MinePvP:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aMinePvP'
+    MATERIAL: DIAMOND_SWORD
+    SPAWN: MinePvP,-1.0,34.0,-49.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  Void:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aVoid'
+    MATERIAL: STONE
+    SPAWN: Void,0.0,0.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  world:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aworld'
+    MATERIAL: STONE
+    SPAWN: world,16.0,98.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  Spawn_nether:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aSpawn_nether'
+    MATERIAL: STONE
+    SPAWN: Spawn_nether,0.0,0.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  hypermines_world:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&ahypermines_world'
+    MATERIAL: STONE
+    SPAWN: hypermines_world,0.0,0.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  mines:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&amines'
+    MATERIAL: STONE
+    SPAWN: mines,0.0,128.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  Survival:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aSurvival'
+    MATERIAL: STONE
+    SPAWN: Survival,0.0,0.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+  plots:
+    ALWAYS-DAY: true
+    TP-WHEN-FALLING: true
+    VOID-POSITION: -1
+    WORLD: '&aplots'
+    MATERIAL: STONE
+    SPAWN: plots,0.0,0.0,0.0,0,0
+    COMMANDS:
+      TYPE: CONSOLE
+      LIST:
+      - tell {Player} &cThe lobby is not over there!
+
+#
+#   ▄▄▄▄▄▄▄   ▄▄     ▄▄▄   ▄▄▄▄▄▄
+#  █▀██▀▀▀    ██▄   ██▀   █▀██▀▀██
+#    ██       ███▄  ██      ██   ██
+#    ████     ██ ▀█▄██      ██   ██
+#    ██       ██   ▀██    ▄ ██   ██
+#    ▀█████ ▀██▀    ██    ▀██▀███▀
+#
+# Developed by Ruben_Artz and Artz Studio

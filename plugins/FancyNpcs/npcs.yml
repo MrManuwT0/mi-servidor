@@ -1,0 +1,610 @@
+npcs:
+  1243dae9-d5e6-480e-bfe8-9b978d1b1fc9:
+    name: Warps
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&9&lPip &fthe "Swift Wanderer"'
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 18.487201299514652
+      y: 100.0
+      z: -17.522494154616126
+      yaw: 45.816162
+      pitch: -2.0661783
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      variant: AUTO
+      identifier: https://textures.minecraft.net/texture/1a7aa3203d27ce64c9fc69ce51c0b74003f32b89dfa8800ed8340dd5c586fdba
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: warps
+  aee55fa0-189b-4727-8384-0b5ec9e7d42d:
+    name: CrateKeyShop
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&b&lSir &lChestlock, &bKeeper of Keys'
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 48.666373904984845
+      y: 112.0
+      z: -56.56081408404905
+      yaw: -21.799377
+      pitch: 1.9240746
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: true
+      variant: AUTO
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: keyshop
+  6a9a5726-95c4-45b1-89fb-e0d729a72437:
+    name: DailyRewards2
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&2&lNix, &fKeeper of Dusk'
+    type: PLAYER
+    location:
+      world: world
+      x: 3.2964034942609706
+      y: 13.0
+      z: 26.65429201437061
+      yaw: 70.15991
+      pitch: -1.6500447
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://textures.minecraft.net/texture/ba8f09482be1a12e319322d830987e46e91316a79685743cd48bc188dfd9c36f
+      variant: AUTO
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: daily
+  12cb706b-1021-4025-a813-a96914f0e749:
+    name: Cosmetics
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 18.5
+      y: 100.0
+      z: -34.5
+      yaw: 23.088528
+      pitch: -0.4273466
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      variant: AUTO
+      identifier: f259d033-9c12-490c-a2bc-85ac72256b4f
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: cosmetics
+  1adac49e-5a78-4e0f-8679-2903e585a777:
+    name: Skills
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&f&lBeacon, &fthe Homeward Cartographer'
+    type: PLAYER
+    location:
+      world: world
+      x: -11.611474065798907
+      y: 13.0
+      z: 1.4739718866853162
+      yaw: 90.81323
+      pitch: -2.8500047
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://textures.minecraft.net/texture/250dd80ad41dbf3a0ff08c748838bfe8175fdc57ab7f9aa0f367a6ae72a0df1b
+      variant: AUTO
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: pw
+  8756c5fb-e2c0-476a-ad91-726e13e3b3f8:
+    name: Kits
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 32.5
+      y: 100.0
+      z: -25.5
+      yaw: 51.948833
+      pitch: -2.493911
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://textures.minecraft.net/texture/9a00182eaf0ec8923e8f1342fdbdaebb3e7e2c4685bb2eb95e316e44c96cf80d
+      variant: AUTO
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: kits
+  664bc8c6-8aab-4f37-9df6-c872a0295e58:
+    name: Coinshop
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 14.5
+      y: 100.0
+      z: -34.5
+      yaw: -1.2109896
+      pitch: 1.9243364
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      variant: AUTO
+      identifier: b3b9997c-1798-458b-bb54-c024b465b081
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: pointshop
+  e1e21f67-d29e-4fa3-a7d3-8bfe23944240:
+    name: PlaytimeRewards
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&6&lChronos, &fKeeper of Time'
+    type: PLAYER
+    location:
+      world: world
+      x: -47.01472962326081
+      y: 13.0
+      z: 12.843146848956634
+      yaw: 125.035645
+      pitch: -4.2024145
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://minesk.in/d33da74bda2048c9bb056b39ac5c084d
+      variant: SLIM
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: playtimelevels
+  4b76e461-bab1-43ea-8565-ee6b28ef638b:
+    name: Shop
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 34.5
+      y: 100.0
+      z: -21.5
+      yaw: 65.345604
+      pitch: 0.3564458
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://minesk.in/1ea5b4536b5c41a6becf3d882b3ea234
+      variant: SLIM
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: shop
+  97a84768-ea60-416c-bcce-7423e2b52fb7:
+    name: DailyRewards
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: -3.5
+      y: 101.0
+      z: -9.5
+      yaw: -43.183327
+      pitch: 4.275733
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      identifier: https://textures.minecraft.net/texture/ba8f09482be1a12e319322d830987e46e91316a79685743cd48bc188dfd9c36f
+      variant: AUTO
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: daily
+  0b54698a-153e-42f6-b935-2ddf482e6009:
+    name: DailyQuests
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 22.5
+      y: 100.0
+      z: -33.5
+      yaw: 34.84637
+      pitch: -3.776709
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+      variant: AUTO
+      identifier: https://textures.minecraft.net/texture/e3af15f96931b7d6ffc920650eb22427eebb5013b5223650990a7d1d2505bfe
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: dq
+  e87bbac8-77f0-48d4-8830-6fac5f5338d6:
+    name: SPARKLERank
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&d&lSparkle, &fthe Glimmering Fae'
+    type: PLAYER
+    location:
+      world: world
+      x: -18.444536014729966
+      y: 15.0
+      z: -15.459566348672999
+      yaw: -1.0319824
+      pitch: 3.4500003
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/60e1c570c237e87d9f425dfd9e79fa9e6ed9a7db6280969bd34a8861c3b3160
+      variant: AUTO
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: rankshop
+  6ab0c39a-c700-4884-a989-64874a86d04b:
+    name: GLINTRank
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&c&lIgnis, &fthe Crimson Herald'
+    type: PLAYER
+    location:
+      world: world
+      x: -21.439828163248453
+      y: 14.0
+      z: -13.477160988455456
+      yaw: -23.238037
+      pitch: -3.0000196
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/37db0cc3a840e982ee89ec16829bc2400881cd10037ce198ebe64d7d34fa0441
+      variant: AUTO
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: rankshop
+  5ac93acd-bbf8-4fbe-877a-5257cb4c882a:
+    name: STARRank
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&5&lNebula, &fthe Shooting Star'
+    type: PLAYER
+    location:
+      world: world
+      x: -23.440461323035702
+      y: 16.0
+      z: -16.481854867667227
+      yaw: -23.976807
+      pitch: 12.150047
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/de1fc4cea4a70a63bbc090194fed7850e5b78f5bf8b49d94d08e6e63e56b411d
+      variant: AUTO
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: rankshop
+  cd46aaad-145f-4b9e-9f75-f74853266779:
+    name: RTP
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&5&lRoamer, &fthe Random Traveler'
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 10.404451281188306
+      y: 101.0
+      z: 4.321351276098521
+      yaw: 121.42235
+      pitch: 3.5633774
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/6f74f58f541342393b3b16787dd051dfacec8cb5cd3229c61e5f73d63947ad
+      variant: AUTO
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: rtp
+  dbe689bb-2678-4ae2-8f50-dc0cdc47c4cc:
+    name: Nightmarket
+    creator: 90513d68-2fa8-407b-b402-d098fceb5a64
+    displayName: '&8&lUmbra, &7Merchant of Shadows'
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 41.5351308282247
+      y: 100.0
+      z: 15.207221051402147
+      yaw: 169.7409
+      pitch: 3.633499E-4
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/4d64416a4c3cc2b65c13210b65d6acfc027ea7a5bb89780480819e7f896d08fa
+      variant: SLIM
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: nightmarket
+  7f8b86d9-7dbb-454b-9c73-39f8f80ba90b:
+    name: SkillsNPC
+    creator: 8876b672-cc53-47d0-9367-f512991a63bf
+    displayName: '&c&lSensei &lTao'
+    type: PLAYER
+    location:
+      world: world
+      x: -25.43949378087667
+      y: 14.0
+      z: -3.4405877763102186
+      yaw: -51.30414
+      pitch: -1.3499951
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/b54be766666b446814a57b046f69e1ab16ba71bbeadc55df43108e9d31746554
+      variant: AUTO
+      mirrorSkin: false
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: skills
+  9278b7d3-d8f6-4085-8b32-bd8d77f3c881:
+    name: Jobs
+    creator: 8876b672-cc53-47d0-9367-f512991a63bf
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: Spawn
+      x: 26.5
+      y: 100.0
+      z: -31.5
+      yaw: 39.97705
+      pitch: 0.14255431
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://textures.minecraft.net/texture/716b70a254dfc7e83cb850a26b5dc4cd213aadda0f71a4413e422fa30279c1f4
+      variant: AUTO
+      mirrorSkin: false
+    equipment: {}
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: sj jobs
+  267bfc04-9354-4d23-8ab9-7dd1b61d1dc1:
+    name: Fisherman
+    creator: 8876b672-cc53-47d0-9367-f512991a63bf
+    displayName: '&6&lOld &lSalty Marlow'
+    type: PLAYER
+    location:
+      world: world
+      x: -3.4226111597641826
+      y: 13.0
+      z: 9.44827272031615
+      yaw: 43.500546
+      pitch: -3.1500103
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://minesk.in/ff8ece47efcb4e3b88bc624c322f0075
+      variant: SLIM
+      mirrorSkin: false
+    equipment: {}
+    visibility: ALL
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: emf shop

@@ -1,0 +1,8 @@
+Name: '&a&lElite Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:lime_candle"}'
+    DataVersion: 4189
+ItemStackable: true

@@ -1,0 +1,32 @@
+name: Overlord
+pos1:
+  world: mines
+  x: -942.0
+  y: 150.0
+  z: 65.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: mines
+  x: -918.0
+  y: 163.0
+  z: 89.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: mines
+  x: -914.5
+  y: 165.0
+  z: 77.5
+  yaw: 90.21917
+  pitch: 2.4233232
+reset-type: PERCENTAGE
+reset-interval-seconds: 300
+reset-percentage: 40.0
+required-permission: ranks.overlord
+enabled: true
+autosell-enabled: true
+menu-slot: 23
+break-effects: []
+composition:
+  CUT_COPPER: 100.0

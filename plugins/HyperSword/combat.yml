@@ -1,0 +1,21 @@
+# ============================================================
+#  HyperSword - combat.yml
+# ============================================================
+
+combat:
+  # Segundos sin golpear antes de resetear el combo
+  combo-timeout-seconds: 3
+
+  # Mostrar indicadores de daño (requiere DecentHolograms)
+  damage-indicators: true
+
+  # ¿Los encantamientos de área dañan jugadores aliados?
+  aoe-damage-friendlies: false
+
+  # Multiplicador de XP por matar un jugador con combo activo
+  combo-kill-xp-multiplier: 1.5
+
+# Bosses personalizados (por nombre de mob o CustomName)
+custom-bosses:
+  - "§4[BOSS] El Devastador"
+  - "§6[JEFE] Guardián del Abismo"

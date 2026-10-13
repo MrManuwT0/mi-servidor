@@ -1,0 +1,94 @@
+# ============================================================
+#  HyperSword - skins.yml
+#  Define las skins (materiales) disponibles para la HyperSword.
+#  El jugador puede cambiarla desde el GUI: Espada → Skins.
+# ============================================================
+#
+# Cada skin es un material de Minecraft distinto (espada, hacha o maza).
+# Cambiar de skin SOLO cambia el ItemStack base (Material); todos los
+# encantamientos, NBT, nivel, XP y protecciones se preservan exactamente igual.
+#
+# Campos por skin:
+#   material    → Material de Bukkit (debe ser un arma válida: *_SWORD, *_AXE, MACE)
+#   name        → Nombre mostrado en el menú (MiniMessage)
+#   icon        → Item del menú (normalmente igual al material)
+#   description → Lista de líneas de descripción
+#   cost        → Precio para desbloquear (0 = gratis / desbloqueada por defecto)
+#   currency    → Moneda del coste: EDPRISON_TOKENS, EDPRISON_GEMS, EDPRISON_CRYSTALS, VAULT, PLAYER_POINTS
+#   permission  → Permiso opcional requerido (vacío = sin restricción de permiso)
+#   default     → Si es la skin que se entrega al hacer /hsword give o al primer join
+
+skins:
+
+  netherite_sword:
+    material: NETHERITE_SWORD
+    name: "<gold>⚔ Netherite Sword</gold>"
+    icon: NETHERITE_SWORD
+    description:
+      - "<gray>La espada clásica de HyperSword."
+      - "<gray>Forjada en netherite puro."
+    cost: 0
+    currency: EDPRISON_TOKENS
+    permission: ""
+    default: true
+
+  diamond_sword:
+    material: DIAMOND_SWORD
+    name: "<aqua>⚔ Diamond Sword</aqua>"
+    icon: DIAMOND_SWORD
+    description:
+      - "<gray>Una espada de diamante reluciente."
+    cost: 5000
+    currency: EDPRISON_TOKENS
+    permission: ""
+    default: false
+
+  golden_sword:
+    material: GOLDEN_SWORD
+    name: "<yellow>⚔ Golden Sword</yellow>"
+    icon: GOLDEN_SWORD
+    description:
+      - "<gray>Brillo dorado para los más ostentosos."
+    cost: 7500
+    currency: EDPRISON_TOKENS
+    permission: ""
+    default: false
+
+  netherite_axe:
+    material: NETHERITE_AXE
+    name: "<dark_red>🪓 Netherite Axe</dark_red>"
+    icon: NETHERITE_AXE
+    description:
+      - "<gray>Cambia tu espada por un hacha brutal."
+      - "<gray>Mismo poder, otro estilo."
+    cost: 10000
+    currency: EDPRISON_TOKENS
+    permission: ""
+    default: false
+
+  diamond_axe:
+    material: DIAMOND_AXE
+    name: "<aqua>🪓 Diamond Axe</aqua>"
+    icon: DIAMOND_AXE
+    description:
+      - "<gray>Un hacha de diamante imponente."
+    cost: 8000
+    currency: EDPRISON_TOKENS
+    permission: ""
+    default: false
+
+  mace:
+    material: MACE
+    name: "<light_purple>🔨 Mace</light_purple>"
+    icon: MACE
+    description:
+      - "<gray>La temida maza."
+      - "<gray>Solo para los más veteranos."
+    cost: 25000
+    currency: EDPRISON_TOKENS
+    permission: "hypersword.skin.mace"
+    default: false
+
+# Si true, los jugadores empiezan con TODAS las skins marcadas cost:0 ya desbloqueadas.
+# El resto debe comprarse desde el GUI de Skins con la moneda indicada.
+unlock-free-skins-by-default: true

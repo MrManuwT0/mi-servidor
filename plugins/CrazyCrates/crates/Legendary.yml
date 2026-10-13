@@ -1,0 +1,209 @@
+# ==================================================
+#  CRATE: LEGENDARY (Tier 4)
+# ==================================================
+Crate:
+  CrateType: CSGO
+  CrateName: "<bold><gold>Legendary Crate</bold>"
+  Preview-Name: "<bold><gold>Legendary Crate Preview</bold>"
+  StartingKeys: 0
+  RequiredKeys: 1
+  Max-Mass-Open: 10
+  InGUI: true
+  Slot: 24
+  OpeningBroadCast: true
+  BroadCast: "%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><gold>Legendary Crate.</bold>"
+  opening-command:
+    toggle: false
+    commands: []
+  sound:
+    cycle-sound:
+      toggle: true
+      value: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+      volume: 1.0
+      pitch: 1.0
+    click-sound:
+      toggle: true
+      value: "UI_BUTTON_CLICK"
+      volume: 1.0
+      pitch: 1.0
+    stop-sound:
+      toggle: true
+      value: "UI_TOAST_CHALLENGE_COMPLETE"
+      volume: 1.0
+      pitch: 1.0
+  Prize-Message:
+    - "<gray>You have won <red>%reward% <gray>from <red>%crate%."
+  Prize-Commands: []
+  Item: "NETHERITE_INGOT"
+  Glowing: true
+  Name: "<bold><gold>Legendary Crate</bold>"
+  Lore:
+    - "<gray>OP items, high money, real points."
+    - "<gray>You have <gold>%keys% keys <gray>to open this crate with."
+    - "<gray>You have opened this crate: <gold>%crate_opened% times"
+    - "<gray>(<yellow>!<gray>) Right click to view rewards."
+  Preview:
+    Toggle: true
+    ChestLines: 3
+    Glass:
+      Toggle: true
+      Name: " "
+      Item: "ORANGE_STAINED_GLASS_PANE"
+  PhysicalKey:
+    Name: "<bold><gold>Legendary Key</bold>"
+    Lore:
+      - "<gray>Open it at the <bold><gold>Legendary</bold> <gray>crate"
+      - ""
+      - "<gray>Rewards: <white>OP items, High money, Points"
+    Item: "TRIPWIRE_HOOK"
+    Glowing: true
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Range: 8
+    Color: "transparent"
+    Message:
+      - "<bold><gold>LEGENDARY CRATE</bold>"
+      - "<gray>Right click with the key"
+  Prizes:
+    1:
+      DisplayName: "<green>$15,000"
+      DisplayItem: "EMERALD_BLOCK"
+      Lore:
+        - "<gray>A legendary payday."
+        - ""
+        - "<red>Chance: <yellow>19%"
+      MaxRange: 100
+      Chance: 19
+      Commands:
+        - "eco give %player% 15000"
+      Messages:
+        - "<gray>You won <green>$15,000"
+    2:
+      DisplayName: "<green>$25,000"
+      DisplayItem: "NETHERITE_INGOT"
+      Lore:
+        - "<gray>Life-changing money."
+        - ""
+        - "<red>Chance: <yellow>11%"
+      MaxRange: 100
+      Chance: 11
+      Commands:
+        - "eco give %player% 25000"
+      Messages:
+        - "<gray>You won <green>$25,000"
+    3:
+      DisplayName: "<aqua>1,000 Points"
+      DisplayItem: "HEART_OF_THE_SEA"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>16%"
+      MaxRange: 100
+      Chance: 16
+      Commands:
+        - "points give %player% 1000"
+      Messages:
+        - "<gray>You won <aqua>1,000 Points"
+    4:
+      DisplayName: "<aqua>2,000 Points"
+      DisplayItem: "NETHER_STAR"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Commands:
+        - "points give %player% 2000"
+      Messages:
+        - "<gray>You won <aqua>2,000 Points"
+    5:
+      DisplayName: "<yellow>Netherite Kit"
+      DisplayItem: "NETHERITE_CHESTPLATE"
+      Lore:
+        - "<gray>Full netherite gear."
+        - ""
+        - "<red>Chance: <yellow>13%"
+      MaxRange: 100
+      Chance: 13
+      Commands:
+        - "kit give %player% netherite"
+      Messages:
+        - "<gray>You won the <yellow>Netherite Kit"
+    6:
+      DisplayName: "<white>OP Netherite Set (Prot X)"
+      DisplayItem: "NETHERITE_CHESTPLATE"
+      DisplayEnchantments:
+        - "PROTECTION_ENVIRONMENTAL:10"
+        - "DURABILITY:5"
+        - "THORNS:3"
+      Lore:
+        - "<gray>A full OP netherite set."
+        - ""
+        - "<red>Chance: <yellow>11%"
+      MaxRange: 100
+      Chance: 11
+      Glowing: true
+      Items:
+        - "Item:NETHERITE_HELMET, Amount:1, PROTECTION_ENVIRONMENTAL:10, DURABILITY:5, THORNS:3"
+        - "Item:NETHERITE_CHESTPLATE, Amount:1, PROTECTION_ENVIRONMENTAL:10, DURABILITY:5, THORNS:3"
+        - "Item:NETHERITE_LEGGINGS, Amount:1, PROTECTION_ENVIRONMENTAL:10, DURABILITY:5, THORNS:3"
+        - "Item:NETHERITE_BOOTS, Amount:1, PROTECTION_ENVIRONMENTAL:10, DURABILITY:5, THORNS:3"
+      Messages:
+        - "<gray>You won an <white>OP Netherite Set"
+    7:
+      DisplayName: "<white>Netherite Sword (Sharp X)"
+      DisplayItem: "NETHERITE_SWORD"
+      DisplayEnchantments:
+        - "DAMAGE_ALL:10"
+        - "FIRE_ASPECT:2"
+        - "SWEEPING_EDGE:3"
+      Lore:
+        - "<gray>An OP weapon."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Glowing: true
+      Items:
+        - "Item:NETHERITE_SWORD, Amount:1, DAMAGE_ALL:10, FIRE_ASPECT:2, SWEEPING_EDGE:3"
+      Messages:
+        - "<gray>You won an OP <white>Netherite Sword"
+    8:
+      DisplayName: "<white>Netherite Pickaxe (Fortune X, Efficiency X)"
+      DisplayItem: "NETHERITE_PICKAXE"
+      DisplayEnchantments:
+        - "LOOT_BONUS_BLOCKS:10"
+        - "DIG_SPEED:10"
+        - "DURABILITY:5"
+      Lore:
+        - "<gray>Mine like never before."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Glowing: true
+      Items:
+        - "Item:NETHERITE_PICKAXE, Amount:1, LOOT_BONUS_BLOCKS:10, DIG_SPEED:10, DURABILITY:5"
+      Messages:
+        - "<gray>You won an OP <white>Netherite Pickaxe"
+    9:
+      DisplayName: "<dark_red>1x Supreme Key"
+      DisplayItem: "TRIPWIRE_HOOK"
+      Lore:
+        - "<gray>The top tier awaits."
+        - ""
+        - "<red>Chance: <yellow>3%"
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - "crates give %player% Supreme 1"
+      Messages:
+        - "<gray>You won <dark_red>1x Supreme Key<gray>!"
+
+# Nota: los niveles de encantamiento aquí (X = 10) superan el límite
+# vanilla y funcionan porque CrazyCrates aplica encantamientos "unsafe".
+# Si quieres igualarlos a la escala de tus PlayerKits2 (Sharpness 300 /
+# Protection 400), solo sube el número después de los dos puntos,
+# por ejemplo 'DAMAGE_ALL:300'.

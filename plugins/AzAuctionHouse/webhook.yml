@@ -1,0 +1,55 @@
+#=========================================
+#     AzAuctionHouse Webhook Configuration
+#     Author: GamingHuzai
+#     Version: 1.0.0
+#     Support: https://discord.gg/86xXYfHCgu
+#=========================================
+
+# Discord Webhook Settings
+webhook:
+  # Enable/disable webhook notifications
+  enabled: true
+  
+  # Discord webhook URL - REQUIRED: Set your Discord webhook URL here for notifications to work
+  # Example: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+  url: ""
+  
+  # Webhook settings
+  username: "AzAuctionHouse"
+  avatar-url: ""
+  
+  # What events to log
+  events:
+    item-listed: true
+    item-sold: true
+    item-purchased: true
+    item-expired: true
+    high-value-sales: true
+  
+  # High value sale threshold
+  high-value-threshold: 10000
+  
+  # Retry settings for failed webhooks
+  retry:
+    max-attempts: 3
+    delay-seconds: 5
+  
+  # Embed settings
+  embed:
+    color: 16766720  # Yellow color (#FFD700)
+    footer-text: "AzAuctionHouse by GamingHuzai"
+    footer-icon: ""
+    
+  # Message templates
+  messages:
+    item-listed: "§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e                🏪 ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜѕᴇ 🏪\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§7📦 ᴘʟᴀʏᴇʀ: §e{player}\n§7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}\n§7💰 ᴘʀɪᴄᴇ: §6{price}\n§7⏰ ᴅᴜʀᴀᴛɪᴏɴ: §b{duration}\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e§l       ᴛʏᴘᴇ §f⁄ᴀʜ §eᴛᴏ ᴠɪѕɪᴛ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜѕᴇ!\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    item-sold: "§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e                🏪 ɪᴛᴇᴍ ѕᴏʟᴅ! 🏪\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§7👤 ѕᴇʟʟᴇʀ: §e{player}\n§7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}\n§7💰 ᴘʀɪᴄᴇ: §6{price}\n§7🛒 ʙᴜʏᴇʀ: §b{buyer}\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    item-purchased: "§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e                🏪 ɪᴛᴇᴍ ᴘᴜʀᴄʜᴀѕᴇᴅ! 🏪\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§7🛒 ʙᴜʏᴇʀ: §e{player}\n§7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}\n§7💰 ᴘʀɪᴄᴇ: §6{price}\n§7👤 ѕᴇʟʟᴇʀ: §b{seller}\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    item-expired: "§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e                🏪 ɪᴛᴇᴍ ᴇxᴘɪʀᴇᴅ! 🏪\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§7👤 ᴘʟᴀʏᴇʀ: §e{player}\n§7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}\n§7💰 ᴘʀɪᴄᴇ: §6{price}\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    high-value-sales: "§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§e                💰 ʜɪɢʜ ᴠᴀʟᴜᴇ ѕᴀʟᴇ! 💰\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n§7👤 ᴘʟᴀʏᴇʀ: §e{player}\n§7🎯 ɪᴛᴇᴍ: §a{material_name} §7x{amount}\n§7💰 ᴘʀɪᴄᴇ: §6{price}\n§7👤 ѕᴇʟʟᴇʀ: §b{seller}\n§6§l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+#=========================================
+# For updates and support, join:
+# Discord: https://discord.gg/86xXYfHCgu
+# Author: GamingHuzai
+#=========================================

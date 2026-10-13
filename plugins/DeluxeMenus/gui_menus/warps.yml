@@ -1,0 +1,478 @@
+menu_title: '         &8✦ &b&lW A R P S &8✦'
+open_command:
+ - zones
+ - warps
+ - warp
+size: 54
+items:
+  Clans:
+    material: RECOVERY_COMPASS
+    slot: 9
+    display_name: '          &b&l✪ &f&lCLANS &b&l✪           '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '      &f&oBrowse the top-ranked clans       '
+    - '&f&oView clan info, join one, or found your own'
+    - '&f&oRise through the ranks and become a champion'
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] clan'
+    right_click_commands:
+    - '[close]'
+    - '[player] clan'
+  MagicChests:
+    material: CHEST
+    slot: 18
+    display_name: '            &b&l✧ &f&lMAGIC CHESTS &b&l✧ &cComing soon..            '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - ' &f&oUnlock magic chests for extra storage  '
+    - ' &f&oEach one comes with unique bonus perks '
+    - '      &f&oNever run out of space again      '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] chests'
+    right_click_commands:
+    - '[player] chests'
+  Rules:
+    material: PAPER
+    slot: 27
+    display_name: '               &b&l✎ &f&lRULES &b&l✎                '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '     &f&oRead through the server rules      '
+    - '     &f&oStay informed and play it safe     '
+    - '     &f&oAvoid warnings, mutes, or bans     '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] rules'
+    right_click_commands:
+    - '[player] rules'
+  Support:
+    material: CLOCK
+    slot: 36
+    display_name: '              &b&l✆ &f&lSUPPORT &b&l✆               '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '         &f&oOpen the support panel         '
+    - '     &f&oFind quick links to our store      '
+    - '      &f&oand official Discord server       '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] discord'
+    right_click_commands:
+    - '[close]'
+    - '[player] discord'
+  Spawners:
+    material: SPAWNER
+    slot: 40
+    display_name: '             &b&l⚡ &f&lSPAWNERS &b&l⚡               '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '      &f&oBuy and sell mob spawners         '
+    - '   &f&oStack them up to farm passive cash   '
+    - '  &f&oUpgrade your grinder and earn more    '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] warp spawners'
+    right_click_commands:
+    - '[close]'
+    - '[player] warp spawners'
+  Plots:
+    material: CACTUS
+    slot: 13
+    display_name: '               &b&l⌂ &f&lPLOTS &b&l⌂                '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '  &f&oClaim your own plot and build freely  '
+    - '&f&oFully protected from theft and griefing '
+    - '&f&oThe best plot each season wins real prizes'
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] warp plots'
+    right_click_commands:
+    - '[close]'
+    - '[player] warp plots'
+  Survival:
+    material: GRASS_BLOCK
+    slot: 15
+    display_name: '              &b&l⚔ &f&lSURVIVAL &b&l⚔              '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '   &f&oExplore our Realistic Survival map   '
+    - '       &f&oGather rare gear and items       '
+    - '&f&oA fresh experience unlike our other maps'
+    - '  &f&oSecure your base well to avoid theft  '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] rtp'
+    right_click_commands:
+    - '[close]'
+    - '[player] rtp'
+  Bank:
+    material: MAGMA_CREAM
+    slot: 21
+    display_name: '                &b&l⛁ &f&lBANK &b&l⛁                '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '   &f&oLearn how the banking system works   '
+    - '  &f&oManage your funds like a true expert  '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] warp bank'
+    right_click_commands:
+    - '[close]'
+    - '[player] warp bank'
+  Mines:
+    material: GOLDEN_PICKAXE
+    slot: 23
+    display_name: '               &b&l⛏ &f&lMINES &b&l⛏                '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '  &f&oTeleport to your current RankUp mine  '
+    - '   &f&oMine blocks and earn serious cash    '
+    - '  &f&oRank up to unlock even better mines   '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] mines'
+    right_click_commands:
+    - '[player] mines'
+  Trades:
+    material: FIREWORK_STAR
+    slot: 30
+    display_name: '               &b&l⇄ &f&lTRADES &b&l⇄               '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '        &f&oExchange your coins here        '
+    - '     &f&oUnlock a wide variety of items     '
+    - '   &f&oImported straight from Survival OP   '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] warp trades'
+    right_click_commands:
+    - '[close]'
+    - '[player] warp trades'
+  AuctionHouse:
+    material: OAK_SIGN
+    slot: 25
+    display_name: '          &b&l⚖ &f&lAUCTION HOUSE &b&l⚖            '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '      &f&oBuy and sell items with players    '
+    - '     &f&oList your loot for the best price   '
+    - '   &f&oGrab a bargain before someone else    '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] ah'
+    right_click_commands:
+    - '[close]'
+    - '[player] ah'
+  Crates:
+    material: RED_SHULKER_BOX
+    slot: 32
+    display_name: '               &b&l✧ &f&lCRATES &b&l✧               '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '       &f&oOpen your crate keys here        '
+    - '   &f&oWin overpowered items and rewards    '
+    - '&f&oKeep your keys safe, don''t give them away'
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] warp crates'
+    right_click_commands:
+    - '[player] warp crates'
+  Dungeon:
+    material: FERMENTED_SPIDER_EYE
+    slot: 34
+    display_name: '              &b&l☠ &f&lDUNGEON &b&l☠               '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '&f&oDefeat the boss to claim the grand prize'
+    - '&f&oDiscover unique RPG items found nowhere else'
+    - '   &f&oFair warning: it''s no easy fight    '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] dungeons'
+    right_click_commands:
+    - '[player] dungeons'
+  Shop:
+    material: DIAMOND
+    slot: 38
+    display_name: '                &b&l⛃ &f&lSHOP &b&l⛃                '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '        &f&oBrowse items to decorate        '
+    - '       &f&oand personalize your home        '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] warp shop'
+    right_click_commands:
+    - '[player] warp shop'
+  CustomEnchants:
+    material: ENCHANTED_BOOK
+    slot: 11
+    display_name: '         &b&l✵ &f&lCUSTOM ENCHANTS &b&l✵            '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '     &f&oEnchant your tools and gear        '
+    - '        &f&oExchange XP for Bitcoins        '
+    - '  &f&oDeposit or spend Bitcoins on enchants '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[close]'
+    - '[player] warp enchants'
+    right_click_commands:
+    - '[close]'
+    - '[player] warp enchants'
+  PVP:
+    material: IRON_SWORD
+    slot: 42
+    display_name: '                &b&l⚔ &f&lPVP &b&l⚔                 '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - '     &f&oFight for total PVP dominance      '
+    - '        &f&oChoose your battlefield         '
+    - '       &f&oand prove you''re the best       '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '            &b&o➤ Click to open             '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] warp minapvp'
+    right_click_commands:
+    - '[player] warp minapvp'
+  NextPage:
+    material: ARROW
+    slot: 53
+    display_name: '             &b&l➜ &f&lNEXT PAGE &b&l➜              '
+    lore:
+    - '&8&m                                        '
+    - ''
+    - ''
+    - '        &f&oMove on to the next page        '
+    - '           &f&oof available warps           '
+    - ''
+    - '&7&m                  &b&l ✦ &7&m                  '
+    - '          &b&o➤ Click to continue           '
+    - '&8&m                                        '
+    left_click_commands:
+    - '[player] warps2'
+    right_click_commands:
+    - '[player] warps2'
+  Glass0:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 0
+    display_name: '&7 '
+  Glass1:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 1
+    display_name: '&7 '
+  Glass2:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 2
+    display_name: '&7 '
+  Glass3:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 3
+    display_name: '&7 '
+  Glass4:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 4
+    display_name: '&7 '
+  Glass5:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 5
+    display_name: '&7 '
+  Glass6:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 6
+    display_name: '&7 '
+  Glass7:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 7
+    display_name: '&7 '
+  Glass8:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 8
+    display_name: '&7 '
+  Glass10:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 10
+    display_name: '&7 '
+  Glass11:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 12
+    display_name: '&7 '
+  Glass12:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 14
+    display_name: '&7 '
+  Glass13:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 16
+    display_name: '&7 '
+  Glass14:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 17
+    display_name: '&7 '
+  Glass18:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 19
+    display_name: '&7 '
+  Glass19:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 20
+    display_name: '&7 '
+  Glass22:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 22
+    display_name: '&7 '
+  Glass24:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 24
+    display_name: '&7 '
+  Glass26:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 26
+    display_name: '&7 '
+  Glass28:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 28
+    display_name: '&7 '
+  Glass37:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 37
+    display_name: '&7 '
+  Glass45:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 45
+    display_name: '&7 '
+  Glass46:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 46
+    display_name: '&7 '
+  Glass47:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 47
+    display_name: '&7 '
+  Glass48:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 48
+    display_name: '&7 '
+  Glass49:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 49
+    display_name: '&7 '
+  Glass50:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 50
+    display_name: '&7 '
+  Glass51:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 51
+    display_name: '&7 '
+  Glass52:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 52
+    display_name: '&7 '
+  Glass35:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 35
+    display_name: '&7 '
+  Glass44:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 44
+    display_name: '&7 '
+  Glass29:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 29
+    display_name: '&7 '
+  Glass31:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 31
+    display_name: '&7 '
+  Glass33:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 33
+    display_name: '&7 '
+  Glass39:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 39
+    display_name: '&7 '
+  Glass41:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 41
+    display_name: '&7 '
+  Glass43:
+    material: WHITE_STAINED_GLASS_PANE
+    slot: 43
+    display_name: '&7 '

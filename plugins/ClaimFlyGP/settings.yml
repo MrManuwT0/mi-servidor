@@ -1,0 +1,28 @@
+# !-----------------------------------------------------------------------------------------------!
+#                       Welcome to the main configuration of ClaimFlyGP
+# !-----------------------------------------------------------------------------------------------!
+Version: 1
+Prefix: '&8[&9Claim Fly&8]&e'
+Command_Aliases:
+- 'claimflyadmin'
+- 'cfadmin'
+Log_Lag_Over_Millis: 100
+Debug: []
+ClaimFly:
+  ChatPrefix: '&8[&9Claim Fly&8]&e'
+  ignoreCreativeMode: true
+  ignoreSpectatorMode: true
+  # Players wont need to use /claimfly command to be able to fly if this is enabled
+  # *NB* This will allow flight, not make them start flying.
+  # they will still need the correct permission nodes though
+  AutoAllowFlightOnEnterClaim: false
+  # Display messages in actionbar instead of chat
+  # True = ActionBar; False = Chat
+  MessageOnActionBar: true
+Messages:
+  noFlyPerms: '&cYou do not have permission to fly on this server!'
+  # Accepts %ClaimOwner% placeholder to get the current claimowners name
+  noFlyThisClaim: '&cYou do not have permission to fly in this claim! Ask &6%ClaimOwner% &c for /accesstrust.'
+  noFlyOutsideClaims: '&cYou cannot fly outside of claims!'
+  FlightEnabled: Flight mode has been enabled.
+  FlightDisabled: Flight mode has been disabled.

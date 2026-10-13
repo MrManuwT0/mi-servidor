@@ -1,0 +1,56 @@
+prefix: '&8[&bHyperMines&8] &r'
+no-permission: '&cNo tienes permiso para hacer eso.'
+player-only: '&cSolo los jugadores pueden usar este comando.'
+mine-created: '&aMina &b%mine% &acreada correctamente.'
+mine-deleted: '&aMina &b%mine% &aeliminada.'
+mine-not-found: '&cNo existe una mina con ese nombre.'
+mine-already-exists: '&cYa existe una mina con ese nombre.'
+mine-reset: '&aLa mina &b%mine% &aha sido reseteada manualmente.'
+pos1-set: '&aPosición 1 establecida en &b%loc%'
+pos2-set: '&aPosición 2 establecida en &b%loc%'
+wand-given: '&aHas recibido la varita de selección para la mina &b%mine%&a. Click
+  izquierdo = pos1, click derecho = pos2.'
+select-both-positions: '&cDebes seleccionar ambas posiciones (pos1 y pos2) antes de
+  continuar.'
+teleported: '&aHas sido teletransportado a la mina &b%mine%'
+schematic-saved: '&aSchematic guardado para la mina &b%mine%'
+schematic-not-found: '&cNo se encontró el schematic. Colócalo en /HyperMines/schematics/'
+worldedit-missing: '&cWorldEdit/FAWE no está instalado. Esta función requiere WorldEdit
+  o FastAsyncWorldEdit.'
+vault-missing: '&cVault (o un plugin de economía) no está instalado. El autosell está
+  desactivado.'
+price-set: '&aPrecio de &b%material% &aestablecido en &b$%price%'
+price-invalid: '&cPrecio inválido. Escribe solo un número, ej: 12.5'
+
+# ---------- Autosell ----------
+autosell-header: '&e&m                                                    '
+autosell-title: '                  &6&lAutosell &7(%minutes% minuto(s))'
+autosell-line: ' &7› &f%material% sold&7: &a%amount% &7» &a$%earned%'
+autosell-total: ' &7› &fTotal sold&7: &a$%total%'
+autosell-footer: '&e&m                                                    '
+mine-renamed: '&aMina renombrada de &b%old% &aa &b%new%&a.'
+name-taken: '&cYa existe una mina con ese nombre.'
+name-invalid: '&cNombre inválido. No puede estar vacío ni contener espacios.'
+mine-duplicated: '&aMina &b%mine% &aclonada como &b%new%&a. Usa la varita para fijar
+  su región (pos1/pos2).'
+icon-set: '&aÍcono del menú establecido en &b%material%'
+icon-invalid: '&cMaterial inválido. Escribe un nombre de material válido de Minecraft,
+  ej: DIAMOND_ORE.'
+icon-reset: '&aÍcono del menú restablecido al automático.'
+autosell-mine-enabled: '&aAutosell activado para esta mina.'
+autosell-mine-disabled: '&cAutosell desactivado para esta mina.'
+mines-menu-locked: '&cEsta mina está bloqueada. Rango requerido: &f%rank%'
+mines-menu-maintenance: '&cEsta mina está en mantenimiento en este momento.'
+mines-menu-no-region: '&cEsta mina todavía no tiene una ubicación configurada.'
+slot-set: '&aPosición en &b/mines &afijada en la casilla &b%slot%&a.'
+slot-reset: '&aPosición en &b/mines &arestablecida a automática.'
+slot-invalid: '&cCasilla inválida. Debe ser un número entre &f0 &cy &f27&c, o escribe
+  &f''auto''&c.'
+reset-countdown: '&e⏳ &b%mine% &7se reiniciará en &c%seconds%s&7...'
+multiplier-created: '&aMultiplicador &b%id% &acreado (x%value%).'
+multiplier-updated: '&aMultiplicador &b%id% &aactualizado a x%value%.'
+multiplier-deleted: '&aMultiplicador &b%id% &aeliminado.'
+multiplier-exists: '&cYa existe un multiplicador con el id &b%id%&c.'
+multiplier-invalid: '&cValor inválido. Escribe solo un número, ej: 2.5'
+autosell-multiplier: ' &8‣ &dActive Multiplier&7: &e%multiplier% &8» &d+$%bonus% &7bonus'
+

@@ -1,0 +1,32 @@
+name: Expert
+pos1:
+  world: mines
+  x: -166.0
+  y: 163.0
+  z: 89.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: mines
+  x: -190.0
+  y: 150.0
+  z: 65.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: mines
+  x: -162.5
+  y: 165.0
+  z: 77.5
+  yaw: 90.14784
+  pitch: 3.4209018
+reset-type: PERCENTAGE
+reset-interval-seconds: 300
+reset-percentage: 40.0
+required-permission: ranks.expert
+enabled: true
+autosell-enabled: true
+menu-slot: 13
+break-effects: []
+composition:
+  IRON_ORE: 100.0

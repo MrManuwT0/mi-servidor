@@ -1,0 +1,84 @@
+# =======================================================================
+#  KothPlugin - general configuration
+#  Every value here can be changed and reloaded with /koth reload
+# =======================================================================
+
+prefix: "<gradient:gold:yellow>KOTH</gradient> <dark_gray>»</dark_gray> "
+language: "en"
+
+performance:
+  # How often (in server ticks, 20 = 1 second) the capture logic is evaluated.
+  # Lower = more responsive, higher = better performance on large servers.
+  check-interval-ticks: 10
+  # How often bossbar/scoreboard are refreshed (in ticks).
+  visual-update-interval-ticks: 20
+  # How often (in seconds) the scheduler checks for due automatic events.
+  schedule-check-interval-seconds: 30
+
+visuals:
+  bossbar: true
+  scoreboard: true
+  actionbar: true
+  titles: true
+  # If true, KOTH visuals/broadcasts are shown to the whole server regardless
+  # of which world the KOTH is in. If false, only players in that world see them.
+  broadcast-global: true
+
+messages:
+  cooldown-millis: 500
+
+capture:
+  # If true, capture progress does not advance while more than one
+  # player/team is inside the hill at the same time.
+  contested-blocks-progress: true
+  # Maximum distance (in blocks) a capturer may stand from the KOTH's
+  # capture-point before their progress stops counting. 0 disables this check.
+  anti-camp-max-distance: 0
+
+integrations:
+  vault: true
+  placeholderapi: true
+  decentholograms: true
+
+worlds:
+  # If whitelist is non-empty, ONLY these worlds may host KOTHs.
+  whitelist: []
+  # Otherwise, every world except those listed here is allowed.
+  blacklist: []
+
+protection:
+  blocked-commands:
+    - "tpa"
+    - "tpaccept"
+    - "home"
+    - "spawn"
+    - "tpa"
+    - "clan setbase"
+    - "warp"
+  prevent-teleport-during-capture: true
+  prevent-flight-inside: false
+  afk-protection: true
+  afk-threshold-seconds: 60
+
+regions:
+  # Maximum allowed cuboid volume (width * height * length) for any KOTH region.
+  max-volume: 2000000
+
+schedule:
+  # What happens when a scheduled trigger fires but the KOTH is already running.
+  # Options: SKIP, QUEUE, CANCEL
+  conflict-behavior: "SKIP"
+
+death:
+  respawn-at-koth-spawn: false
+
+database:
+  # Options: SQLITE, MYSQL
+  type: "SQLITE"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "koth"
+    username: "root"
+    password: ""
+    use-ssl: false

@@ -1,0 +1,50 @@
+log:
+- timestamp: '2026-07-21 21:17:03'
+  player: MrManuHC
+  uuid: e3245637-e4b5-3eef-ba4c-96c3053bf18a
+  crate: test
+  reward: NETHER_BRICKS
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:16:50'
+  player: MrManuHC
+  uuid: e3245637-e4b5-3eef-ba4c-96c3053bf18a
+  crate: test
+  reward: FEATHER
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:16:35'
+  player: TheVaro_YT
+  uuid: 98346681-fc9e-3e2c-87d9-765c1ebe429b
+  crate: test
+  reward: CHICKEN
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:16:15'
+  player: TheVaro_YT
+  uuid: 98346681-fc9e-3e2c-87d9-765c1ebe429b
+  crate: test
+  reward: NETHER_BRICKS
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:15:51'
+  player: TheVaro_YT
+  uuid: 98346681-fc9e-3e2c-87d9-765c1ebe429b
+  crate: test
+  reward: BARRIER
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:15:07'
+  player: TheVaro_YT
+  uuid: 98346681-fc9e-3e2c-87d9-765c1ebe429b
+  crate: test
+  reward: CHICKEN
+  amount: 1
+  chance: 1.0
+- timestamp: '2026-07-21 21:14:53'
+  player: TheVaro_YT
+  uuid: 98346681-fc9e-3e2c-87d9-765c1ebe429b
+  crate: test
+  reward: CHICKEN
+  amount: 1
+  chance: 1.0

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 92.186.68.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1783889311111
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1783889341522
+  login: 1783889082092
+money: '0'
+last-account-name: MrManuwT
+lastlocation:
+  world: c06ad42d-fe5f-47db-9674-dedc5be99257
+  world-name: Void
+  x: 15.5
+  y: 82.0
+  z: -13.5
+  yaw: 90.02291107177734
+  pitch: -1.4263346195220947
+logoutlocation:
+  world: fcadfaf8-5764-4831-97ca-0ce5922427e0
+  world-name: mines
+  x: -348.5
+  y: 165.0
+  z: 77.5
+  yaw: 89.92496490478516
+  pitch: 1.282677173614502

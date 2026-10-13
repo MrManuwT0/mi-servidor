@@ -1,0 +1,35 @@
+name: Novice
+pos1:
+  world: Void
+  x: -32.0
+  y: 79.0
+  z: -29.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: Void
+  x: -2.0
+  y: 64.0
+  z: 1.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: Void
+  x: 15.403923108126774
+  y: 82.0
+  z: -13.353696925648247
+  yaw: 90.28628
+  pitch: -1.2115091
+reset-type: TIMER
+reset-interval-seconds: 300
+reset-percentage: 40.0
+enabled: true
+autosell-enabled: true
+menu-slot: 10
+autosell-region: Novice
+break-effects:
+- haste
+effect-levels:
+  haste: 5
+composition:
+  STONE: 100.0

@@ -1,0 +1,173 @@
+cooldown: 25200
+permission_required: true
+custom_permission: ranks.hero
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: ENCHANTED_GOLDEN_APPLE
+    name: '&3&lHero Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Diamond Armor Set &7(Prot 195 | Unb 122)'
+    - '&8- &71x Diamond Sword &7(Sharp 145 | Unb 122)'
+    - '&8- &71x Power III Bow + 64x Arrows'
+    - '&8- &72x Notch Apple'
+    - '&8- &710x Golden Apple'
+    - '&8- &78x Ender Pearl'
+    - ''
+    - '&7Cooldown: &c7 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&3&lHero Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fHero&c rank to claim this kit.'
+  cooldown:
+    id: ENCHANTED_GOLDEN_APPLE
+    name: '&3&lHero Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: DIAMOND_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f195'
+    - '&7✦ Unbreaking &f122'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;195
+    - DURABILITY;122
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: DIAMOND_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f195'
+    - '&7✦ Unbreaking &f122'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;195
+    - DURABILITY;122
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: DIAMOND_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f195'
+    - '&7✦ Unbreaking &f122'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;195
+    - DURABILITY;122
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: DIAMOND_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f195'
+    - '&7✦ Unbreaking &f122'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;195
+    - DURABILITY;122
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: DIAMOND_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f145'
+    - '&7✦ Unbreaking &f122'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;145
+    - DURABILITY;122
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: BOW
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Power &f3'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - ARROW_DAMAGE;3
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 5
+  '7':
+    id: ARROW
+    amount: 64
+    preview_slot: 6
+  '8':
+    id: GOLDEN_APPLE
+    amount: 10
+    preview_slot: 7
+  '9':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 2
+    preview_slot: 8
+  '10':
+    id: ENDER_PEARL
+    amount: 8
+    preview_slot: 9

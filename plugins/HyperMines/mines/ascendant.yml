@@ -1,0 +1,32 @@
+name: Ascendant
+pos1:
+  world: mines
+  x: -1200.0
+  y: 163.0
+  z: 89.0
+  yaw: 0.0
+  pitch: 0.0
+pos2:
+  world: mines
+  x: -1224.0
+  y: 150.0
+  z: 65.0
+  yaw: 0.0
+  pitch: 0.0
+teleport:
+  world: mines
+  x: -1196.5
+  y: 165.0
+  z: 77.5
+  yaw: 89.791626
+  pitch: 1.5682898
+reset-type: PERCENTAGE
+reset-interval-seconds: 300
+reset-percentage: 40.0
+required-permission: ranks.ascendant
+enabled: true
+autosell-enabled: true
+menu-slot: 28
+break-effects: []
+composition:
+  END_STONE_BRICKS: 100.0

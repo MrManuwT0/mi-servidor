@@ -1,0 +1,182 @@
+cooldown: 72000
+permission_required: true
+custom_permission: group.estelar
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: DIAMOND_SWORD
+    name: '&b&lEstelar Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Diamond Armor Set &7(Prot &f200&7, Unb &f125&7)'
+    - '&8- &71x Diamond Sword &7(Sharp &f150&7, Unb &f125&7)'
+    - '&8- &78x Ender Pearl'
+    - '&8- &78x Golden Apple &8+ &71x Notch Apple'
+    - '&8- &732x Experience Bottle'
+    - '&8- &72x Potion of Strength &8+ &72x Potion of Speed'
+    - '&8- &732x Fireworks'
+    - ''
+    - '&7Cooldown: &c20 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&b&lEstelar Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fEstelar&c donor rank to claim this kit.'
+    - '&7Available on our store!'
+  cooldown:
+    id: DIAMOND_SWORD
+    name: '&b&lEstelar Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: DIAMOND_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f200'
+    - '&7✦ Unbreaking &f125'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;200
+    - DURABILITY;125
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: DIAMOND_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f200'
+    - '&7✦ Unbreaking &f125'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;200
+    - DURABILITY;125
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: DIAMOND_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f200'
+    - '&7✦ Unbreaking &f125'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;200
+    - DURABILITY;125
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: DIAMOND_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f200'
+    - '&7✦ Unbreaking &f125'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;200
+    - DURABILITY;125
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: DIAMOND_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f150'
+    - '&7✦ Unbreaking &f125'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;150
+    - DURABILITY;125
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: ENDER_PEARL
+    amount: 8
+    preview_slot: 5
+  '7':
+    id: GOLDEN_APPLE
+    amount: 8
+    preview_slot: 6
+  '8':
+    id: ENCHANTED_GOLDEN_APPLE
+    amount: 1
+    preview_slot: 7
+  '9':
+    id: EXPERIENCE_BOTTLE
+    amount: 32
+    preview_slot: 8
+  '10':
+    id: POTION
+    amount: 2
+    potion_data:
+      effects:
+      - INCREASE_DAMAGE;1;3600
+      extended: false
+      upgraded: false
+      type: UNCRAFTABLE
+    preview_slot: 9
+  '11':
+    id: POTION
+    amount: 2
+    potion_data:
+      effects:
+      - SPEED;1;3600
+      extended: false
+      upgraded: false
+      type: UNCRAFTABLE
+    preview_slot: 10
+  '12':
+    id: FIREWORK_ROCKET
+    amount: 32
+    preview_slot: 11

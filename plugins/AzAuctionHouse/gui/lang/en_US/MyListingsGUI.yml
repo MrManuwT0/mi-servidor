@@ -1,0 +1,70 @@
+# MyListingsGUI Configuration - English
+title: '&eᴍʏ ʟɪsᴛɪɴɢs'
+size: 54
+
+slots:
+  back: 45
+  prev-page: 48
+  next-page: 50
+  refresh: 49
+  cancel-all: 53
+
+items:
+  back: '&c&lʙᴀᴄᴋ'
+  prev-page: '&c&lʙᴀᴄᴋ'
+  next-page: '&a&lɴᴇxᴛ'
+  refresh: '&e&lʀᴇғʀᴇsʜ'
+  cancel-all: '&cᴄᴀɴᴄᴇʟ ᴀʟʟ'
+
+materials:
+  back: SPECTRAL_ARROW
+  prev-page: SPECTRAL_ARROW
+  prev-page-disabled: GRAY_DYE
+  next-page: LIME_SHULKER_BOX
+  next-page-disabled: GRAY_DYE
+  refresh: REPEATER
+  cancel-all: RED_DYE
+
+lore:
+  back-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eʀᴇᴛᴜʀɴ &7ᴛᴏ'
+  - '&eᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ'
+  prev-page-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ɢᴏ ᴛᴏ'
+  - '&eᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+  next-page-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ɢᴏ ᴛᴏ'
+  - '&eɴᴇxᴛ ᴘᴀɢᴇ'
+  refresh-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eʀᴇғʀᴇsʜ'
+  - '&7ʏᴏᴜʀ ʟɪsᴛɪɴɢs'
+  cancel-all-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &cᴄᴀɴᴄᴇʟ'
+  - '&cᴀʟʟ ʏᴏᴜʀ ʟɪsᴛɪɴɢs'
+  - ''
+  - '&cᴛʜɪs ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴᴅᴏɴᴇ!'
+  item-lore:
+  - '&6────────────────'
+  - '&7ᴘʀɪᴄᴇ: &e{price}'
+  - '&7ᴇxᴘɪʀᴇs ɪɴ: &e{time}'
+  - '&7ᴛɪᴍᴇ ʟɪsᴛᴇᴅ: &e{listed_time}'
+  - ''
+  - '&7ʟᴇғᴛ ᴄʟɪᴄᴋ ᴛᴏ &cᴄᴀɴᴄᴇʟ'
+  - '&7ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ &eᴠɪᴇᴡ ɪᴛᴇᴍ'
+
+sounds:
+  open: BLOCK_CHEST_OPEN
+  click: UI_BUTTON_CLICK
+  back: BLOCK_WOOD_BUTTON_CLICK_ON
+  page: ITEM_BOOK_PAGE_TURN
+  cancel: ENTITY_ITEM_BREAK
+  refresh: BLOCK_LEVER_CLICK
+
+no-listings:
+  title: '&7ɴᴏ ʟɪsᴛɪɴɢs ғᴏᴜɴᴅ'
+  lore:
+  - '&7ʏᴏᴜ ᴅᴏɴ''ᴛ ʜᴀᴠᴇ ᴀɴʏ'
+  - '&7ᴀᴄᴛɪᴠᴇ ʟɪsᴛɪɴɢs'
+  - ''
+  - '&7ᴜsᴇ &e/ah sell &7ᴛᴏ'
+  - '&7ʟɪsᴛ ᴀɴ ɪᴛᴇᴍ!'

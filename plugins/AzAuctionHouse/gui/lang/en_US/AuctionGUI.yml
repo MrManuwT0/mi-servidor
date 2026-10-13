@@ -1,0 +1,137 @@
+# AuctionGUI Configuration
+slots:
+  search: 45
+  filter: 46
+  back-to-overview: 47
+  prev-page: 48
+  refresh: 49
+  next-page: 50
+  transaction-history: 52
+  my-listings: 53
+
+items:
+  search: '&eSearch Item'
+  filter: '&7Filter {filter_mode}'
+  back-overview: '&eBack to Overview'
+  back: '&c&lBack'
+  back-disabled: '&c&lBack'
+  next: '&a&lNext'
+  next-disabled: '&a&lNext'
+  transaction-history: '&eTransaction History'
+  my-listings: '&eMy Listings'
+  prev-page: '&c&lPrevious'
+  prev-page-disabled: '&c&lPrevious'
+  next-page: '&a&lNext'
+  next-page-disabled: '&a&lNext'
+  refresh: '&e&lRefresh'
+
+filter:
+  time-newest: '&7ᴛɪᴍᴇ &eɴᴇᴡᴇsᴛ ғɪʀsᴛ'
+  time-oldest: '&7ᴛɪᴍᴇ &eᴏʟᴅᴇsᴛ ғɪʀsᴛ'
+  price-highest: '&7ᴘʀɪᴄᴇ &eʜɪɢʜᴇsᴛ ғɪʀsᴛ'
+  price-lowest: '&7ᴘʀɪᴄᴇ &eʟᴏᴡᴇsᴛ ғɪʀsᴛ'
+
+lore:
+  divider: '&6------------'
+  price: '&7ᴘʀɪᴄᴇ: &e{price}'
+  seller: '&7sᴇʟʟᴇʀ: &e{seller}'
+  expires-in: '&7ᴇxᴘɪʀᴇs ɪɴ: &e{time}'
+  click-to-buy: '&7ᴄʟɪᴄᴋ &eᴛᴏ ʙᴜʏ'
+  click-to-take-back: '&7ᴄʟɪᴄᴋ ᴛᴏ ᴛᴀᴋᴇ &eʏᴏᴜʀ ɪᴛᴇᴍ &7ʙᴀᴄᴋ ғʀᴏᴍ &eᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ.'
+  search-lore:
+  - '&7ᴄʟɪᴄᴋ &eʜᴇʀᴇ &7ᴛᴏ &esᴇᴀʀᴄʜ &7ғᴏʀ &eɪᴛᴇᴍs'
+  - '&7ɪɴ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ'
+  back-overview-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &esʜᴏᴡ ᴀʟʟ ɪᴛᴇᴍs'
+  back-to-main-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eʀᴇᴛᴜʀɴ &7ᴛᴏ &eᴛʜᴇ ᴍᴀɪɴ ᴍᴇɴᴜ'
+  history-book-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ &eᴠɪᴇᴡ ʏᴏᴜʀ ʙᴜʏ &7ᴀɴᴅ'
+  - '&esᴇʟʟ ʜɪsᴛᴏʀʏ'
+  my-listings-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ &eʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ'
+  - '&eʟɪsᴛɪɴɢs'
+  - ''
+  - '&7ᴄᴜʀʀᴇɴᴛ ʟɪsᴛɪɴɢs: &e{listings_count}'
+  refresh-lore:
+  - '&7ᴄʟɪᴄᴋ ᴛᴏ ʀᴇғʀᴇsʜ &eᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ'
+  - ''
+  - '&7/ᴀʜ sᴇʟʟ &e<ᴘʀɪᴄᴇ> [ᴅᴜʀᴀᴛɪᴏɴ]'
+  - ''
+  filter-lore:
+    time-newest: '&7▶ ᴛɪᴍᴇ: &eɴᴇᴡᴇsᴛ ғɪʀsᴛ'
+    time-newest-inactive: '&7▷ ᴛɪᴍᴇ: ɴᴇᴡᴇsᴛ ғɪʀsᴛ'
+    time-oldest: '&7▶ ᴛɪᴍᴇ: &eᴏʟᴅᴇsᴛ ғɪʀsᴛ'
+    time-oldest-inactive: '&7▷ ᴛɪᴍᴇ: ᴏʟᴅᴇsᴛ ғɪʀsᴛ'
+    price-highest: '&7▶ ᴘʀɪᴄᴇ: &eʜɪɢʜᴇsᴛ ғɪʀsᴛ'
+    price-highest-inactive: '&7▷ ᴘʀɪᴄᴇ: ʜɪɢʜᴇsᴛ ғɪʀsᴛ'
+    price-lowest: '&7▶ ᴘʀɪᴄᴇ: &eʟᴏᴡᴇsᴛ ғɪʀsᴛ'
+    price-lowest-inactive: '&7▷ ᴘʀɪᴄᴇ: ʟᴏᴡᴇsᴛ ғɪʀsᴛ'
+    click-to-switch: '&7ᴄʟɪᴄᴋ &eᴛᴏ sᴡɪᴛᴄʜ'
+  auction-item-lore:
+  - ''
+  - '&8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  - '&6⚡ &e&lᴀᴜᴄᴛɪᴏɴ ɪɴғᴏʀᴍᴀᴛɪᴏɴ &6⚡'
+  - '&8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  - '&7💰 ᴘʀɪᴄᴇ: &a&l{price}'
+  - '&7👤 sᴇʟʟᴇʀ: &b&l{seller}'
+  - '&7⏰ ᴇxᴘɪʀᴇs: &e&l{time}'
+  - '&8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  - '&a&l➤ &7ᴄʟɪᴄᴋ ᴛᴏ ᴘᴜʀᴄʜᴀsᴇ &a&l➤'
+  - '&8&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+
+titles:
+  auction: '&8Auction House'
+  search: '&8Search Results'
+  my-listings: '&8My Listings'
+
+# Navigation buttons with shulker boxes and repeater
+materials:
+  prev-page: SPECTRAL_ARROW
+  next-page: SPECTRAL_ARROW
+  back: SPECTRAL_ARROW
+  search: OAK_SIGN
+  filter: HOPPER
+  refresh: REPEATER
+  transaction-history: BOOK
+  my-listings: ENDER_CHEST
+# Custom head support (when enabled in config.yml)
+# These will override the materials above when custom-heads.enabled is true
+custom-heads:
+  # Navigation buttons
+  prev-page:
+    enabled: true
+    texture-key: previous-page # References config.yml custom-heads.textures.previous-page
+    fallback-material: SPECTRAL_ARROW
+  
+  next-page:
+    enabled: true
+    texture-key: next-page # References config.yml custom-heads.textures.next-page
+    fallback-material: SPECTRAL_ARROW
+  
+  back:
+    enabled: true
+    texture-key: back # References config.yml custom-heads.textures.back
+    fallback-material: SPECTRAL_ARROW
+  
+  # Utility buttons
+  search:
+    enabled: true
+    texture-key: search # References config.yml custom-heads.textures.search
+    fallback-material: OAK_SIGN
+  
+  refresh:
+    enabled: false # Keep using REPEATER for refresh
+    texture-key: settings
+    fallback-material: REPEATER
+  
+  # Info buttons
+  transaction-history:
+    enabled: true
+    texture-key: info # References config.yml custom-heads.textures.info
+    fallback-material: BOOK
+  
+  my-listings:
+    enabled: false # Keep using ENDER_CHEST for my listings
+    texture-key: settings
+    fallback-material: ENDER_CHEST

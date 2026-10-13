@@ -1,0 +1,86 @@
+# ShulkerPreviewGUI Configuration - English
+title: '&eꜱʜᴜʟᴋᴇʀ ᴘʀᴇᴠɪᴇᴡ'
+size: 54
+
+slots:
+  back: 45
+  buy: 49
+  close: 53
+
+items:
+  back: '&c&lʙᴀᴄᴋ'
+  buy: '&a&lʙᴜʏ ɪᴛᴇᴍ'
+  close: '&c&lᴄʟᴏsᴇ'
+
+materials:
+  back: RED_DYE
+  buy: LIME_DYE
+  close: RED_DYE
+
+lore:
+  back-lore:
+  - '&7&lᴄʟɪᴄᴋ ᴛᴏ &eʀᴇᴛᴜʀɴ'
+  - '&7&lᴛᴏ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜꜱᴇ'
+  buy-lore:
+  - '&7&lᴄʟɪᴄᴋ ᴛᴏ &aʙᴜʏ &7ᴛʜɪs'
+  - '&7&lsʜᴜʟᴋᴇʀ ʙᴏx'
+  - ''
+  - '&7&lᴘʀɪᴄᴇ: &e{price}'
+  - '&7&lsᴇʟʟᴇʀ: &e{seller}'
+  close-lore:
+  - '&7&lᴄʟɪᴄᴋ ᴛᴏ &cᴄʟᴏꜱᴇ'
+  - '&7&lᴡɪᴛʜᴏᴜᴛ ʙᴜʏɪɴɢ'
+
+preview-info:
+  title: '&6&lꜱʜᴜʟᴋᴇʀ ᴄᴏɴᴛᴇɴᴛꜱ'
+  lore:
+  - '&7&lᴘʀᴇᴠɪᴇᴡ ᴏғ ᴛʜᴇ'
+  - '&7&lɪᴛᴇᴍꜱ ɪɴꜱɪᴅᴇ'
+  - '&7&lᴛʜɪꜱ ꜱʜᴜʟᴋᴇʀ ʙᴏx'
+
+sounds:
+  open: BLOCK_SHULKER_BOX_OPEN
+  close: BLOCK_SHULKER_BOX_CLOSE
+  click: UI_BUTTON_CLICK
+  buy: ENTITY_PLAYER_LEVELUP
+  back: BLOCK_WOOD_BUTTON_CLICK_ON
+
+messages:
+  preview-disabled: '&cꜱʜᴜʟᴋᴇʀ ᴘʀᴇᴠɪᴇᴡ ɪꜱ ᴅɪꜱᴀʙʟᴇᴅ'
+  empty-shulker: '&7ᴛʜɪꜱ ꜱʜᴜʟᴋᴇʀ ʙᴏx ɪꜱ ᴇᴍᴘᴛʏ'
+  not-shulker: '&cᴛʜɪꜱ ɪᴛᴇᴍ ɪꜱ ɴᴏᴛ ᴀ ꜱʜᴜʟᴋᴇʀ ʙᴏx'
+
+# Preview slots (0-26 for the shulker contents)
+preview-slots:
+  start: 9
+  end: 35
+
+# Border decoration
+border:
+  material: YELLOW_STAINED_GLASS_PANE
+  name: '&r'
+  slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 46
+  - 47
+  - 48
+  - 50
+  - 51
+  - 52

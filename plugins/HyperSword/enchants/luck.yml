@@ -1,0 +1,22 @@
+id: luck
+name: "<green>🍀 Luck</green>"
+description: "Aumenta la suerte en drops."
+icon: EMERALD
+slot: -1
+max-level: 5
+cost:
+  base: 5000
+  multiplier: 1.8
+  currency: EDPRISON_TOKENS
+trigger-chance: 1.0
+trigger-sound: ENTITY_EXPERIENCE_ORB_PICKUP
+trigger-sound-volume: 0.5
+trigger-sound-pitch: 1.2
+trigger-particle: HAPPY_VILLAGER
+trigger-particle-count: 8
+cooldown: 0
+permission: ""
+requirements: {}
+show-in-lore: true
+lore-format: "<green>🍀 Luck <white>%level%</white></green>"
+category: UTILITY

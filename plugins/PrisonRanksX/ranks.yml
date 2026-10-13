@@ -1,0 +1,137 @@
+Ranks:
+  default:
+    Novice:
+      display: '&8Novice'
+      nextrank: Apprentice
+      cost: 0
+
+    Apprentice:
+      display: '&7Apprentice'
+      nextrank: Adept
+      cost: 5000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Adept:
+      display: '&aAdept'
+      nextrank: Expert
+      cost: 8000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Expert:
+      display: '&2Expert'
+      nextrank: Veteran
+      cost: 12500
+      executecmds:
+      - lp user %player% promote rankups
+
+    Veteran:
+      display: '&eVeteran'
+      nextrank: Elite
+      cost: 19000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Elite:
+      display: '&6Elite'
+      nextrank: Master
+      cost: 30000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Master:
+      display: '&cMaster'
+      nextrank: Grandmaster
+      cost: 46000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Grandmaster:
+      display: '&4Grandmaster'
+      nextrank: Champion
+      cost: 72000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Champion:
+      display: '&bChampion'
+      nextrank: Hero
+      cost: 112000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Hero:
+      display: '&3Hero'
+      nextrank: Warlord
+      cost: 175000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Warlord:
+      display: '&5Warlord'
+      nextrank: Overlord
+      cost: 275000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Overlord:
+      display: '&dOverlord'
+      nextrank: Sovereign
+      cost: 425000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Sovereign:
+      display: '&9Sovereign'
+      nextrank: Titan
+      cost: 665000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Titan:
+      display: '&1Titan'
+      nextrank: Ascendant
+      cost: 1000000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Ascendant:
+      display: '&dAscendant'
+      nextrank: Mythic
+      cost: 1600000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Mythic:
+      display: '&5Mythic'
+      nextrank: Immortal
+      cost: 2500000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Immortal:
+      display: '&cImmortal'
+      nextrank: Celestial
+      cost: 4000000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Celestial:
+      display: '&bCelestial'
+      nextrank: Eternal
+      cost: 6000000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Eternal:
+      display: '&eEternal'
+      nextrank: Divine
+      cost: 9500000
+      executecmds:
+      - lp user %player% promote rankups
+
+    Divine:
+      display: '&6&lDivine'
+      nextrank: LASTRANK
+      cost: 15000000

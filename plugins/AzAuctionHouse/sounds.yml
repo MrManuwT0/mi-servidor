@@ -1,0 +1,58 @@
+#=========================================
+#     AzAuctionHouse Sounds Configuration
+#     Author: GamingHuzai
+#     Version: 1.0.0
+#     Support: https://discord.gg/86xXYfHCgu
+#=========================================
+
+# Sound Settings
+sounds:
+  # UI Interaction Sounds
+  ui-click: 
+    sound: UI_BUTTON_CLICK
+    volume: 0.5
+    pitch: 1.0
+    
+  # Success Sounds
+  success:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.7
+    pitch: 1.2
+    
+  # Error Sounds
+  error:
+    sound: ENTITY_VILLAGER_NO
+    volume: 0.5
+    pitch: 1.0
+    
+  # Purchase Sounds
+  purchase:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.6
+    pitch: 1.5
+    
+  # Sale Sounds
+  sale:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.8
+    pitch: 1.0
+    
+  # GUI Navigation
+  page-turn:
+    sound: ITEM_BOOK_PAGE_TURN
+    volume: 0.4
+    pitch: 1.0
+
+# Enable/Disable specific sound categories
+enable:
+  ui-sounds: true
+  success-sounds: true
+  error-sounds: true
+  transaction-sounds: true
+  navigation-sounds: true
+
+#=========================================
+# For updates and support, join:
+# Discord: https://discord.gg/86xXYfHCgu
+# Author: GamingHuzai
+#=========================================

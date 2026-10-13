@@ -1,0 +1,186 @@
+# ==================================================
+#  CRATE: COMMON (Tier 1)
+# ==================================================
+Crate:
+  CrateType: CSGO
+  CrateName: "<bold><white>Common Crate</bold>"
+  Preview-Name: "<bold><white>Common Crate Preview</bold>"
+  StartingKeys: 0
+  RequiredKeys: 1
+  Max-Mass-Open: 10
+  InGUI: true
+  Slot: 21
+  OpeningBroadCast: false
+  BroadCast: "%prefix%<bold><gray>%player%</bold><reset> <gray>is opening a <bold><white>Common Crate.</bold>"
+  opening-command:
+    toggle: false
+    commands: []
+  sound:
+    cycle-sound:
+      toggle: true
+      value: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+      volume: 1.0
+      pitch: 1.0
+    click-sound:
+      toggle: true
+      value: "UI_BUTTON_CLICK"
+      volume: 1.0
+      pitch: 1.0
+    stop-sound:
+      toggle: true
+      value: "ENTITY_PLAYER_LEVELUP"
+      volume: 1.0
+      pitch: 1.0
+  Prize-Message:
+    - "<gray>You have won <red>%reward% <gray>from <red>%crate%."
+  Prize-Commands: []
+  Item: "IRON_INGOT"
+  Glowing: false
+  Name: "<bold><white>Common Crate</bold>"
+  Lore:
+    - "<gray>The first step on your journey."
+    - "<gray>You have <gold>%keys% keys <gray>to open this crate with."
+    - "<gray>You have opened this crate: <gold>%crate_opened% times"
+    - "<gray>(<yellow>!<gray>) Right click to view rewards."
+  Preview:
+    Toggle: true
+    ChestLines: 3
+    Glass:
+      Toggle: true
+      Name: " "
+      Item: "WHITE_STAINED_GLASS_PANE"
+  PhysicalKey:
+    Name: "<bold><white>Common Key</bold>"
+    Lore:
+      - "<gray>Open it at the <bold><white>Common</bold> <gray>crate"
+      - ""
+      - "<gray>Rewards: <white>Money, Basic kits, Points"
+    Item: "TRIPWIRE_HOOK"
+    Glowing: false
+  Hologram:
+    Toggle: true
+    Height: 1.5
+    Range: 8
+    Color: "transparent"
+    Message:
+      - "<bold><white>COMMON CRATE</bold>"
+      - "<gray>Right click with the key"
+  Prizes:
+    1:
+      DisplayName: "<green>$100"
+      DisplayItem: "GOLD_NUGGET"
+      Lore:
+        - "<gray>A small stack of cash."
+        - ""
+        - "<red>Chance: <yellow>19%"
+      MaxRange: 100
+      Chance: 19
+      Commands:
+        - "eco give %player% 100"
+      Messages:
+        - "<gray>You won <green>$100"
+    2:
+      DisplayName: "<green>$250"
+      DisplayItem: "GOLD_INGOT"
+      Lore:
+        - "<gray>A decent handful of cash."
+        - ""
+        - "<red>Chance: <yellow>15%"
+      MaxRange: 100
+      Chance: 15
+      Commands:
+        - "eco give %player% 250"
+      Messages:
+        - "<gray>You won <green>$250"
+    3:
+      DisplayName: "<green>$500"
+      DisplayItem: "GOLD_BLOCK"
+      Lore:
+        - "<gray>Now we're talking."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Commands:
+        - "eco give %player% 500"
+      Messages:
+        - "<gray>You won <green>$500"
+    4:
+      DisplayName: "<aqua>10 Points"
+      DisplayItem: "PRISMARINE_CRYSTALS"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>15%"
+      MaxRange: 100
+      Chance: 15
+      Commands:
+        - "points give %player% 10"
+      Messages:
+        - "<gray>You won <aqua>10 Points"
+    5:
+      DisplayName: "<aqua>25 Points"
+      DisplayItem: "PRISMARINE_SHARD"
+      Lore:
+        - "<gray>Progress towards your rank."
+        - ""
+        - "<red>Chance: <yellow>11%"
+      MaxRange: 100
+      Chance: 11
+      Commands:
+        - "points give %player% 25"
+      Messages:
+        - "<gray>You won <aqua>25 Points"
+    6:
+      DisplayName: "<yellow>Starter Kit"
+      DisplayItem: "LEATHER_CHESTPLATE"
+      Lore:
+        - "<gray>Gear up for the mines."
+        - ""
+        - "<red>Chance: <yellow>11%"
+      MaxRange: 100
+      Chance: 11
+      Commands:
+        - "kit give %player% starter"
+      Messages:
+        - "<gray>You won the <yellow>Starter Kit"
+    7:
+      DisplayName: "<yellow>Miner Kit"
+      DisplayItem: "IRON_PICKAXE"
+      Lore:
+        - "<gray>Everything you need to mine."
+        - ""
+        - "<red>Chance: <yellow>9%"
+      MaxRange: 100
+      Chance: 9
+      Commands:
+        - "kit give %player% miner"
+      Messages:
+        - "<gray>You won the <yellow>Miner Kit"
+    8:
+      DisplayName: "<white>16x Bread"
+      DisplayItem: "BREAD"
+      DisplayAmount: 16
+      Lore:
+        - "<gray>Never mine on an empty stomach."
+        - ""
+        - "<red>Chance: <yellow>7%"
+      MaxRange: 100
+      Chance: 7
+      Items:
+        - "Item:BREAD, Amount:16"
+      Messages:
+        - "<gray>You won <white>16x Bread"
+    9:
+      DisplayName: "<white>1x Golden Apple"
+      DisplayItem: "GOLDEN_APPLE"
+      Lore:
+        - "<gray>A tasty little bonus."
+        - ""
+        - "<red>Chance: <yellow>4%"
+      MaxRange: 100
+      Chance: 4
+      Items:
+        - "Item:GOLDEN_APPLE, Amount:1"
+      Messages:
+        - "<gray>You won <white>1x Golden Apple"

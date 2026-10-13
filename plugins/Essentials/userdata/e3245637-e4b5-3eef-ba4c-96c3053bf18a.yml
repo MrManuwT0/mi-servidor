@@ -1,0 +1,48 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: true
+muted: false
+jailed: false
+ip-address: 92.186.68.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: true
+timestamps:
+  lastteleport: 1788120753026
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1788120820587
+  login: 1788120709711
+money: '37653.66000000000489342'
+last-account-name: MrManuHC
+lastlocation:
+  world: fcadfaf8-5764-4831-97ca-0ce5922427e0
+  world-name: mines
+  x: -633.1634271091583
+  y: 165.0
+  z: 84.70359762722698
+  yaw: 24.16615867614746
+  pitch: 2.6020474433898926
+logoutlocation:
+  world: b30f7a7f-f95f-4df5-90d7-bde827212875
+  world-name: Spawn
+  x: 68.03375194380676
+  y: 112.0
+  z: -63.58901370943115
+  yaw: -107.45487976074219
+  pitch: -0.9651331901550293
+homes:
+  casa:
+    world: 4c754807-de36-4009-8a10-db657f9185f3
+    world-name: Survival
+    x: -55.1421236168358
+    y: 71.0
+    z: 211.63219247666527
+    yaw: 34.412689208984375
+    pitch: 3.6728858947753906

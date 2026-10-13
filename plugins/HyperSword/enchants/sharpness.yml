@@ -1,0 +1,71 @@
+# ============================================================
+#  HyperSword - enchants/sharpness.yml
+#  Encantamiento: Sharpness (Daño base aumentado)
+# ============================================================
+
+# Identificador único (debe coincidir con el nombre del archivo)
+id: sharpness
+
+# Puedes deshabilitar un encantamiento con enabled: false.
+# El menú lo ocultará y el slot se autorellenará con el siguiente encantamiento disponible.
+enabled: true
+
+# Nombre mostrado (MiniMessage)
+name: "<red>⚔ Sharpness</red>"
+
+# Descripción en el menú
+description: "Aumenta el daño base de la espada."
+
+# Material del icono en el GUI
+icon: IRON_SWORD
+
+# Slot preferido en el menú de encantamientos (-1 = automático)
+slot: -1
+
+# Nivel máximo
+max-level: 10
+
+# Precio por nivel
+# Fórmula: base_cost * (level ^ cost_multiplier)
+cost:
+  base: 1000
+  multiplier: 1.5
+  # Moneda de ESTE encantamiento: EDPRISON_TOKENS, EDPRISON_GEMS, EDPRISON_CRYSTALS, VAULT, PLAYER_POINTS
+  # Si economy.force-global=true en config.yml, esta moneda se ignora y se usa siempre
+  # la moneda global. Si force-global=false, cada encantamiento usa la suya propia.
+  currency: EDPRISON_TOKENS
+
+# Efecto: daño adicional por nivel (en puntos de corazón, 2 = 1 corazón)
+damage-per-level: 0.5
+
+# Probabilidad de activación (0.0 - 1.0, 1.0 = siempre)
+# Sharpness siempre aplica
+trigger-chance: 1.0
+
+# Sonido al activarse el encantamiento (en golpe)
+trigger-sound: ENTITY_PLAYER_ATTACK_STRONG
+trigger-sound-volume: 0.6
+trigger-sound-pitch: 1.0
+
+# Partículas al activarse
+trigger-particle: CRIT
+trigger-particle-count: 5
+
+# Cooldown en segundos (0 = sin cooldown)
+cooldown: 0
+
+# Permiso requerido para mejorar (vacío = ninguno)
+permission: ""
+
+# Requisitos previos (otros encantamientos que deben tener cierto nivel)
+requirements: {}
+# Ejemplo:
+# requirements:
+#   strength: 3   # Requiere 'strength' en nivel 3+
+
+# ¿Aparece en el lore de la espada?
+show-in-lore: true
+lore-format: "<red>⚔ Sharpness <white>%level%</white></red>"
+
+# Categoría para filtrar en el menú
+category: DAMAGE

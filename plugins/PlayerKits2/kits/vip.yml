@@ -1,0 +1,177 @@
+cooldown: 86400
+permission_required: true
+custom_permission: group.vip
+one_time: false
+auto_armor: true
+clear_inventory: false
+
+display:
+  default:
+    id: GOLD_INGOT
+    name: '&6&lVIP Kit'
+    amount: 1
+    lore:
+    - '&7Contents:'
+    - '&8- &71x Diamond Armor Set &7(Prot &f70&7, Unb &f50&7)'
+    - '&8- &71x Diamond Sword &7(Sharp &f50&7, Unb &f50&7)'
+    - '&8- &74x Golden Apple'
+    - '&8- &74x Ender Pearl'
+    - '&8- &716x Experience Bottle'
+    - '&8- &72x Potion of Strength'
+    - '&8- &72x Name Tag &8+ &71x Saddle'
+    - '&8- &716x Fireworks'
+    - ''
+    - '&7Cooldown: &c24 hours'
+    - ''
+    - '&aLeft Click to claim!'
+    - '&bRight Click to preview!'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '&6&lVIP Kit'
+    amount: 1
+    lore:
+    - '&cYou need the &fVIP&c rank to claim this kit.'
+    - '&7Available on our store!'
+  cooldown:
+    id: GOLD_INGOT
+    name: '&6&lVIP Kit'
+    amount: 1
+    lore:
+    - '&cYou need to wait &7%time%'
+    - '&cto claim this kit again.'
+    item_flags:
+    - HIDE_ATTRIBUTES
+save_original_items: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    id: DIAMOND_HELMET
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f70'
+    - '&7✦ Unbreaking &f50'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;70
+    - DURABILITY;50
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 0
+  '2':
+    id: DIAMOND_CHESTPLATE
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f70'
+    - '&7✦ Unbreaking &f50'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;70
+    - DURABILITY;50
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 1
+  '3':
+    id: DIAMOND_LEGGINGS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f70'
+    - '&7✦ Unbreaking &f50'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;70
+    - DURABILITY;50
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 2
+  '4':
+    id: DIAMOND_BOOTS
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Protection &f70'
+    - '&7✦ Unbreaking &f50'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - PROTECTION_ENVIRONMENTAL;70
+    - DURABILITY;50
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 3
+  '5':
+    id: DIAMOND_SWORD
+    amount: 1
+    lore:
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    - '&eEncantamientos'
+    - '&7✦ Sharpness &f50'
+    - '&7✦ Unbreaking &f50'
+    - '&8━━━━━━━━━━━━━━━━━━━━━━'
+    enchants:
+    - DAMAGE_ALL;50
+    - DURABILITY;50
+    item_flags:
+    - HIDE_ENCHANTS
+    nbt:
+    - hs_item_base_lore_set|true|boolean
+    - hs_item_glow_dummy|false|boolean
+    - hs_item_base_lore|
+    preview_slot: 4
+  '6':
+    id: GOLDEN_APPLE
+    amount: 4
+    preview_slot: 5
+  '7':
+    id: ENDER_PEARL
+    amount: 4
+    preview_slot: 6
+  '8':
+    id: EXPERIENCE_BOTTLE
+    amount: 16
+    preview_slot: 7
+  '9':
+    id: POTION
+    amount: 2
+    potion_data:
+      effects:
+      - INCREASE_DAMAGE;1;3600
+      extended: false
+      upgraded: false
+      type: UNCRAFTABLE
+    preview_slot: 8
+  '10':
+    id: NAME_TAG
+    amount: 2
+    preview_slot: 9
+  '11':
+    id: SADDLE
+    amount: 1
+    preview_slot: 10
+  '12':
+    id: FIREWORK_ROCKET
+    amount: 16
+    preview_slot: 11

@@ -1,0 +1,122 @@
+# =========================================
+#   NightMarket - Main configuration
+#   HyperCraft Network
+# =========================================
+
+# Internal - used to auto-migrate old config.yml files after an update. Don't edit.
+config-version: 3
+
+storage:
+  # Supported types: YAML, SQLITE, MYSQL
+  type: SQLITE
+  mysql:
+    host: localhost
+    port: 3306
+    database: nightmarket
+    username: root
+    password: ""
+    useSSL: false
+    pool-size: 10
+
+economy:
+  # Provider: VAULT (recommended, covers EssentialsX, CMI, etc via Vault)
+  provider: VAULT
+
+market:
+  offers-per-market: 5
+  # items never repeat within the same market
+  prevent-duplicate-items: true
+
+  # If true, the plugin guarantees the 10 sample rare items exist in the
+  # pool (recreates them if an admin deletes them). Set to false once you
+  # have your own item catalog.
+  seed-default-items: true
+
+  reset:
+    # Automatic reset interval for a player's personal market.
+    # unit: HOURS, DAYS, WEEKS, MONTHS
+    unit: WEEKS
+    amount: 1
+
+  discount:
+    min-percent: 15
+    max-percent: 30
+
+  # A single extra highlighted offer with its own (shorter) reset cycle and
+  # a bigger discount, only rolled from higher-rarity items. Gives players
+  # a reason to check back before the whole market resets.
+  featured:
+    enabled: true
+    reset:
+      unit: DAYS
+      amount: 1
+    discount:
+      min-percent: 20
+      max-percent: 30
+    # minimum rarity eligible to be picked as the featured offer: COMMON, RARE, EPIC, LEGENDARY
+    min-rarity: EPIC
+
+  # Lets a player pay to reroll their entire market early instead of waiting
+  # for the weekly reset. Rerolls both the regular offers and the featured offer.
+  reroll:
+    enabled: true
+    cost: 2000
+
+# Rarity tiers for items: color used in their lore tag, whether they get an
+# enchant glint, and a weight multiplier applied on top of an item's own
+# "probability" value when rolling offers (lower = rarer in practice).
+rarity:
+  common:
+    color: "<white><bold>"
+    glow: false
+    weight-multiplier: 1.0
+  rare:
+    color: "<aqua><bold>"
+    glow: false
+    weight-multiplier: 0.55
+  epic:
+    color: "<light_purple><bold>"
+    glow: true
+    weight-multiplier: 0.28
+  legendary:
+    color: "<gold><bold>"
+    glow: true
+    weight-multiplier: 0.12
+
+animation:
+  enabled: true
+  # total duration of the "reveal" animation in ticks (20 ticks = 1s)
+  duration-ticks: 50
+  # how often (in ticks) the icon changes during the animation
+  frame-interval-ticks: 2
+  # speed increases (frame-interval drops) as the animation progresses, down to this minimum
+  min-frame-interval-ticks: 1
+  cycle-materials:
+    - QUARTZ
+    - EMERALD
+    - DIAMOND
+    - NETHER_STAR
+    - PLAYER_HEAD
+    - AMETHYST_SHARD
+    - GLOWSTONE_DUST
+
+gui:
+  # Purple-to-gold gradient title with sparkle accents for a "night sky market" feel.
+  main-title: "<gradient:#3b0764:#facc15><bold>✦ Night Market ✦"
+  rows: 4
+  # slots (0-indexed) where the 5 regular offers are placed
+  offer-slots: [10, 12, 14, 16, 22]
+  # slot for the single featured offer (see market.featured above)
+  featured-slot: 31
+  # slot for the paid-reroll button (see market.reroll above)
+  reroll-slot: 29
+  fill-empty-slots: true
+  # Two-tone border for a dusk-to-night gradient look: purple near the top,
+  # fading into black lower down, with a sparkle accent at the 4 corners.
+  border-top-material: PURPLE_STAINED_GLASS_PANE
+  border-bottom-material: BLACK_STAINED_GLASS_PANE
+  corner-accent-material: MAGENTA_STAINED_GLASS_PANE
+  # Spotlight-style glow placed directly around the featured slot.
+  featured-border-material: GLOWSTONE
+
+debug: false

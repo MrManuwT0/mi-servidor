@@ -1,0 +1,50 @@
+# =======================================================
+#                     HyperClans Config
+# =======================================================
+
+storage:
+  # Actualmente solo SQLite está soportado en esta versión
+  type: SQLITE
+  file: clans.db
+
+clan:
+  name:
+    min-length: 3
+    max-length: 16
+  tag:
+    min-length: 2
+    max-length: 6
+  max-members: 20
+  creation-cost: 500.0         # requiere Vault; 0 para desactivar
+  max-clans-per-player: 1
+
+bank:
+  enabled: true
+  max-balance: 1000000.0
+  tax-on-withdraw-percent: 0     # 0 = sin impuesto
+
+wars:
+  enabled: true
+  declare-cost: 0.0
+  cooldown-minutes: 60           # tiempo mínimo entre declaraciones de guerra al mismo clan
+  min-members-required: 1
+
+alliances:
+  enabled: true
+  max-allies: 5
+  require-mutual-accept: true
+
+chat:
+  clan-chat-prefix: "&8[&aClan&8] "
+  format: "{prefix}&7{rank_prefix}&f{player}&8: &f{message}"
+
+placeholders:
+  date-format: "dd/MM/yyyy"
+  online-text: "&aOnline"
+  offline-text: "&cOffline"
+  not-available-text: "&7"
+  kdr-decimals: 2
+
+general:
+  language-file: messages.yml
+  debug: false
